@@ -1,4 +1,4 @@
-# Practica 3
+# Práctica 3
 
 Undum is a game framework for building a sophisticated form of
 hypertext interactive fiction.
