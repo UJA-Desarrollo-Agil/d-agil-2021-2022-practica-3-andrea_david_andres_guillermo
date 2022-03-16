@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Undum &ndash;
+    A client side framework for hypertext interactive fiction games</title>
+    <meta charset = "utf-8">
+    <style type="text/css" media="screen">
+      body, html {
+          margin: 0;
+          font-family: Palatino, Times, "Times New Roman", serif;
+          line-height: 1.6;
+          font-size: 22px;
+      }
+      #page {
+          position: absolute;
+      }
+      #content {
+          /*border: 1px solid black;*/
+          position: absolute;
+          z-index: 100;
+          text-align: center;
+          left: 225px;
+          top: 80px;
+          width: 500px;
+          height: 750px;
+      }
+      #image {
+          position: absolute;
+          left: 0;
+          top: 0;
+      }
+
+      #twitter_div {
+          font-size: 0.9em;
+          padding-top: 1em;
+          border-top: 1px solid #666;
+          margin: 1em;
+      }
+      #twitter_div ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      h1 {
+          font-size: 1.2em;
+          text-transform: uppercase;
+          letter-spacing: 0.4em;
+          margin: 2em 0 1em 0;
+          color: #210;
+      }
+      a {
+          color: #900;
+          text-decoration: none;
+          border-bottom: 1px solid transparent;
+      }
+      a:hover {
+          border-bottom: 1px dotted #900;
+      }
+      ol, ul {
+      text-align: left;
+      }
+      p.legal {
+          margin-top: 3em;
+          font-size: 0.7em;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <div id="content">
+        <h1>Undum</h1>
+        <p>
+          A client-side framework for<br>
+          hypertext interactive fiction games.
+        </p>
+        <p><em>Current Version (v. 2)</em></p>
+        <p>
+          <a href="games/tutorial.en.html">Tutorial Game</a><br/>
+          <a href="games/tutorial.ru.html">Русский</a><br/><br/>
+
+          <a href="doc/index.html">Reference Documentation</a><br/>
+          <a href="http://github.com/idmillington/undum">Source Code</a>
+        </p>
+        <p><em>Previous Version (v. 1)</em></p>
+        <p>
+          Tutorial game in:
+          <a href="games/tutorial.de.html">Deutsch</a>,
+        </p>
+        <p class="legal">
+          &copy; 2010-2018 IDM |
+          <a href="https://github.com/idmillington/undum/blob/master/CREDITS">Contributors |
+          <a href="https://github.com/idmillington/undum/blob/master/LICENSE">MIT License</a>
+        </p>
+      </div>
+      <img id="image" src="media/img/book_bg.jpg"
+           alt="Pro captu lectoris habent sua fata libelli.">
+    </div>
+    <script type="text/javascript"
+     src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+    (function() {
+        // The unscalable borders of the main content from each edge.
+        var MARGINS = [0, 0, 0, 0];
+
+        // The proportion of extra space used vertically and horizontally.
+        var CENTER = [0.25, 0.5];
+
+        // The minimum and maximum scale for the image.
+        var SCALE_LIMIT = [0.5, 1.0];
+
+        // The proportional offsets to the content area.
+        var CONTENT = [0.05, 0.525, 0.17, 0.125];
+
+        var layout = function() {
+            // Find the page size.
+            var win = $(window);
+            var pw = win.width() - MARGINS[1] - MARGINS[3];
+            var ph = win.height() - MARGINS[0] - MARGINS[2];
+
+            // Hardcoded background image size.
+            var iw = 1583;
+            var ih = 981;
+
+            // Work out the scale and offsets.
+            var scale = Math.min(
+                SCALE_LIMIT[1], Math.max(
+                    SCALE_LIMIT[0], ((pw/ph) < (iw/ih))?(pw/iw):(ph/ih)
+                )
+            );
+            var tx = Math.max(0.0, MARGINS[3] + (pw - iw * scale) * CENTER[1]);
+            var ty = Math.max(0.0, MARGINS[0] + (ph - ih * scale) * CENTER[0]);
+
+            // Show the content.
+            $("#page").css({'left':tx, 'top':ty});
+            $("#image").attr('width', iw*scale).attr('height', ih*scale);
+
+            // Position the text and scale it correctly.
+            $("#content").css({
+                'width': iw*scale*(1.0-CONTENT[1]-CONTENT[3]),
+                'height': ih*scale*(1.0-CONTENT[0]-CONTENT[2]),
+                'left': iw*scale*CONTENT[3],
+                'top': iw*scale*CONTENT[0],
+                'font-size': (scale*100)+"%"
+            });
+        };
+        $(function() {
+            $(window).bind('resize', layout);
+            layout();
+        });
+    })();
+    </script>
+  </body>
+</html>
