@@ -1,4 +1,4 @@
-# Undu
+# Undum
 
 Undum is a game framework for building a sophisticated form of
 hypertext interactive fiction.
