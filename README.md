@@ -1,4 +1,14 @@
-# Práctica 3
+# DESARROLLO ÁGIL
+# Práctica 3: 
+
+## Guillermo Cámara Castillo
+## Andrea Marín Verdejo
+## David Rodríguez Muro
+## Andrés Palacios de Castro
+
+* **Curso**: 2021-2022
+
+
 
 Undum is a game framework for building a sophisticated form of
 hypertext interactive fiction.
