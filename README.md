@@ -1,12 +1,12 @@
 # DESARROLLO ÁGIL
 # Práctica 3: 
 
-## Guillermo Cámara Castillo
-## Andrea Marín Verdejo
-## David Rodríguez Muro
-## Andrés Palacios de Castro
+* **Guillermo Cámara Castillo** - gcc00034@red.ujaen.es
+* **Andrea Marín Verdejo** - amv00079@red.ujaen.es
+* **David Rodríguez Muro** - drm00035@red.ujaen.es
+* **Andrés Palacios de Castro** - apc00085@red.ujaen.es
 
-* **Curso**: 2021-2022
+**Curso**: 2021-2022
 
 
 
