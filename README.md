@@ -45,7 +45,8 @@ Hecho por:
 
 ## 3. Descripción del juego
 
-
+Nuestro juego está basado en un estilo de juego llamado “Escape Room”, en este tipo de juegos tú eres el protagonista. En este historia tienes que escapar de un parque de atracciones abandonado.
+Todo comienza en la plaza central del parque. Estás solo, lo único que tienes es un GPS en el que aparece toda la distribución de los elementos del parque y tu ubicación actualizada en tiempo real. En esta aventura tendrás que desplazarte por el parque de atracciones hasta encontrar todos los objetos necesarios para completar los objetivos de cada situación y obtener la llave con la que podrás escapar de ese lugar tan tenebroso.
 
 ## 4. URL del tablero de Trello
 La URL del tablero utilizado en esta práctica es: https://trello.com/b/nwDPtiRL/pr%C3%A1ctica-3
