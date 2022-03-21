@@ -56,7 +56,8 @@ La URL del tablero utilizado en esta práctica es: https://trello.com/b/nwDPtiRL
 
 A continuación diferentes imagenes del avance del Tablero Trtello
 
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/trello1.JPG"></img>
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/trello2.JPG"></img>
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/trello1.PNG"></img>
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/trello2.PNG"></img>
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/trello3.PNG"></img>
 ## 6. Capturas de pantalla de Telegram
 
