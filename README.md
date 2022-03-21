@@ -17,11 +17,6 @@ Hecho por:
 
 **Curso**: 2021-2022
 
-
-
-
-
-
 ## Índice
 
   * [1. Introducción](#1-introducción)
@@ -31,17 +26,13 @@ Hecho por:
   * [5. Capturas de pantalla de Trello](#5-capturas-de-pantalla-de-trello)
   * [6. Capturas de pantalla de Telegram](#6-capturas-de-pantalla-de-telegram)
 
-
-
-
 ## 1. Introducción
-
-
+ 
+En este sprint incial deberemos redactar la descripción de un juego entre los cuatro miembros del equipo, a su vez deberemos describir las diferentes historias de usuario y asignarle su puntuación correspondiente.
 
 ## 2. Motivación
 
-
-
+Para realizar el sprint usaremos herramientas como Trello, GitHub y Telegram, en Telegram aprenderemos del uso de diferentes bots como el de Trello, GitHub y utilizaremos un bot para asignar los puntos de poker mediante votaciones de todos los miembros del equipo.
 
 ## 3. Descripción del juego.
 
