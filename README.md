@@ -27,12 +27,12 @@ Hecho por:
   * [6. Capturas de pantalla de Telegram](#6-capturas-de-pantalla-de-telegram)
 
 ## 1. Introducción
- 
-En este sprint incial deberemos redactar la descripción de un juego entre los cuatro miembros del equipo, a su vez deberemos describir las diferentes historias de usuario y asignarle su puntuación correspondiente.
+
+En esta tercera práctica de la asignatura Desarrollo Ágil tendremos que crear un juego con Undum en equipos de 4. Para facilitar el trabajo en grupo y mejorar la coordinación y comunicación entre nosotros usaremos las herramientas Trello, Telegram y GitHub. En este Sprint 0 hemos descrito el juego, establecido las historias de usuario asignándole una descripción, puntos de historia y valor.
 
 ## 2. Motivación
 
-Para realizar el sprint usaremos herramientas como Trello, GitHub y Telegram, en Telegram aprenderemos del uso de diferentes bots como el de Trello, GitHub y utilizaremos un bot para asignar los puntos de poker mediante votaciones de todos los miembros del equipo.
+Esta práctica está motivada por ser parte del contenido de prácticas de la asignatura de Desarrollo Ágil, por su importante peso en la nota final de prácticas y por la obligatoriedad de la entrega de esta para el dia 22 de Marzo de 2022.
 
 ## 3. Descripción del juego.
 
