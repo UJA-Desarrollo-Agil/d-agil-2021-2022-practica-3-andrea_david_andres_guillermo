@@ -45,17 +45,27 @@ La URL del tablero utilizado en esta práctica es: https://trello.com/b/nwDPtiRL
 
 ## 5. Capturas de pantalla de Trello 
 
-A continuación diferentes imagenes del avance del Tablero Trello
+A continuación diferentes imágenes del avance del Tablero Trello:
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/trello1.png"></img>
+>Ilustración 1: Tablero Trello con las 4 primeras Historias de Usuario.
+
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/trello2.png"></img>
+>Ilustración 2: Tablero Trello con las 3 siguientes Historias de Usuario.
+
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/trello3.png"></img>
+>Ilustración 3: Tablero Trello con las 3 últimas Historias de Usuario.
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/Sin título-1.png" width="600" height="600"></img>
+>Ilustración 4: Ejemplos de descripción de 2 Historias de Usuario.
 
 ## 6. Capturas de pantalla de Telegram
 
 Las siguientes capturas que se muestran son de los bots de Trello y GitHub, en ese orden, que hemos vinculado en Telegram en un grupo que hemos creado con los cuatro miembros del grupo.
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/botTrello.png"></img>
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/botGitHub.png"></img>
+>Ilustración 5: Captura de pantalla del bot de Trello en funcionamiento.
 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/botGitHub.png"></img>
+>Ilustración 6: Captura de pantalla del bot de GitHub en funcionamiento.
 
