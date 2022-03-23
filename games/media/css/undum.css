@@ -223,6 +223,10 @@ img.float_left {
 .tools.right {
     right: 0.4em;
 }
+.tools.right2 {
+    right: 0.4em;
+    display: grid;
+}
 
 .tools h1 {
     font-size: 1.0em;
@@ -273,21 +277,21 @@ img.float_left {
     text-indent: 0;
 }
 
-#character {
+#character, #gps {
     font-size: 1.0em;
     line-height: 1.4em;
 }
-#qualities .quality, #character_text {
+#qualities .quality, #character_text,#gps_text {
     position: relative;
     clear: both;
     overflow: hidden;
     margin: 0 -0.25em;
     padding: 0 0.25em;
 }
-#character_text {
+#character_text, #gps_text {
     margin-bottom: 0.6em;
 }
-#character_text_content {
+#character_text_content, #gps_text_content {
     position: relative;
     z-index: 100;
 }
