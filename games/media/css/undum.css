@@ -1,5 +1,5 @@
 body {
-    background: #170804 url("../img/page_bg.jpg") repeat-x left top;
+    background: #170804 url("../img/page_bg.png") repeat-x left top;
     font-family: Palatino, Times, "Times New Roman", serif;
     font-size: 18px;
     line-height: 1.6em;
@@ -22,7 +22,7 @@ body {
 }
 #title {
     max-width: 28em;
-    background: #e6e6c6 url("../img/title_bg.jpg") repeat -1.1em -1.1em;
+    background: #e6e6c6 url("../img/title_bg.png") repeat -1.1em -1.1em;
     margin: 2.2em auto 1.1em auto;
     padding: 1.7em;
     border: 1.1em solid rgba(0,0,0,0.25);
@@ -218,7 +218,8 @@ img.float_left {
     line-height: 1.5em;
 }
 .tools.left {
-    left: 0.4em;
+    left: -10em;
+    width: 18.9em;
 }
 .tools.right {
     right: 0.4em;

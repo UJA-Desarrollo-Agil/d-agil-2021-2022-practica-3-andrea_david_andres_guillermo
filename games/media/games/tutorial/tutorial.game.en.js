@@ -27,33 +27,31 @@ undum.game.fadeSpeed = 1500
 undum.game.slideUpSpeed = 500
 
 /* The situations that the game can be in. Each has a unique ID. */
+
+
 undum.game.situations = {
     start: new undum.SimpleSituation(
-        "<h1>Starting Out with Undum</h1>\
+        "<h1>Inicio del juego</h1>\
         <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
-        <p>Welcome to the Undum tutorial. Undum is a tool for writing\
-        hypertext interactive fiction. It has some unique features\
-        and a visual design that encourages narrative games.</p>\
+        <p> Bienvenido al inicio del juego. </p> \
+        <p> Acabas de despertarte y te encuentras en un parque de atracciones \
+        </p>no hay nadie y empiezas a asustarte. Lo único que tienes es un \
+        mapa del parque pero no sabes cómo salir de él.\
+        <p>Tu objetivo consiste en completar todas las tareas para\
+        conseguir la llave con la que podrás salir de este lugar tan tenebroso.\
         \
-        <p>Hypertext interactive fiction is the digital equivalent of the\
-        Choose Your Own Adventure (CYOA) books that were popular in the\
-        1980s. The story is told in chunks, and you select from a range\
-        of options to move it forward. Unlike the book form, however, the\
-        digital form gives you far more flexibility to tell rich stories\
-        and introduce more interesting game elements.</p>\
+       </p>\
         \
-        <p class='transient'>Click <a href='hub'>this link to\
-        continue...</a></p>"
+        <p class='transient'> Elige un lugar al que ir: \
+         <a href='Noria'> Noria </a> o\
+         <a href='Luz'> Luz </a></p>"
+       
     ),
+    
 
-    // NB: The 'hub' situation which is the main list of topics, is
-    // defined wholly in the HTML file, and doesn't have an entry in
-    // the game.situations dictionary in this file.
+    
+       
 
-    // For variety, here we define a situation using the top-level
-    // Situation type. This is a neat approach to generate text by
-    // looking it up in the HTML document. For static text that makes
-    // more sense than writing it longhand.
     situations: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#s_situations").html());
@@ -253,7 +251,7 @@ undum.game.situations = {
         the character panel, and you'll see that Novice decides it doesn't\
         need to be displayed any more and will be removed. You will also see\
         that when the last\
-        quality in a group is removed ('Novice' is in the 'Progress' group),\
+        quality in a group is removed ('Novice' is in the 'Progreso' group),\
         then the group heading is also removed. You can tell Undum what\
         group each quality belongs to, and what order they should be listed.\
         <p>",
@@ -292,16 +290,16 @@ undum.game.situations = {
             }
         }
     ),
-    progress: new undum.SimpleSituation(
+    Progreso: new undum.SimpleSituation(
         "<p>Sometimes you want to make the change in a quality into a more\
         significant event. You can do this by animating the change in\
         quality. If you <a href='./boost-stamina-action'>boost your\
         stamina</a>, you will see the stamina change in the normal\
-        way in the character panel. But you will also see a progress\
+        way in the character panel. But you will also see a Progreso\
         bar appear and animate below.</p>",
         {
             tags: ["topic"],
-            heading: "Showing a Progress Bar",
+            heading: "Showing a Progreso Bar",
             displayOrder: 5,
             actions: {
                 // I'm going indirect here - the link carries out an
@@ -323,13 +321,13 @@ undum.game.situations = {
     "boost-stamina": new undum.SimpleSituation(
         "<p>\
         <img src='media/games/tutorial/woodcut3.png' class='float_right'>\
-        The progress bar is also useful in situations where the\
+        The Progreso bar is also useful in situations where the\
         character block is displaying just the whole number of a quality,\
         whereas some action changes a fraction. If the quality is displaying\
-        the character's level, for example, you might want to show a progress\
+        the character's level, for example, you might want to show a Progreso\
         bar to indicate how near the character is to levelling up.</p>\
         \
-        <p>After a few seconds, the progress bar disappears, to keep the\
+        <p>After a few seconds, the Progreso bar disappears, to keep the\
         focus on the text. Undum isn't designed for games where a lot of\
         statistic management is needed. If you want a change to be part\
         of the permanent record of the game, then write it in text.</p>\
@@ -458,10 +456,10 @@ undum.game.qualities = {
     ),
 
     inspiration: new undum.NonZeroIntegerQuality(
-        "Inspiration", {priority:"0001", group:'progress'}
+        "Inspiration", {priority:"0001", group:'Progreso'}
     ),
     novice: new undum.OnOffQuality(
-        "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
+        "Novice", {priority:"0002", group:'Progreso', onDisplay:"&#10003;"}
     )
 };
 
@@ -473,7 +471,7 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
-    progress: new undum.QualityGroup('Progress', {priority:"0002"})
+    Progreso: new undum.QualityGroup('Progreso', {priority:"0002"})
 };
 
 // ---------------------------------------------------------------------------
@@ -485,5 +483,5 @@ undum.game.init = function(character, system) {
     character.qualities.luck = 0;
     character.qualities.novice = 1;
     character.qualities.inspiration = 0;
-    system.setCharacterText("<p>You are starting on an exciting journey.</p>");
+    system.setCharacterText("<p>Comienza el juego.</p>");
 };
