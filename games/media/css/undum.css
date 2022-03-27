@@ -8,6 +8,14 @@ body {
 }
 
 /* Basic structure */
+
+.mapa{
+    width:200px; 
+    height:170px;
+    float: right;
+    margin-top: 1rem;
+}
+
 #page {
     margin: 0 auto;
     position: relative;

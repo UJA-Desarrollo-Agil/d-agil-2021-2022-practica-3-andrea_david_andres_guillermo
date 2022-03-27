@@ -42,12 +42,60 @@ undum.game.situations = {
         \
        </p>\
         \
-        <p class='transient'> Elige un lugar al que ir: \
-         <a href='Noria'> Noria </a> o\
+        <p> Elige un lugar al que ir: \
+         <a href='plaza'> Noria </a>\
          <a href='Luz'> Luz </a></p>"
        
     ),
     
+    plaza: new undum.SimpleSituation(
+        
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+         <a href='noria'> Noria</a><br> \
+         <a href='caida'> Caida Libre </a><br> \
+         <a href='coches'> Karts </a><br>\
+         <a href='tiovivo'> Tiovivo </a><br> \
+         <a href='agua'> Rápidos Acuáticos </a> </p>"
+    ),
+
+    tiovivo: new undum.SimpleSituation(
+        
+    ),
+
+    entrada: new undum.SimpleSituation(
+        
+    ),
+
+    globos: new undum.SimpleSituation(
+        
+    ),
+
+    rusa: new undum.SimpleSituation(
+        
+    ),
+
+    coches: new undum.SimpleSituation(
+            
+    ),
+
+    caida: new undum.SimpleSituation(
+            
+    ),
+
+    agua: new undum.SimpleSituation(
+            
+    ),
+
+    luz: new undum.SimpleSituation(
+            
+    ),
+
+    noria: new undum.SimpleSituation(
+                
+    ),
+    
+
 
     
        
