@@ -43,7 +43,6 @@ undum.game.situations = {
        </p>\
         \
         <p> Elige un lugar al que ir: \
-         <a href='plaza'> Noria </a>\
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a><br> \
          <a href='coches'> Karts(8) </a><br>\
@@ -67,6 +66,7 @@ undum.game.situations = {
          <a href='entrada'> Entrada(10) </a><br>\
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
     ),
+    
 
     tiovivo: new undum.SimpleSituation(
         "<img src='media/img/mapaBeta.png' class='mapa'> </img \
