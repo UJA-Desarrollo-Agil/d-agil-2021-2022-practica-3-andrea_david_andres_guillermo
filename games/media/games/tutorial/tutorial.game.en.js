@@ -52,47 +52,79 @@ undum.game.situations = {
         
         "<img src='media/img/mapaBeta.png' class='mapa'> </img \
         <p class='transient'> Elige un lugar al que ir:<br> \
-         <a href='noria'> Noria</a><br> \
-         <a href='caida'> Caida Libre </a><br> \
-         <a href='coches'> Karts </a><br>\
-         <a href='tiovivo'> Tiovivo </a><br> \
-         <a href='agua'> Rápidos Acuáticos </a> </p>"
+         <a href='noria'> Noria(2)</a><br> \
+         <a href='caida'> Caida Libre(3) </a><br> \
+         <a href='coches'> Karts(8) </a><br>\
+         <a href='tiovivo'> Tiovivo(9) </a><br> \
+         <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
     ),
 
     tiovivo: new undum.SimpleSituation(
-        
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+         <a href='plaza'>Plaza(1)</a><br> \
+         <a href='coches'> Karts(8) </a></p>"
     ),
 
     entrada: new undum.SimpleSituation(
-        
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+         <a href='noria'> Noria(2)</a><br> \
+         <a href='plaza'> Plaza(1)</a></p>"
     ),
 
     globos: new undum.SimpleSituation(
-        
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+         <a href='noria'> Noria(2)</a><br> \
+         <a href='caida'> Caida Libre(3) </a></p>"
     ),
 
     rusa: new undum.SimpleSituation(
-        
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+         <a href='coches'> Karts(8) </a><br>\
+         <a href='plaza'> Plaza(1)</a> \
+         <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
     ),
 
     coches: new undum.SimpleSituation(
-            
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+         <a href='rusa'> Montaña Rusa(7) </a><br>\
+         <a href='tiovivo'> Tiovivo(9) </a><br> \
+         <a href='plaza'> Plaza(1)</a> </p>"
     ),
 
     caida: new undum.SimpleSituation(
-            
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+         <a href='globos'> Globos(4) </a><br>\
+         <a href='luz'> Electricidad(5) </a><br> \
+         <a href='plaza'> Plaza(1)</a> </p>"
     ),
 
     agua: new undum.SimpleSituation(
-            
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+         <a href='rusa'> Montaña rusa(7) </a><br>\
+         <a href='luz'> Electricidad(5) </a><br> \
+         <a href='plaza'> Plaza(1)</a>  </a> </p>"
     ),
 
     luz: new undum.SimpleSituation(
-            
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+         <a href='caida'> Caida Libre(3) </a><br> \
+         <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
     ),
 
     noria: new undum.SimpleSituation(
-                
+        "<img src='media/img/mapaBeta.png' class='mapa'> </img \
+        <p class='transient'> Elige un lugar al que ir:<br> \
+        <a href='noria'> Noria(2)</a><br> \
+        <a href='globos'> Globos(4) </a><br>\
+        <a href='plaza'> Plaza(1)</a></p>"    
     ),
     
 
