@@ -124,7 +124,7 @@ undum.game.situations = {
          <a href='luz'> Electricidad(5) </a><br> \
          <a href='plaza'> Plaza(1)</a> </p>"
     ),
-
+    /*Nadie*/
     agua: new undum.SimpleSituation(
         "<p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
@@ -133,8 +133,9 @@ undum.game.situations = {
          <a href='luz'> Electricidad(5) </a><br> \
          <a href='plaza'> Plaza(1)</a>  </a> </p>"
     ),
-    /*Andrés*/
+     /*Nadie*/
 
+    /*Andrés*/
     luz: new undum.SimpleSituation(
         "<p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
@@ -144,6 +145,7 @@ undum.game.situations = {
     ),
     /*Andrés*/
 
+    /*Nadie*/
     noria: new undum.SimpleSituation(
         "<p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
@@ -152,7 +154,8 @@ undum.game.situations = {
         <a href='entrada'> Entrada(10) </a><br>\
         <a href='plaza'> Plaza(1)</a></p>"    
     ),
-    
+   /*Nadie*/
+
 
 
     
