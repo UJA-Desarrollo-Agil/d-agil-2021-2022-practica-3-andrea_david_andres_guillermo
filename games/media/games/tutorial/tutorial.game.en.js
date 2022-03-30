@@ -79,6 +79,8 @@ undum.game.situations = {
          <a href='coches'> Karts(8) </a></p>"
     ),
     /*David*/
+
+    /*Guille*/
     entrada: new undum.SimpleSituation(
         "<p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
@@ -86,7 +88,9 @@ undum.game.situations = {
          <a href='noria'> Noria(2)</a><br> \
          <a href='plaza'> Plaza(1)</a></p>"
     ),
+    /*Guille*/
 
+    /*Globos*/
     globos: new undum.SimpleSituation(
         "<p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
@@ -94,7 +98,9 @@ undum.game.situations = {
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a></p>"
     ),
+    /*Globos*/
 
+    /*Guille*/
     rusa: new undum.SimpleSituation(
         "<p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
@@ -103,6 +109,7 @@ undum.game.situations = {
          <a href='plaza'> Plaza(1)</a> \
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
     ),
+    /*Guille*/
 
     /*David*/
     coches: new undum.SimpleSituation(
@@ -116,6 +123,7 @@ undum.game.situations = {
     ),
     /*David*/
 
+    /*Andrea*/
     caida: new undum.SimpleSituation(
         "<p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
@@ -143,6 +151,7 @@ undum.game.situations = {
          <a href='caida'> Caida Libre(3) </a><br> \
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
     ),
+
     /*Andrés*/
 
     /*Nadie*/
@@ -518,6 +527,8 @@ undum.game.situations = {
             }
         }
     ),
+    /*Andrea*/
+
 
     "last": new undum.SimpleSituation(
         "<h1>Where to Go Now</h1>\
