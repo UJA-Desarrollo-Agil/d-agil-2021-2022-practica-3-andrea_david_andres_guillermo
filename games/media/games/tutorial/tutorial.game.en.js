@@ -133,6 +133,7 @@ undum.game.situations = {
          <a href='luz'> Electricidad(5) </a><br> \
          <a href='plaza'> Plaza(1)</a>  </a> </p>"
     ),
+    /*Andrés*/
 
     luz: new undum.SimpleSituation(
         "<p class='transient'> \
@@ -141,6 +142,7 @@ undum.game.situations = {
          <a href='caida'> Caida Libre(3) </a><br> \
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
     ),
+    /*Andrés*/
 
     noria: new undum.SimpleSituation(
         "<p class='transient'> \
