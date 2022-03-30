@@ -54,7 +54,8 @@ undum.game.situations = {
          <a href='luz'> Electricidad(5) </a></p>"
        
     ),
-    
+
+    /*Andrés*/
     plaza: new undum.SimpleSituation(
         
         "<p class='transient'> \
@@ -67,8 +68,9 @@ undum.game.situations = {
          <a href='entrada'> Entrada(10) </a><br>\
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
     ),
-    
+    /*Andrés*/
 
+    /*David*/
     tiovivo: new undum.SimpleSituation(
         "<p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
@@ -76,7 +78,7 @@ undum.game.situations = {
          <a href='plaza'>Plaza(1)</a><br> \
          <a href='coches'> Karts(8) </a></p>"
     ),
-
+    /*David*/
     entrada: new undum.SimpleSituation(
         "<p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
@@ -102,14 +104,17 @@ undum.game.situations = {
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
     ),
 
+    /*David*/
     coches: new undum.SimpleSituation(
-        "<p class='transient'> \
+        "<h1>Coches de choque</h1>\
+        <p class='transient'> \
         <img src='media/img/mapaBeta.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='rusa'> Montaña Rusa(7) </a><br>\
          <a href='tiovivo'> Tiovivo(9) </a><br> \
          <a href='plaza'> Plaza(1)</a> </p>"
     ),
+    /*David*/
 
     caida: new undum.SimpleSituation(
         "<p class='transient'> \
