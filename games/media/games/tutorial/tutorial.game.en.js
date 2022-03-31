@@ -102,13 +102,62 @@ undum.game.situations = {
 
     /*Guille*/
     rusa: new undum.SimpleSituation(
+
         "<p class='transient'> \
+        Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
+        ¿Será un fragmento de llave?<br>\
         <img src='media/img/mapa7.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='coches'> Karts(8) </a><br>\
-         <a href='plaza'> Plaza(1)</a> \
-         <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
+         <a href='plaza'> Plaza(1)</a><br> \
+         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+         {
+				enter: function( character, system, from ) {
+					if( character.qualities.energia > 0 ) {
+						system.doLink( "rusaenergia" );
+					} else {
+                        system.setCharacterText( "<p>Te intentas montar pero no hay energia suficiente\
+                                                                                    como para que funcione...Habrá que hacer algo...</p>");
+					}
+				}
+			}
     ),
+
+    rusaenergia: new undum.SimpleSituation(
+
+        "<p class='transient'> \
+         Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
+         ¿Será un fragmento de llave?<br>\
+        <img src='media/img/mapa7.png' class='mapa'/> \
+         Elige un lugar al que ir:<br> \
+         <a href='coches'> Karts(8) </a><br>\
+         <a href='plaza'> Plaza(1)</a><br> \
+         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+         {
+				enter: function( character, system, from ) {
+					if( character.qualities.herramientas > 0 ) {
+                        system.write( "<p><a href='./montarse'> Montarse</a></p>"),
+                        {
+                            heading: "Qualities and the Character",
+                            tags: ["topic"],
+                            displayOrder: 4,
+                            actions: {
+                                "montarse": function(character, system, action) {
+                                    system.setQuality("energia", character.qualities.energia-1);
+                                    system.setQuality("herramientas", character.qualities.herramientas-1);
+                                }
+                            }
+                        }
+                        
+					} else {
+						system.setCharacterText( "<p>La montaña rusa está averiada, para montarte\
+                                                                                necesitas tener en el inventario un kit de herramientas</p>");
+					}
+				}
+			}
+                      
+    ),
+
     /*Guille*/
 
     /*David*/
@@ -565,11 +614,11 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    skill: new undum.IntegerQuality(
-        "Skill", {priority:"0001", group:'stats'}
+    energia: new undum.IntegerQuality(
+        "Energía", {priority:"0001", group:'stats'}
     ),
-    stamina: new undum.NumericQuality(
-        "Stamina", {priority:"0002", group:'stats'}
+    herramientas: new undum.NumericQuality(
+        "Kit herramientas", {priority:"0002", group:'stats'}
     ),
     luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
         "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
@@ -599,8 +648,8 @@ undum.game.qualityGroups = {
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    character.qualities.skill = 12;
-    character.qualities.stamina = 12;
+    character.qualities.energia = 1;
+    character.qualities.herramientas = 1;
     character.qualities.luck = 0;
     character.qualities.novice = 1;
     character.qualities.inspiration = 0;
