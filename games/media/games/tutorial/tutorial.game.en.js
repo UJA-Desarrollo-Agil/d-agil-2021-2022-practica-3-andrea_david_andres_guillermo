@@ -93,11 +93,27 @@ undum.game.situations = {
     /*Globos*/
     globos: new undum.SimpleSituation(
         "<p class='transient'> \
+        <p> Caseta de juegos. </p> \
+        <p> Bienvenido a la caseta de juegos.  \
+        </p>\
+        \
         <img src='media/img/mapa4.png' class='mapa'/> \
+         <p class='transient'>\
+         <a href='juegoglobos'> Pulse para continuar... </a></p>"
+    ),
+
+    juegoglobos: new undum.SimpleSituation(
+        "<p> Caseta de juegos. </p> \
+        <p> Bienvenido a la caseta de juegos.  \
+        </p>\
+        \
+        <img src='media/img/globos.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a></p>"
     ),
+
+
     /*Globos*/
 
     /*Guille*/
@@ -117,7 +133,7 @@ undum.game.situations = {
 						system.doLink( "rusaenergia" );
 					} else {
                         system.setCharacterText( "<p>Te intentas montar pero no hay energia suficiente\
-                                                                                    como para que funcione...Habrá que hacer algo...</p>");
+                                                    como para que funcione...Habrá que hacer algo...</p>");
 					}
 				}
 			}
@@ -151,7 +167,7 @@ undum.game.situations = {
                         
 					} else {
 						system.setCharacterText( "<p>La montaña rusa está averiada, para montarte\
-                                                                                necesitas tener en el inventario un kit de herramientas</p>");
+                                                     necesitas tener en el inventario un kit de herramientas</p>");
 					}
 				}
 			}
@@ -577,7 +593,7 @@ undum.game.situations = {
             }
         }
     ),
-    /*Andrea*/
+    
 
 
     "last": new undum.SimpleSituation(
