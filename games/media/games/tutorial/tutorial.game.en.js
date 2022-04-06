@@ -230,12 +230,14 @@ undum.game.situations = {
 
 
         {
-            "arreglar": function( character, system, from ) {
-                if( character.qualities.herramientas >= 1 ) {
-                    system.setQuality("herramientas", character.qualities.herramientas-1);
-                    system.setCharacterText( "<p>Electricidad Arreglada</p>");
-                } else {
-                    system.setCharacterText( "<p>Necesitas un Kit de Herramientas</p>");
+            actions: {
+                "arreglar": function (character, system, from) {
+                    if (character.qualities.herramientas >= 1) {
+                        system.setQuality("herramientas", character.qualities.herramientas - 1);
+                        system.setCharacterText("<p>Electricidad Arreglada</p>");
+                    } else {
+                        system.setCharacterText("<p>Necesitas un Kit de Herramientas</p>");
+                    }
                 }
             }
         }
