@@ -28,32 +28,7 @@ undum.game.slideUpSpeed = 500
 
 /* The situations that the game can be in. Each has a unique ID. */
 
-
 undum.game.situations = {
-/*
-
-// Grupos de propiedades
-    undum.game.qualityGroups = {
-        Herramientas: new undum.QualityGroup('Herramientas', {priority:"0001"})
-    };
-
-// PRopiedades
-
-    undum.game.qualities = {
-        kitherramientas: new undum.Inte(
-            "Kit Herramientas", {priority:"0001", group:'inventario', onDisplay:"✓"}
-        ),
-
-    };
-
-
-// INicialización
-    undum.game.init = function(character, system) {
-        system.setQuality( "kitherramientas" , false )
-        system.setCharacterText("<p>¡Comenzamos!</p>");
-    };
-
- */
     start: new undum.SimpleSituation(
         "<h1>Inicio del juego</h1>\
         <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
@@ -287,22 +262,19 @@ undum.game.situations = {
          <img src='media/img/mapa5.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='caida'> Caida Libre(3) </a><br> \
-         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+         <a href='agua'> Rápidos Acuáticos(6) </a> \
+        <a href='./arreglar'> Arreglar Electricidad</a></p>",
+
+
         {
-            enter: function( character, system, from ) {
-                if( character.qualities.herramientas >= 1 ) {
-                    system.write( "<p><a href='./arreglar'> Arreglar Electricidad</a></p>"),
-                        {
-                            heading: "electricidad",
-                            actions: {
-                                "arreglar": function(character, system, action) {
-                                    system.setQuality("herramientas", character.qualities.herramientas-1);
-                                }
-                            }
-                        }
-                    system.setCharacterText( "<p>Electricidad Arreglada</p>");
-                } else {
-                    system.setCharacterText( "<p>Necesitas un Kit de Herramientas</p>");
+            actions: {
+                "arreglar": function (character, system, from) {
+                    if (character.qualities.herramientas >= 1) {
+                        system.setQuality("herramientas", character.qualities.herramientas - 1);
+                        system.setCharacterText("<p>Electricidad Arreglada</p>");
+                    } else {
+                        system.setCharacterText("<p>Necesitas un Kit de Herramientas</p>");
+                    }
                 }
             }
         }
@@ -746,14 +718,17 @@ undum.game.qualities = {
  * heading) and ordering. QualityDefinitions without a group appear at
  * the end. It is an error to have a quality definition belong to a
  * non-existent group. */
+
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
-    Progreso: new undum.QualityGroup('Progreso', {priority:"0002"})
+    Progreso: new undum.QualityGroup('', {priority:"0002"})
+
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
+
 undum.game.init = function(character, system) {
     character.qualities.energia = 1;
     character.qualities.herramientas = 1;
