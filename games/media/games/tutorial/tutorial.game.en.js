@@ -225,19 +225,14 @@ undum.game.situations = {
          <img src='media/img/mapa5.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='caida'> Caida Libre(3) </a><br> \
-         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+         <a href='agua'> Rápidos Acuáticos(6) </a> \
+        <a href='./arreglar'> Arreglar Electricidad</a></p>",
+
+
         {
-            enter: function( character, system, from ) {
+            "arreglar": function( character, system, from ) {
                 if( character.qualities.herramientas >= 1 ) {
-                    system.write( "<p><a href='./arreglar'> Arreglar Electricidad</a></p>"),
-                        {
-                            heading: "electricidad",
-                            actions: {
-                                "arreglar": function(character, system, action) {
-                                    system.setQuality("herramientas", character.qualities.herramientas-1);
-                                }
-                            }
-                        }
+                    system.setQuality("herramientas", character.qualities.herramientas-1);
                     system.setCharacterText( "<p>Electricidad Arreglada</p>");
                 } else {
                     system.setCharacterText( "<p>Necesitas un Kit de Herramientas</p>");
