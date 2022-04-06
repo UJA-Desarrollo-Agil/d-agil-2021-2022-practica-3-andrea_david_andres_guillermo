@@ -58,7 +58,8 @@ undum.game.situations = {
     /*Andrés*/
     plaza: new undum.SimpleSituation(
         
-        "<p class='transient'> \
+        "<h1>Plaza</h1>\
+        <p class='transient'> \
         <img src='media/img/mapa1.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
@@ -72,7 +73,8 @@ undum.game.situations = {
 
     /*David*/
     tiovivo: new undum.SimpleSituation(
-        "<p class='transient'> \
+        "<h1>Tiovivo</h1>\
+        <p class='transient'> \
         <img src='media/img/mapa9.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='plaza'>Plaza(1)</a><br> \
@@ -82,7 +84,8 @@ undum.game.situations = {
 
     /*Guille*/
     entrada: new undum.SimpleSituation(
-        "<p class='transient'> \
+        "<h1>Entrada</h1>\
+        <p class='transient'> \
         <img src='media/img/mapa10.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
@@ -92,7 +95,8 @@ undum.game.situations = {
 
     /*Globos*/
     globos: new undum.SimpleSituation(
-        "<p class='transient'> \
+        "<h1>Caseta de juegos</h1>\
+        <p class='transient'> \
         <p> Caseta de juegos. </p> \
         <p> Bienvenido a la caseta de juegos.  \
         </p>\
@@ -103,11 +107,11 @@ undum.game.situations = {
     ),
 
     juegoglobos: new undum.SimpleSituation(
-        "<p> Caseta de juegos. </p> \
+        "<p class='transient'> Caseta de juegos. </p> \
         <p> Bienvenido a la caseta de juegos.  \
         </p>\
         \
-        <img src='media/img/globos.png' class='mapa'/> \
+        <p><img src='media/img/globos.png' class='mapa'/> </p>\
          Elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a></p>"
@@ -119,7 +123,8 @@ undum.game.situations = {
     /*Guille*/
     rusa: new undum.SimpleSituation(
 
-        "<p class='transient'> \
+        "<h1>Montaña Rusa</h1>\
+        <p class='transient'> \
         Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
         ¿Será un fragmento de llave?<br>\
         <img src='media/img/mapa7.png' class='mapa'/> \
@@ -190,7 +195,8 @@ undum.game.situations = {
 
     /*Andrea*/
     caida: new undum.SimpleSituation(
-        "<p class='transient'> \
+        "<h1>Caída Libre</h1>\
+        <p class='transient'> \
         <img src='media/img/mapa3.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='globos'> Globos(4) </a><br>\
@@ -201,7 +207,8 @@ undum.game.situations = {
 
     /*Nadie*/
     agua: new undum.SimpleSituation(
-        "<p class='transient'> \
+        "<h1>Rápidos Acuáticos</h1>\
+        <p class='transient'> \
         <img src='media/img/mapa6.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='rusa'> Montaña rusa(7) </a><br>\
@@ -212,7 +219,8 @@ undum.game.situations = {
 
     /*Andrés*/
     luz: new undum.SimpleSituation(
-        "<p class='transient'> \
+        "<h1>Caseta de electricidad</h1>\
+        <p class='transient'> \
         <img src='media/img/mapa5.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='caida'> Caida Libre(3) </a><br> \
@@ -222,7 +230,8 @@ undum.game.situations = {
 
     /*Nadie*/
     noria: new undum.SimpleSituation(
-        "<p class='transient'> \
+        "<h1>Noria</h1>\
+        <p class='transient'> \
         <img src='media/img/mapa2.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
         <a href='globos'> Globos(4) </a><br>\
