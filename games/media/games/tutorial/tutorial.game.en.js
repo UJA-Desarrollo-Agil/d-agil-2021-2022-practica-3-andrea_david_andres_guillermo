@@ -197,8 +197,10 @@ undum.game.situations = {
     caida: new undum.SimpleSituation(
         "<h1>Caída Libre</h1>\
         <p class='transient'> \
-        <img src='media/img/mapa3.png' class='mapa'/> \
-         Elige un lugar al que ir:<br> \
+        <img src='media/img/mapa3.png' class='mapa' \
+        Tras observar durante unos minutos la Caída Libre no \
+        encuentras nada...\
+         Elige otro lugar al que ir:<br> \
          <a href='globos'> Globos(4) </a><br>\
          <a href='luz'> Electricidad(5) </a><br> \
          <a href='plaza'> Plaza(1)</a> </p>"
@@ -219,9 +221,9 @@ undum.game.situations = {
 
     /*Andrés*/
     luz: new undum.SimpleSituation(
-        "<h1>Caseta de electricidad</h1>\
+        "<h1>Caseta de electricidad </h1>\
         <p class='transient'> \
-        <img src='media/img/mapa5.png' class='mapa'/> \
+         <img src='media/img/mapa5.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='caida'> Caida Libre(3) </a><br> \
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
