@@ -121,24 +121,61 @@ undum.game.situations = {
     globos: new undum.SimpleSituation(
         "<h1>Caseta de juegos</h1>\
         <p class='transient'> \
-        <p> Caseta de juegos. </p> \
-        <p> Bienvenido a la caseta de juegos.  \
+        <p> Bienvenido a la caseta de juegos.\
+        Si desea jugar:  \
         </p>\
         \
-        <img src='media/img/mapa4.png' class='mapa'/> \
+        <img src='media/img/mapa4.png' class='mapa transient ' /> \
          <p class='transient'>\
-         <a href='juegoglobos'> Pulse para continuar... </a></p>"
+         <a href='juegoglobos'> Pulse para continuar...<br><br> </a>\
+         En otro caso, elige un lugar al que ir:<br> \
+         <a href='noria'> Noria(2)</a><br> \
+         <a href='caida'> Caida Libre(3) </a></p>"
     ),
 
     juegoglobos: new undum.SimpleSituation(
         "<h1>Juego Globos</h1>\
-        <p> Bienvenido a la caseta de juegos.  \
+        <p> El juego consiste en explotar los globos para obtener una recompensa...  \
+        ¿Y si hay un fragmento de llave?🤔\
         </p>\
         \
-        <img src='media/img/globos.png' class='mapa'/> \
-         Elige un lugar al que ir:<br> \
-         <a href='noria'> Noria(2)</a><br> \
-         <a href='caida'> Caida Libre(3) </a></p>"
+        <p>\
+        <img src='media/img/globos.png' class='globos' id='img_globos' /> \
+         <a href='azul'>Globo azul</a><br/> \
+         <a href='rojo'>Globo rojo</a><br/>\
+         <a href='amarillo'>Globo amarillo</a><br/>\
+         </p>"
+    ),
+
+    
+    azul: new undum.SimpleSituation(
+        "<p> Enhorabuena, has obtenido un fragmento de la llave\
+        </p>\
+        \
+        <img src='media/img/azul.png' class='globos' /> \
+         <p><a href='juegoglobos'>Volver</a><br> \
+         </p>"
+    ),
+
+    
+    rojo: new undum.SimpleSituation(
+        "<p> Vaya, parece que no hay nada😔\
+        </p>\
+        \
+        <p><img src='media/img/rojo.png' class='globos' /> \
+         <a href='juegoglobos'>Inténtelo de nuevo</a><br> \
+         </p>"
+    ),
+
+
+    
+    amarillo: new undum.SimpleSituation(
+        "<p> Vaya, parece que no hay nada😔\
+        </p>\
+        \
+        <p><img src='media/img/amarillo.png' class='globos' /> \
+         <a href='juegoglobos'>Inténtelo de nuevo</a><br> \
+         </p>"
     ),
     /*Globos*/
 

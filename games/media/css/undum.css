@@ -17,6 +17,14 @@ body {
     
 }
 
+.globos{
+    width:150px; 
+    height:100px;
+    float: right;
+    margin-top: 1rem;
+    
+}
+
 #page {
     margin: 0 auto;
     position: relative;
