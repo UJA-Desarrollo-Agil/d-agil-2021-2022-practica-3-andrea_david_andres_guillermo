@@ -28,7 +28,6 @@ undum.game.slideUpSpeed = 500
 
 /* The situations that the game can be in. Each has a unique ID. */
 
-
 undum.game.situations = {
     start: new undum.SimpleSituation(
         "<h1>Inicio del juego</h1>\
@@ -57,7 +56,6 @@ undum.game.situations = {
 
     /*Andrés*/
     plaza: new undum.SimpleSituation(
-        
         "<h1>Plaza</h1>\
         <p class='transient'> \
         <img src='media/img/mapa1.png' class='mapa'/> \
@@ -68,6 +66,7 @@ undum.game.situations = {
          <a href='tiovivo'> Tiovivo(9) </a><br> \
          <a href='entrada'> Entrada(10) </a><br>\
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
+
     ),
     /*Andrés*/
 
@@ -97,32 +96,66 @@ undum.game.situations = {
     globos: new undum.SimpleSituation(
         "<h1>Caseta de juegos</h1>\
         <p class='transient'> \
-        <p> Caseta de juegos. </p> \
-        <p> Bienvenido a la caseta de juegos.  \
+        <p> Bienvenido a la caseta de juegos.\
+        Si desea jugar:  \
         </p>\
         \
-        <img src='media/img/mapa4.png' class='mapa'/> \
+        <img src='media/img/mapa4.png' class='mapa transient ' /> \
          <p class='transient'>\
-         <a href='juegoglobos'> Pulse para continuar... </a></p>"
-    ),
-
-    juegoglobos: new undum.SimpleSituation(
-        "<p class='transient'> Caseta de juegos. </p> \
-        <p> Bienvenido a la caseta de juegos.  \
-        </p>\
-        \
-        <p><img src='media/img/globos.png' class='mapa'/> </p>\
-         Elige un lugar al que ir:<br> \
+         <a href='juegoglobos'> Pulse para continuar...<br><br> </a>\
+         En otro caso, elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a></p>"
     ),
 
+    juegoglobos: new undum.SimpleSituation(
+        "<h1>Juego Globos</h1>\
+        <p> El juego consiste en explotar los globos para obtener una recompensa...  \
+        ¿Y si hay un fragmento de llave?🤔\
+        </p>\
+        \
+        <p>\
+        <img src='media/img/globos.png' class='globos' id='img_globos' /> \
+         <a href='azul'>Globo azul</a><br/> \
+         <a href='rojo'>Globo rojo</a><br/>\
+         <a href='amarillo'>Globo amarillo</a><br/>\
+         </p>"
+    ),
 
+    
+    azul: new undum.SimpleSituation(
+        "<p> Enhorabuena, has obtenido un fragmento de la llave\
+        </p>\
+        \
+        <img src='media/img/azul.png' class='globos' /> \
+         <p><a href='juegoglobos'>Volver</a><br> \
+         </p>"
+    ),
+
+    
+    rojo: new undum.SimpleSituation(
+        "<p> Vaya, parece que no hay nada😔\
+        </p>\
+        \
+        <p><img src='media/img/rojo.png' class='globos' /> \
+         <a href='juegoglobos'>Inténtelo de nuevo</a><br> \
+         </p>"
+    ),
+
+
+    
+    amarillo: new undum.SimpleSituation(
+        "<p> Vaya, parece que no hay nada😔\
+        </p>\
+        \
+        <p><img src='media/img/amarillo.png' class='globos' /> \
+         <a href='juegoglobos'>Inténtelo de nuevo</a><br> \
+         </p>"
+    ),
     /*Globos*/
 
     /*Guille*/
     rusa: new undum.SimpleSituation(
-
         "<h1>Montaña Rusa</h1>\
         <p class='transient'> \
         Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
@@ -138,7 +171,7 @@ undum.game.situations = {
 						system.doLink( "rusaenergia" );
 					} else {
                         system.setCharacterText( "<p>Te intentas montar pero no hay energia suficiente\
-                                                    como para que funcione...Habrá que hacer algo...</p>");
+                                                                                    como para que funcione...Habrá que hacer algo...</p>");
 					}
 				}
 			}
@@ -161,7 +194,7 @@ undum.game.situations = {
                         
 					} else {
 						system.setCharacterText( "<p>La montaña rusa está averiada, para montarte\
-                                                     necesitas tener en el inventario un kit de herramientas</p>");
+                                                                                necesitas tener en el inventario un kit de herramientas</p>");
 					}
 				}
 			}
@@ -214,8 +247,10 @@ undum.game.situations = {
     caida: new undum.SimpleSituation(
         "<h1>Caída Libre</h1>\
         <p class='transient'> \
-        <img src='media/img/mapa3.png' class='mapa'/> \
-         Elige un lugar al que ir:<br> \
+        <img src='media/img/mapa3.png' class='mapa' />\
+        Tras observar durante unos minutos la Caída Libre no\
+        encuentras nada...<br>\
+         Elige otro lugar al que ir:<br> \
          <a href='globos'> Globos(4) </a><br>\
          <a href='luz'> Electricidad(5) </a><br> \
          <a href='plaza'> Plaza(1)</a> </p>"
@@ -226,8 +261,11 @@ undum.game.situations = {
     agua: new undum.SimpleSituation(
         "<h1>Rápidos Acuáticos</h1>\
         <p class='transient'> \
+        <h1>Rápidos Acuáticos </h1>\
         <img src='media/img/mapa6.png' class='mapa'/> \
-         Elige un lugar al que ir:<br> \
+        Vaya, parece que no hay agua... <br>\
+        Aquí no encontaré nada...<br>\
+        Elige un lugar al que ir:<br> \
          <a href='rusa'> Montaña rusa(7) </a><br>\
          <a href='luz'> Electricidad(5) </a><br> \
          <a href='plaza'> Plaza(1)</a>  </a> </p>"
@@ -236,13 +274,29 @@ undum.game.situations = {
 
     /*Andrés*/
     luz: new undum.SimpleSituation(
-        "<h1>Caseta de electricidad</h1>\
+        "<h1>Caseta de electricidad </h1>\
         <p class='transient'> \
-        <img src='media/img/mapa5.png' class='mapa'/> \
+         <img src='media/img/mapa5.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='caida'> Caida Libre(3) </a><br> \
-         <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
+         <a href='agua'> Rápidos Acuáticos(6) </a> \
+        <a href='./arreglar'> Arreglar Electricidad</a></p>",
+
+
+        {
+            actions: {
+                "arreglar": function (character, system, from) {
+                    if (character.qualities.herramientas >= 1) {
+                        system.setQuality("herramientas", character.qualities.herramientas - 1);
+                        system.setCharacterText("<p>Electricidad Arreglada</p>");
+                    } else {
+                        system.setCharacterText("<p>Necesitas un Kit de Herramientas</p>");
+                    }
+                }
+            }
+        }
     ),
+
     /*Andrés*/
 
     /*Nadie*/
@@ -619,7 +673,7 @@ undum.game.situations = {
             }
         }
     ),
-    
+    /*Andrea*/
 
 
     "last": new undum.SimpleSituation(
@@ -684,14 +738,17 @@ undum.game.qualities = {
  * heading) and ordering. QualityDefinitions without a group appear at
  * the end. It is an error to have a quality definition belong to a
  * non-existent group. */
+
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
-    Progreso: new undum.QualityGroup('Progreso', {priority:"0002"})
+    Progreso: new undum.QualityGroup('', {priority:"0002"})
+
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
+
 undum.game.init = function(character, system) {
     character.qualities.energia = 2;
     character.qualities.herramientas = 2;
