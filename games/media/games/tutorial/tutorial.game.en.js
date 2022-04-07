@@ -191,18 +191,7 @@ undum.game.situations = {
          {
 				enter: function( character, system, from ) {
 					if( character.qualities.herramientas > 0 ) {
-                        system.write( "<p><a href='./montarse'> Montarse</a></p>"),
-                        {
-                            heading: "Qualities and the Character",
-                            tags: ["topic"],
-                            displayOrder: 4,
-                            actions: {
-                                "montarse": function(character, system, action) {
-                                    system.setQuality("energia", character.qualities.energia-1);
-                                    system.setQuality("herramientas", character.qualities.herramientas-1);
-                                }
-                            }
-                        }
+                      system.doLink("rusaherramientas")
                         
 					} else {
 						system.setCharacterText( "<p>La montaña rusa está averiada, para montarte\
@@ -211,6 +200,34 @@ undum.game.situations = {
 				}
 			}
                       
+    ),
+    
+    rusaherramientas: new undum.SimpleSituation(
+        "<p class='transient'> \
+        Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
+        ¿Será un fragmento de llave?<br>\
+        <p class='once' ><a href='montarse'>Montarse</a><p><br> \
+       <img src='media/img/mapa7.png' class='mapa'/> \
+        Elige un lugar al que ir:<br> \
+        <a href='coches'> Karts(8) </a><br>\
+        <a href='plaza'> Plaza(1)</a><br> \
+        <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+    ),
+
+    montarse: new undum.SimpleSituation(
+        "<p> ¡¡Era un fragmento de llave!! Encuentra todos los fragmentos y sal de parque.<br>\
+       <img src='media/img/mapa7.png' class='mapa'/> \
+        Elige un lugar al que ir:<br> \
+        <a href='coches'> Karts(8) </a><br>\
+        <a href='plaza'> Plaza(1)</a><br> \
+        <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+        {
+            enter: function(character, system, action) {
+                    system.setQuality("energia", character.qualities.energia-1);
+                    system.setQuality("herramientas", character.qualities.herramientas-1);
+                    system.setQuality("fragmentos", character.qualities.fragmentos+1);
+                },
+        }
     ),
 
     /*Guille*/
@@ -700,6 +717,9 @@ undum.game.qualities = {
     herramientas: new undum.NumericQuality(
         "Kit herramientas", {priority:"0002", group:'stats'}
     ),
+    fragmentos: new undum.NumericQuality(
+        "Fragmentos de llave", {priority:"0003", group:'stats'}
+    ),
     luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
         "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
         {priority:"0003", group:'stats'}
@@ -731,8 +751,9 @@ undum.game.qualityGroups = {
  * to configure the character at the start of play. */
 
 undum.game.init = function(character, system) {
-    character.qualities.energia = 1;
-    character.qualities.herramientas = 1;
+    character.qualities.energia = 2;
+    character.qualities.herramientas = 2;
+    character.qualities.fragmentos = 0;
     character.qualities.luck = 0;
     character.qualities.novice = 1;
     character.qualities.inspiration = 0;
