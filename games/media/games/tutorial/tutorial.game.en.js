@@ -63,6 +63,7 @@ undum.game.situations = {
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a><br> \
          <a href='coches'> Karts(8) </a><br>\
+         <a href='rusa'> Montaña Rusa(7) </a><br>\
          <a href='tiovivo'> Tiovivo(9) </a><br> \
          <a href='entrada'> Entrada(10) </a><br>\
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
@@ -102,7 +103,7 @@ undum.game.situations = {
         \
         <img src='media/img/mapa4.png' class='mapa transient ' /> \
          <p class='transient'>\
-         <a href='juegoglobos'> Pulse para continuar...<br><br> </a>\
+         <a href='juegoglobos'> Pulse para jugar...<br><br> </a>\
          En otro caso, elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a></p>"
@@ -111,33 +112,33 @@ undum.game.situations = {
     juegoglobos: new undum.SimpleSituation(
         "<h1>Juego Globos</h1>\
         <p> El juego consiste en explotar los globos para obtener una recompensa...  \
-        ¿Y si hay un fragmento de llave?🤔\
+        ¿Y si hay un fragmento de llave?🤔<br/>\
         </p>\
         \
         <p>\
-        <img src='media/img/globos.png' class='globos' id='img_globos' /> \
-         <a href='azul'>Globo azul</a><br/> \
-         <a href='rojo'>Globo rojo</a><br/>\
-         <a href='amarillo'>Globo amarillo</a><br/>\
+        <img src='media/img/globos.png' class='globos transient'  /> \
+         <a href='rojo'>Globo rojo🔴</a><br/>\
+         <a href='azul'>Globo azul 🔵</a><br/> \
+         <a href='amarillo'>Globo amarillo🟡</a><br/>\
          </p>"
     ),
 
     
     azul: new undum.SimpleSituation(
-        "<p> Enhorabuena, has obtenido un fragmento de la llave\
+        "<p> Enhorabuena, has obtenido un fragmento de la llave.\
         </p>\
         \
-        <img src='media/img/azul.png' class='globos' /> \
-         <p><a href='juegoglobos'>Volver</a><br> \
+        <img src='media/img/azul.png' class='globos transient' /> \
+         <p><a href='globos'>Salir</a><br> \
          </p>"
     ),
 
     
     rojo: new undum.SimpleSituation(
-        "<p> Vaya, parece que no hay nada😔\
+        "<p>Vaya, parece que no <br> hay nada.😔<br>\
         </p>\
         \
-        <p><img src='media/img/rojo.png' class='globos' /> \
+        <p><img src='media/img/rojo.png' class='globos transient' /> <br> \
          <a href='juegoglobos'>Inténtelo de nuevo</a><br> \
          </p>"
     ),
@@ -145,10 +146,10 @@ undum.game.situations = {
 
     
     amarillo: new undum.SimpleSituation(
-        "<p> Vaya, parece que no hay nada😔\
+        "<p> Vaya, parece que no <br> hay nada.😔\
         </p>\
         \
-        <p><img src='media/img/amarillo.png' class='globos' /> \
+        <p><img src='media/img/amarillo.png' class='globos transient' /> \
          <a href='juegoglobos'>Inténtelo de nuevo</a><br> \
          </p>"
     ),
