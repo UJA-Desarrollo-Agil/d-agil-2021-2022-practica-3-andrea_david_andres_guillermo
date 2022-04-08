@@ -130,7 +130,12 @@ undum.game.situations = {
         \
         <img src='media/img/azul.png' class='globos transient' /> \
          <p><a href='globos'>Salir</a><br> \
-         </p>"
+         </p>",
+         {
+            enter: function(character, system, action) {
+                    system.setQuality("fragmentos", character.qualities.fragmentos+1);
+                },
+        }
     ),
 
     
@@ -260,16 +265,15 @@ undum.game.situations = {
 
     /*Nadie*/
     agua: new undum.SimpleSituation(
-        "<h1>Rápidos Acuáticos</h1>\
+        "<h1>Rápidos acuáticos</h1>\
         <p class='transient'> \
-        <h1>Rápidos Acuáticos </h1>\
-        <img src='media/img/mapa6.png' class='mapa'/> \
-        Vaya, parece que no hay agua... <br>\
-        Aquí no encontaré nada...<br>\
-        Elige un lugar al que ir:<br> \
-         <a href='rusa'> Montaña rusa(7) </a><br>\
+        <img src='media/img/mapa6.png' class='mapa' />\
+        Vaya parece que no hay agua... Aquí no\
+        encontraré nada...<br>\
+         Elige otro lugar al que ir:<br> \
+         <a href='rusa'> Montaña Rusa(7) </a><br>\
          <a href='luz'> Electricidad(5) </a><br> \
-         <a href='plaza'> Plaza(1)</a>  </a> </p>"
+         <a href='plaza'> Plaza(1)</a> </p>"
     ),
      /*Nadie*/
 
@@ -305,6 +309,8 @@ undum.game.situations = {
         "<h1>Noria</h1>\
         <p class='transient'> \
         <img src='media/img/mapa2.png' class='mapa'/> \
+        <br>\
+        Tras subir a la noria, no encuentras nada...<br>\
          Elige un lugar al que ir:<br> \
         <a href='globos'> Globos(4) </a><br>\
         <a href='entrada'> Entrada(10) </a><br>\
@@ -751,8 +757,8 @@ undum.game.qualityGroups = {
  * to configure the character at the start of play. */
 
 undum.game.init = function(character, system) {
-    character.qualities.energia = 2;
-    character.qualities.herramientas = 2;
+    character.qualities.energia = 0;
+    character.qualities.herramientas = 0;
     character.qualities.fragmentos = 0;
     character.qualities.luck = 0;
     character.qualities.novice = 1;
