@@ -86,10 +86,33 @@ undum.game.situations = {
     entrada: new undum.SimpleSituation(
         "<h1>Entrada</h1>\
         <p class='transient'> \
+        Parece que esta puerta está cerrada y se necesita una llave para poder abrirla... \
+        <a href='abrir'>Abrir</a><br> \
         <img src='media/img/mapa10.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
-         <a href='plaza'> Plaza(1)</a></p>"
+         <a href='plaza'> Plaza(1)</a></p>",
+    ),
+
+    abrir: new undum.SimpleSituation(
+        "<h1>Entrada</h1>\
+        <p class='transient'> \
+        Parece que esta puerta está cerrada y se necesita una llave para poder abrirla... \
+        <a href='abrir'>Abrir</a><br> \
+        <img src='media/img/mapa10.png' class='mapa'/> \
+         Elige un lugar al que ir:<br> \
+         <a href='noria'> Noria(2)</a><br> \
+         <a href='plaza'> Plaza(1)</a></p>",
+        {
+            enter: function( character, system, from ) {
+                if( character.qualities.llave == 1 ) {
+                  system.setCharacterText("<p>Esta llave no encaja con la cerradura</p>")
+                    
+                } else {
+                    system.setCharacterText( "<p>No tienes ninguna llave</p>");
+                }
+            }
+        }
     ),
     /*Guille*/
 
@@ -720,6 +743,9 @@ undum.game.qualities = {
     fragmentos: new undum.NumericQuality(
         "Fragmentos de llave", {priority:"0003", group:'stats'}
     ),
+    llave: new undum.NumericQuality(
+        "Llave", {priority:"0004", group:'stats'}
+    ),
     luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
         "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
         {priority:"0003", group:'stats'}
@@ -754,6 +780,7 @@ undum.game.init = function(character, system) {
     character.qualities.energia = 2;
     character.qualities.herramientas = 2;
     character.qualities.fragmentos = 0;
+    character.qualities.llave = 0;
     character.qualities.luck = 0;
     character.qualities.novice = 1;
     character.qualities.inspiration = 0;
