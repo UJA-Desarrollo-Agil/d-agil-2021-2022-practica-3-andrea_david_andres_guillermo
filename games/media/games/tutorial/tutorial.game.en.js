@@ -31,26 +31,18 @@ undum.game.slideUpSpeed = 500
 undum.game.situations = {
     start: new undum.SimpleSituation(
         "<h1>Inicio del juego</h1>\
-        <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
         <p> Bienvenido al inicio del juego. </p> \
-        <p> Acabas de despertarte y te encuentras en un parque de atracciones \
-        </p>no hay nadie y empiezas a asustarte. Lo único que tienes es un \
-        mapa del parque pero no sabes cómo salir de él.\
+        <p> Te encuentras en un parque de atracciones \
+        </p>sólo tienes un mapa del parque y la única indicación que te da es\
+        encontrar 3 fragmentos de llave para poder salir de él.\
         <p>Tu objetivo consiste en completar todas las tareas para\
-        conseguir la llave con la que podrás salir de este lugar tan tenebroso.\
+        conseguir la llave con la que podrás salir de este lugar.\
         \
        </p>\
         \
-        <p> Elige un lugar al que ir: \
-         <a href='noria'> Noria(2)</a><br> \
-         <a href='caida'> Caida Libre(3) </a><br> \
-         <a href='coches'> Karts(8) </a><br>\
-         <a href='tiovivo'> Tiovivo(9) </a><br> \
-         <a href='agua'> Rápidos Acuáticos(6) </a><br> \
-         <a href='rusa'> Montaña Rusa(7) </a><br>\
-         <a href='globos'> Globos(4) </a><br>\
-         <a href='entrada'> Entrada(10) </a><br>\
-         <a href='luz'> Electricidad(5) </a></p>"
+         <p><a href='plaza'> Pulse para comenzar...</a><br> \
+         <img src='media/img/mapa1.png' class='mapainicio' class='float_right'/>\
+         </p>"
        
     ),
 
@@ -291,8 +283,8 @@ undum.game.situations = {
         "<h1>Rápidos acuáticos</h1>\
         <p class='transient'> \
         <img src='media/img/mapa6.png' class='mapa' />\
-        Vaya parece que no hay agua... Aquí no\
-        encontraré nada...<br>\
+        Vaya parece que no hay agua... Sólo hay una trampilla con cerradura...\
+         Aquí no encontraré nada...<br>\
          Elige otro lugar al que ir:<br> \
          <a href='rusa'> Montaña Rusa(7) </a><br>\
          <a href='luz'> Electricidad(5) </a><br> \

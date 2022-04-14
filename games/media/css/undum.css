@@ -8,6 +8,14 @@ body {
 }
 
 /* Basic structure */
+.mapainicio{
+    width:400px; 
+    height:264px;
+    display:flex;
+    margin: auto;
+
+    
+}
 
 .mapa{
     width:200px; 
