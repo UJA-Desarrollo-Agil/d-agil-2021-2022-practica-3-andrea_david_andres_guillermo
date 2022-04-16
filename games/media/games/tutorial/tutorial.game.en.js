@@ -50,16 +50,15 @@ undum.game.situations = {
     plaza: new undum.SimpleSituation(
         "<h1>Plaza</h1>\
         <p class='transient'> \
-        <img src='media/img/mapa1.png' class='mapa'/> \
-         Elige un lugar al que ir:<br> \
+         Te encuentras en el centro del parque... desde aquí podrás elegir donde quieres ir :<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a><br> \
          <a href='coches'> Karts(8) </a><br>\
          <a href='rusa'> Montaña Rusa(7) </a><br>\
          <a href='tiovivo'> Tiovivo(9) </a><br> \
          <a href='entrada'> Entrada(10) </a><br>\
-         <a href='agua'> Rápidos Acuáticos(6) </a> </p>"
-
+         <a href='agua'> Rápidos Acuáticos(6) </a> </p>\
+         <img src='media/img/mapa1.png' class='mapainicio'/></p>"
     ),
     /*Andrés*/
 
