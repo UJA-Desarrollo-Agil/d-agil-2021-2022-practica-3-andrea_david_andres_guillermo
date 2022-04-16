@@ -243,7 +243,7 @@ undum.game.situations = {
         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
         {
             enter: function(character, system, action) {
-                    system.setQuality("energia", character.qualities.energia-1);
+                    system.setQuality("energia", character.qualities.energia-10);
                     system.setQuality("herramientas", character.qualities.herramientas-1);
                     system.setQuality("fragmentos", character.qualities.fragmentos+1);
                 },
@@ -294,29 +294,48 @@ undum.game.situations = {
 
     /*Andrés*/
     luz: new undum.SimpleSituation(
-        "<h1>Caseta de electricidad </h1>\
+        "<h1>Entrada Caseta de electricidad </h1>\
         <p class='transient'> \
-         <img src='media/img/mapa5.png' class='mapa'/> \
-         Elige un lugar al que ir:<br> \
-         <a href='caida'> Caida Libre(3) </a><br> \
-         <a href='agua'> Rápidos Acuáticos(6) </a> \
-        <a href='./arreglar'> Arreglar Electricidad</a></p>",
-
-
-        {
-            actions: {
-                "arreglar": function (character, system, from) {
-                    if (character.qualities.herramientas >= 1) {
-                        system.setQuality("herramientas", character.qualities.herramientas - 1);
-                        system.setCharacterText("<p>Electricidad Arreglada</p>");
-                    } else {
-                        system.setCharacterText("<p>Necesitas un Kit de Herramientas</p>");
-                    }
-                }
-            }
-        }
+         <img src='media/img/caseta.png' class='mapa'/> \
+         Elige que hacer<br> \
+         <a href='moverseluz'> Moverse de Sitio </a><br> \
+         <a href='arreglarluz'> Entrar a la Caseta de Electricidad </a>",
     ),
 
+    moverseluz: new undum.SimpleSituation(
+        "<h1>Elige donde Ir </h1>\
+        <p class='transient'> \
+         <img src='media/img/mapa2.png' class='mapa'/> \
+         Elige un lugar al que ir:<br> \
+         <a href='caida'> Caida Libre(3) </a><br> \
+         <a href='agua'> Rápidos Acuáticos(6) </a>",
+    ),
+
+    arreglarluz: new undum.SimpleSituation(
+        "<h1>Interior Caseta Electricidad </h1> \
+        <p class='transient'> <br>\
+       <img src='media/img/elec.png' class='mapa'/> \
+        Veamos si tienes todo lo necesario....<br> \
+        <a href='luz'> Salir Caseta </a>",
+
+{
+            enter: function(character, system, action) {
+                if (character.qualities.herramientas >= 1 && character.qualities.energia != 100) {
+                    system.setQuality("herramientas", character.qualities.herramientas - 1);
+                    system.setCharacterText("<p>Electricidad Arreglada</p>");
+                    if(character.qualities.energia == 0){
+                        system.setQuality("energia", character.qualities.energia + 100);
+                        system.setCharacterText("<p>100% de Energía</p>");
+                    }else{
+                        system.setCharacterText("<p>Energía ya Arreglada</p>");
+                    }
+                } else {
+                    if(character.qualities.herramientas < 1) system.setCharacterText("<p>Necesitas un Kit de Herramientas</p>");
+                    if(character.qualities.energia == 100) system.setCharacterText("<p>Energía al 100%</p>");
+                }
+            },
+        }
+    ),
     /*Andrés*/
 
     /*Nadie*/
@@ -732,7 +751,7 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    energia: new undum.IntegerQuality(
+    energia: new undum.NumericQuality(
         "Energía", {priority:"0001", group:'stats'}
     ),
     herramientas: new undum.NumericQuality(
@@ -776,7 +795,7 @@ undum.game.qualityGroups = {
 
 undum.game.init = function(character, system) {
     character.qualities.energia = 0;
-    character.qualities.herramientas = 0;
+    character.qualities.herramientas = 2;
     character.qualities.fragmentos = 0;
     character.qualities.llave = 0;
     character.qualities.luck = 0;
