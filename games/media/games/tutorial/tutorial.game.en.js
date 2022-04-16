@@ -209,7 +209,7 @@ undum.game.situations = {
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
          {
 				enter: function( character, system, from ) {
-					if( "arreglado" == false ) {
+					if(  character.qualities.arreglado == false ) {
                         if(character.qualities.herramientas > 0){
                             system.setQuality( "arreglado" , true )
                             system.setQuality("herramientas", character.qualities.herramientas-1);
@@ -768,7 +768,7 @@ undum.game.qualities = {
     ),
 
     arreglado: new undum.OnOffQuality(
-        "Arreglado", {priority:"0002", group:'stats', onDisplay:"✓"}
+        "Arreglado Mon-Rus", {priority:"0002", group:'stats', onDisplay:"✓"}
     ),
 
     luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
