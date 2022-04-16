@@ -209,13 +209,18 @@ undum.game.situations = {
          <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
          {
 				enter: function( character, system, from ) {
-					if( character.qualities.herramientas > 0 ) {
-                      system.doLink("rusaherramientas")
-                        
-					} else {
-						system.setCharacterText( "<p>La montaña rusa está averiada, para montarte\
-                                                                                necesitas tener en el inventario un kit de herramientas</p>");
-					}
+					if( "arreglado" == false ) {
+                        if(character.qualities.herramientas > 0){
+                            system.setQuality( "arreglado" , true )
+                            system.setQuality("herramientas", character.qualities.herramientas-1);
+                            system.setCharacterText( "<p>Montaña rusa Arreglada</p>");
+                            system.doLink("rusaherramientas")
+                        }else{
+                            system.setCharacterText( "<p>La montaña rusa está averiada, necesario Kit Herramientas</p>");
+                        }
+					}else{
+                        system.doLink("rusaherramientas")
+                    }
 				}
 			}
                       
@@ -243,7 +248,6 @@ undum.game.situations = {
         {
             enter: function(character, system, action) {
                     system.setQuality("energia", character.qualities.energia-10);
-                    system.setQuality("herramientas", character.qualities.herramientas-1);
                     system.setQuality("fragmentos", character.qualities.fragmentos+1);
                 },
         }
@@ -762,6 +766,11 @@ undum.game.qualities = {
     llave: new undum.NumericQuality(
         "Llave", {priority:"0004", group:'stats'}
     ),
+
+    arreglado: new undum.OnOffQuality(
+        "Arreglado", {priority:"0002", group:'stats', onDisplay:"✓"}
+    ),
+
     luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
         "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
         {priority:"0003", group:'stats'}
@@ -773,6 +782,7 @@ undum.game.qualities = {
     novice: new undum.OnOffQuality(
         "Novice", {priority:"0002", group:'Progreso', onDisplay:"&#10003;"}
     )
+
 };
 
 // ---------------------------------------------------------------------------
@@ -793,6 +803,7 @@ undum.game.qualityGroups = {
  * to configure the character at the start of play. */
 
 undum.game.init = function(character, system) {
+    system.setQuality( "arreglado" , false )
     character.qualities.energia = 0;
     character.qualities.herramientas = 2;
     character.qualities.fragmentos = 0;
