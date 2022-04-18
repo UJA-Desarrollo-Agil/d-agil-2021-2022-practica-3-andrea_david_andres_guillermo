@@ -66,11 +66,51 @@ undum.game.situations = {
     tiovivo: new undum.SimpleSituation(
         "<h1>Tiovivo</h1>\
         <p class='transient'> \
-        <img src='media/img/mapa9.png' class='mapa'/> \
+        Llegaste al tiovivo, aquí puedes escoger algunos de los vehículos para intentar alcanzar aquello \
+        que brilla en el techo, si escoges la opción correcta quizás puedas obtener un fragmento de llave...\
+        tus opciones son: <br>\
+         <a href='caballo'> Caballo que sube y baja </a> <br>\
+         <a href='fallatv'> Taza giratoria </a> <br>\
+         <a href='fallatv'> Coche que realiza movimientos hacía adelante y hacía atrás </a> <br>\
+         <a href='fallatv'> Columpio que se mueve hacia atrás y delante</a> <br>\
+         o bien puedes seguir buscando en algún otro lugar. <br>\
+         <img src='media/img/mapa9.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='plaza'>Plaza(1)</a><br> \
          <a href='coches'> Karts(8) </a></p>"
     ),
+
+    caballo: new undum.SimpleSituation(
+        "<h1>Tiovivo</h1>\
+        <p class='transient'>\
+        Enhorabuena! Lograste alcanzar un fragmento de llave y se ha añadido a tu inventario!\
+        Recuerda que debes seguir investigando para encontrar los demás fragmentos y poder salir del parque de atracciones.<br>\
+        Elige un lugar al que ir:<br> \
+        <a href='plaza'>Plaza(1)</a><br> \
+        <a href='coches'> Karts(8) </a></p>",
+
+         {
+            enter: function(character, system, action) {
+                system.setQuality("fragmentos", character.qualities.fragmentos+1);
+             },
+         }
+    ),
+
+    fallotv: new undum.SimpleSituation(
+        "<h1>Tiovivo</h1>\
+        <p class='transient'>\
+        Vaya... Parece que la opción escogida no es la correcta, si quieres puedes volver a intentarlo\
+        <a href='caballo'> Caballo que sube y baja </a> <br>\
+        <a href='fallatv'> Taza giratoria </a> <br>\
+        <a href='fallatv'> Coche que realiza movimientos hacía adelante y hacía atrás </a> <br>\
+        <a href='fallatv'> Columpio que se mueve hacia atrás y delante</a> <br>\
+        o bien puedes seguir buscando en algún otro lugar. <br>\
+        <img src='media/img/mapa9.png' class='mapa'/>\
+        Elige un lugar al que ir:<br>\
+        <a href='plaza'>Plaza(1)</a><br>\
+        <a href='coches'> Karts(8) </a></p>\
+        "
+),
     /*David*/
 
     /*Guille*/
