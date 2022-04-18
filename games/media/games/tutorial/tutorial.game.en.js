@@ -260,7 +260,7 @@ undum.game.situations = {
         "<h1>Coches de choque</h1>\
         <p class='transient'> \
         <img src='media/img/mapa8.png' class='mapa'/> \
-         Llegaste a los coches de choque y trás montarte en ellos descubriste un kit de herramientas, este te será\
+         Llegaste a los coches de choque y trás montarte en ellos descubriste dos kits de herramientas, este te será\
          útil en el futuro ya que podrás utilizar las herramientas para encontrar las diferentes actividades.<br>\
          Elige un lugar al que ir:<br> \
          <a href='rusa'> Montaña Rusa(7) </a><br>\
@@ -268,7 +268,12 @@ undum.game.situations = {
          <a href='plaza'> Plaza(1)</a> </p>",
 {
             enter: function(character, system, action) {
-                system.setQuality("herramientas", character.qualities.herramientas+2);
+                if(character.qualities.herramientas == 0){
+                    system.setQuality("herramientas", character.qualities.herramientas+2);
+                } else {
+                    system.setCharacterText("<p>Ya recogiste los kits de herramientas con anterioridad.</p>")
+                }
+
             },
         }
     ),
