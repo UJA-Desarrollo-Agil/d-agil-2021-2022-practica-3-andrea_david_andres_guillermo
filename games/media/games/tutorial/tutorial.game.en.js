@@ -260,10 +260,17 @@ undum.game.situations = {
         "<h1>Coches de choque</h1>\
         <p class='transient'> \
         <img src='media/img/mapa8.png' class='mapa'/> \
+         Llegaste a los coches de choque y trás montarte en ellos descubriste un kit de herramientas, este te será\
+         útil en el futuro ya que podrás utilizar las herramientas para encontrar las diferentes actividades.<br>\
          Elige un lugar al que ir:<br> \
          <a href='rusa'> Montaña Rusa(7) </a><br>\
          <a href='tiovivo'> Tiovivo(9) </a><br> \
-         <a href='plaza'> Plaza(1)</a> </p>"
+         <a href='plaza'> Plaza(1)</a> </p>",
+{
+            enter: function(character, system, action) {
+                system.setQuality("herramientas", character.qualities.herramientas+2);
+            },
+        }
     ),
     /*David*/
 
@@ -805,7 +812,7 @@ undum.game.qualityGroups = {
 undum.game.init = function(character, system) {
     system.setQuality( "arreglado" , false )
     character.qualities.energia = 0;
-    character.qualities.herramientas = 2;
+    character.qualities.herramientas = 0;
     character.qualities.fragmentos = 0;
     character.qualities.llave = 0;
     character.qualities.luck = 0;
