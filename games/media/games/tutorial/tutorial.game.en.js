@@ -49,7 +49,7 @@ undum.game.situations = {
     /*Andrés*/
     plaza: new undum.SimpleSituation(
         "<h1>Plaza</h1>\
-        <p class='transient'> \
+         <p class='transient'>\
          Te encuentras en el centro del parque... desde aquí podrás elegir donde quieres ir :<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a><br> \
@@ -65,30 +65,59 @@ undum.game.situations = {
     /*David*/
     tiovivo: new undum.SimpleSituation(
         "<h1>Tiovivo</h1>\
-        <p class='transient'> \
-        Llegaste al tiovivo, aquí puedes escoger algunos de los vehículos para intentar alcanzar aquello \
-        que brilla en el techo, si escoges la opción correcta quizás puedas obtener un fragmento de llave...\
-        tus opciones son: <br>\
-         <a href='caballo'> Caballo que sube y baja </a> <br>\
-         <a href='fallatv'> Taza giratoria </a> <br>\
-         <a href='fallatv'> Coche que realiza movimientos hacía adelante y hacía atrás </a> <br>\
-         <a href='fallatv'> Columpio que se mueve hacia atrás y delante</a> <br>\
-         o bien puedes seguir buscando en algún otro lugar. <br>\
-         <img src='media/img/mapa9.png' class='mapa'/> \
-         Elige un lugar al que ir:<br> \
-         <a href='plaza'>Plaza(1)</a><br> \
+        <p class='transient'>\
+         <img src='media/img/mapa9.png' class='mapa'/>",
+        {
+            enter: function( character, system, from ) {
+                if( character.qualities.energia > 0 ) {
+                    system.doLink( "tiovivoenergia" );
+                } else {
+                    system.setCharacterText( "<p>Parece que no hay suficiente energía para que la atracción funcione\
+                                                quizás debas activar la energía antes de poder subir.</p>");
+                    system.doLink("tiovivonoenergia");
+                }
+            }
+        }
+    ),
+
+    tiovivoenergia: new undum.SimpleSituation(
+        "<h1>Tiovivo</h1>\
+         <p class='transient'>\
+          Llegaste al tiovivo, aquí puedes escoger algunos de los vehículos para intentar alcanzar aquello \
+          que brilla en el techo, si escoges la opción correcta quizás puedas obtener un fragmento de llave...\
+          tus opciones son: <br>\
+          <a href='caballo'>Caballo que sube y baja</a>br>\
+          <a href='fallatv'> Taza giratoria </a> <br>\
+          <a href='fallatv'>Coche que realiza movimientos hacía adelante y hacía atrás </a><br>\
+          <a href='fallatv'>Columpio que se mueve hacia atrás y delante </a><br>\
+          o bien puedes seguir buscando en algún otro lugar.<br>\
+          <a href='plaza'>Plaza(1)</a><br>\
+          <a href='coches'> Karts(8) </a></p>"
+    ),
+
+    tiovivonoenergia: new undum.SimpleSituation(
+        "<h1>Tiovivo</h1>\
+         <p class='transient'>\
+          Llegaste al tiovivo, aquí puedes escoger algunos de los vehículos para intentar alcanzar aquello \
+         que brilla en el techo, si escoges la opción correcta quizás puedas obtener un fragmento de llave...\
+         tus opciones son: <br>\
+         Caballo que sube y baja<br>\
+         Taza giratoria <br>\
+         Coche que realiza movimientos hacía adelante y hacía atrás<br>\
+          Columpio que se mueve hacia atrás y delante<br>\
+         o bien puedes seguir buscando en algún otro lugar.<br>\
+         <a href='plaza'>Plaza(1)</a><br>\
          <a href='coches'> Karts(8) </a></p>"
     ),
 
     caballo: new undum.SimpleSituation(
-        "<h1>Tiovivo</h1>\
+        " <h1>Tiovivo</h1>\
         <p class='transient'>\
         Enhorabuena! Lograste alcanzar un fragmento de llave y se ha añadido a tu inventario!\
         Recuerda que debes seguir investigando para encontrar los demás fragmentos y poder salir del parque de atracciones.<br>\
         Elige un lugar al que ir:<br> \
         <a href='plaza'>Plaza(1)</a><br> \
         <a href='coches'> Karts(8) </a></p>",
-
          {
             enter: function(character, system, action) {
                 system.setQuality("fragmentos", character.qualities.fragmentos+1);
@@ -96,7 +125,7 @@ undum.game.situations = {
          }
     ),
 
-    fallotv: new undum.SimpleSituation(
+    fallatv: new undum.SimpleSituation(
         "<h1>Tiovivo</h1>\
         <p class='transient'>\
         Vaya... Parece que la opción escogida no es la correcta, si quieres puedes volver a intentarlo\
@@ -308,12 +337,11 @@ undum.game.situations = {
          <a href='plaza'> Plaza(1)</a> </p>",
 {
             enter: function(character, system, action) {
-                if(character.qualities.herramientas == 0){
-                    system.setQuality("herramientas", character.qualities.herramientas+2);
+                if(character.qualities.herramientas <= 4){
+                    system.setQuality("herramientas", character.qualities.herramientas+1);
                 } else {
                     system.setCharacterText("<p>Ya recogiste los kits de herramientas con anterioridad.</p>")
                 }
-
             },
         }
     ),
