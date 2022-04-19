@@ -86,7 +86,7 @@ undum.game.situations = {
           Llegaste al tiovivo, aquí puedes escoger algunos de los vehículos para intentar alcanzar aquello \
           que brilla en el techo, si escoges la opción correcta quizás puedas obtener un fragmento de llave...\
           tus opciones son: <br>\
-          <a href='caballo'>Caballo que sube y baja</a>br>\
+          <a href='caballo'>Caballo que sube y baja</a><br>\
           <a href='fallatv'> Taza giratoria </a> <br>\
           <a href='fallatv'>Coche que realiza movimientos hacía adelante y hacía atrás </a><br>\
           <a href='fallatv'>Columpio que se mueve hacia atrás y delante </a><br>\
