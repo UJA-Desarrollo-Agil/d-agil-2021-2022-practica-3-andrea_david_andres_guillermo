@@ -72,8 +72,10 @@ undum.game.situations = {
                 if( character.qualities.energia > 0 ) {
                     system.doLink( "tiovivoenergia" );
                 } else {
-                    system.setCharacterText( "<p>Parece que no hay suficiente energía para que la atracción funcione\
-                                                quizás debas activar la energía antes de poder subir.</p>");
+                    system.setCharacterText( "<p>Parece que no hay suficiente energía\
+                                                      para que la atracción funcione\
+                                                      quizás debas activar la energía antes\
+                                                      de poder subir.</p>");
                     system.doLink("tiovivonoenergia");
                 }
             }
@@ -83,8 +85,11 @@ undum.game.situations = {
     tiovivoenergia: new undum.SimpleSituation(
         "<h1>Tiovivo</h1>\
          <p class='transient'>\
-          Llegaste al tiovivo, aquí puedes escoger algunos de los vehículos para intentar alcanzar aquello \
-          que brilla en el techo, si escoges la opción correcta quizás puedas obtener un fragmento de llave...\
+          Llegaste al tiovivo, aquí puedes escoger algunos \
+          de los vehículos para intentar alcanzar aquello \
+          que brilla en el techo, si escoges la \
+          opción correcta quizás puedas obtener\
+           un fragmento de llave...\
           tus opciones son: <br>\
           <a href='caballo'>Caballo que sube y baja</a><br>\
           <a href='fallatv'> Taza giratoria </a> <br>\
@@ -98,8 +103,11 @@ undum.game.situations = {
     tiovivonoenergia: new undum.SimpleSituation(
         "<h1>Tiovivo</h1>\
          <p class='transient'>\
-          Llegaste al tiovivo, aquí puedes escoger algunos de los vehículos para intentar alcanzar aquello \
-         que brilla en el techo, si escoges la opción correcta quizás puedas obtener un fragmento de llave...\
+          Llegaste al tiovivo, aquí puedes escoger algunos \
+          de los vehículos para intentar alcanzar aquello \
+         que brilla en el techo, si escoges la \
+         opción correcta quizás puedas obtener\
+         un fragmento de llave...\
          tus opciones son: <br>\
          Caballo que sube y baja<br>\
          Taza giratoria <br>\
@@ -113,8 +121,11 @@ undum.game.situations = {
     caballo: new undum.SimpleSituation(
         " <h1>Tiovivo</h1>\
         <p class='transient'>\
-        Enhorabuena! Lograste alcanzar un fragmento de llave y se ha añadido a tu inventario!\
-        Recuerda que debes seguir investigando para encontrar los demás fragmentos y poder salir del parque de atracciones.<br>\
+        Enhorabuena! Lograste alcanzar un fragmento de llave \
+        y se ha añadido a tu inventario!\
+        Recuerda que debes seguir investigando \
+        para encontrar los demás fragmentos y \
+        poder salir del parque de atracciones.<br>\
         Elige un lugar al que ir:<br> \
         <a href='plaza'>Plaza(1)</a><br> \
         <a href='coches'> Karts(8) </a></p>",
@@ -128,7 +139,8 @@ undum.game.situations = {
     fallatv: new undum.SimpleSituation(
         "<h1>Tiovivo</h1>\
         <p class='transient'>\
-        Vaya... Parece que la opción escogida no es la correcta, si quieres puedes volver a intentarlo\
+        Vaya... Parece que la opción escogida no es la correcta, \
+        si quieres puedes volver a intentarlo\
         <a href='caballo'> Caballo que sube y baja </a> <br>\
         <a href='fallatv'> Taza giratoria </a> <br>\
         <a href='fallatv'> Coche que realiza movimientos hacía adelante y hacía atrás </a> <br>\
@@ -364,22 +376,50 @@ undum.game.situations = {
         "<h1>Coches de choque</h1>\
         <p class='transient'> \
         <img src='media/img/mapa8.png' class='mapa'/> \
-         Llegaste a los coches de choque y trás montarte en ellos descubriste dos kits de herramientas, este te será\
-         útil en el futuro ya que podrás utilizar las herramientas para encontrar las diferentes actividades.<br>\
+         Llegaste a los coches de choque, resulta demasiado aburrido\
+         montarte tú solo, pero siempre puedes <a href='mcoches'>explorar</a> y ver si descubres\
+         algo nuevo.<br>\
+         O bien, puedes elegir un nuevo lugar para explorar.\
          Elige un lugar al que ir:<br> \
          <a href='rusa'> Montaña Rusa(7) </a><br>\
          <a href='tiovivo'> Tiovivo(9) </a><br> \
-         <a href='plaza'> Plaza(1)</a> </p>",
-{
+         <a href='plaza'> Plaza(1)</a> </p>"
+    ),
+
+    mcoches: new undum.SimpleSituation(
+        "<h1>Coches de choque</h1>\
+        <p class='transient'>\
+        Afortunadamente está vez has podido encontrar\
+        un kit de herramientas, el cual se ha sumado a tu inventario.\
+        puedes seguir <a href='coches'> explorando </a> y ver si encuentras más o bien escoger otro lugar\
+        que visitar:\
+        <a href='rusa'> Montaña Rusa(7) </a><br>\
+        <a href='tiovivo'> Tiovivo(9) </a><br> \
+        <a href='plaza'> Plaza(1)</a> </p>",
+        {
             enter: function(character, system, action) {
                 if(character.qualities.herramientas <= 4){
                     system.setQuality("herramientas", character.qualities.herramientas+1);
                 } else {
                     system.setCharacterText("<p>Ya recogiste los kits de herramientas con anterioridad.</p>")
+                    system.doLink("maxkit");
                 }
             },
         }
     ),
+
+    maxkit: new undum.SimpleSituation(
+        "<h1>Coches de choque</h1>\
+        <p class='transient'>\
+        Lamentablemente, ya que no quedan más kits de herramientas disponibles, o no has tenido la suerte\
+        de encontrar alguno. Puedes seguir explorando y quizá en un futuro puedas volver a \
+        encontrar alguno.\
+        Elige un lugar al que ir:<br> \
+         <a href='rusa'> Montaña Rusa(7) </a><br>\
+         <a href='tiovivo'> Tiovivo(9) </a><br> \
+         <a href='plaza'> Plaza(1)</a></p>"
+    ),
+
     /*David*/
 
     /*Andrea*/
