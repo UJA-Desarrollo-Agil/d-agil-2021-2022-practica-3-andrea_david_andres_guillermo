@@ -118,12 +118,39 @@ undum.game.situations = {
         "<h1>Entrada</h1>\
         <p class='transient'> \
         Parece que esta puerta está cerrada y se necesita una llave para poder abrirla... \
+        <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\
         <a href='abrir'>Abrir</a><br> \
         <img src='media/img/mapa10.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='plaza'> Plaza(1)</a></p>",
     ),
+
+    canjear: new undum.SimpleSituation(
+        "<h1>Entrada</h1>\
+        <p class='transient'> \
+        Parece que esta puerta está cerrada y se necesita una llave para poder abrirla... \
+        <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\
+        <a href='abrir'>Abrir</a><br> \
+        <img src='media/img/mapa10.png' class='mapa'/> \
+         Elige un lugar al que ir:<br> \
+         <a href='noria'> Noria(2)</a><br> \
+         <a href='plaza'> Plaza(1)</a></p>",
+         {
+            enter: function( character, system, from ) {
+                if(character.qualities.fragmentos == 3 ) {
+                        system.setQuality("fragmentos", character.qualities.fragmentos-3);
+                        system.setQuality("llave", character.qualities.llave+1);
+                        
+                }else{
+                        system.setCharacterText( "<p>Necesitas 3 fragmentos para canjear la llave.</p>");
+
+                }
+            }
+        }
+    ),
+    
+
 
     abrir: new undum.SimpleSituation(
         "<h1>Entrada</h1>\
@@ -136,8 +163,8 @@ undum.game.situations = {
          <a href='plaza'> Plaza(1)</a></p>",
         {
             enter: function( character, system, from ) {
-                if( character.qualities.llave == 1 ) {
-                  system.setCharacterText("<p>Esta llave no encaja con la cerradura</p>")
+                if( character.qualities.llave > 0 ) {
+                    system.doLink( "final" );
                     
                 } else {
                     system.setCharacterText( "<p>No tienes ninguna llave</p>");
@@ -145,6 +172,14 @@ undum.game.situations = {
             }
         }
     ),
+
+    final: new undum.SimpleSituation(
+        "<h1>Final</h1>\
+        <p class='transient'> \
+       Enhorabuena, te has pasado el juego</p>",
+    
+    ),
+
     /*Guille*/
 
     /*Globos*/
@@ -458,10 +493,10 @@ undum.game.qualityGroups = {
  * to configure the character at the start of play. */
 
 undum.game.init = function(character, system) {
-    system.setQuality( "arreglado" , false )
     character.qualities.energia = 0;
     character.qualities.herramientas = 0;
     character.qualities.fragmentos = 0;
     character.qualities.llave = 0;
+    system.setQuality( "arreglado" , false )
     system.setCharacterText("<p>Comienza el juego.</p>");
 };
