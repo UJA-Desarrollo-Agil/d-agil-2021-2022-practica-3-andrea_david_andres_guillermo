@@ -25,6 +25,7 @@ Hecho por:
   * [4. URL del tablero de Trello](#4-url-del-tablero-de-trello)
   * [5. Capturas de pantalla de Trello](#5-capturas-de-pantalla-de-trello)
   * [6. Capturas de pantalla de Telegram](#6-capturas-de-pantalla-de-telegram)
+  * [7. Sprint1](#7-sprint1)
 
 ## 1. Introducción
 
@@ -69,3 +70,4 @@ Las siguientes capturas que se muestran son de los bots de Trello y GitHub, en e
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/botGitHub.png"></img>
 >Ilustración 6: Captura de pantalla del bot de GitHub en funcionamiento.
 
+## 7. Sprint1
