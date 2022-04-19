@@ -463,7 +463,7 @@ undum.game.situations = {
     moverseluz: new undum.SimpleSituation(
         "<h1>Elige donde Ir </h1>\
         <p class='transient'> \
-         <img src='media/img/mapa2.png' class='mapa'/> \
+         <img src='media/img/mapa5.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='caida'> Caida Libre(3) </a><br> \
          <a href='agua'> Rápidos Acuáticos(6) </a>",
