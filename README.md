@@ -38,7 +38,7 @@ Esta práctica está motivada por ser parte del contenido de prácticas de la as
 ## 3. Descripción del juego.
 
 Eestá basado en un estilo de juego llamado “Escape Room”, en este tipo de juegos tú eres el protagonista. En la historia tienes que escapar de un parque de atracciones abandonado.
-Todo comienza en la plaza central del parque. Estás solo, lo único que tienes es un GPS en el que aparece toda la distribución de los elementos del parque y tu ubicación actualizada en tiempo real. En esta aventura tendrás que desplazarte por el parque de atracciones hasta encontrar todos los objetos necesarios para completar los objetivos de cada situación y obtener la llave con la que podrás escapar de ese lugar tan tenebroso.
+Todo comienza en la plaza central del parque. Estás solo, lo único que tienes es un mapa en el que aparece toda la distribución de los elementos del parque y tu ubicación. En esta aventura tendrás que desplazarte por el parque de atracciones hasta encontrar todos los objetos necesarios para completar los objetivos de cada situación y obtener la llave con la que podrás escapar de ese lugar.
 
 ## 4. URL del tablero de Trello
 La URL del tablero utilizado en esta práctica es: https://trello.com/b/nwDPtiRL/pr%C3%A1ctica-3
@@ -60,6 +60,10 @@ A continuación diferentes imágenes del avance del Tablero Trello:
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/Sin título-1.png" width="600" height="600"></img>
 >Ilustración 4: Ejemplos de descripción de 2 Historias de Usuario.
 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/Captura de pantalla (362).png" ></img>
+>Ilustración 7: Estado actual de nuestro tablero tras hacer la Sprint Review y adaptar el Product Backlog.
+
+
 ## 6. Capturas de pantalla de Telegram
 
 Las siguientes capturas que se muestran son de los bots de Trello y GitHub, en ese orden, que hemos vinculado en Telegram en un grupo que hemos creado con los cuatro miembros del grupo.
@@ -71,3 +75,26 @@ Las siguientes capturas que se muestran son de los bots de Trello y GitHub, en e
 >Ilustración 6: Captura de pantalla del bot de GitHub en funcionamiento.
 
 ## 7. Sprint1
+
+**Product Backlog Refinement (PBR):**
+
+El día 6 de abril tuvimos que considerar nuevos requisitos, creando nuevas Historias de Usuario y asignándoles Puntos de Historia y Valor
+
+Los nuevos requisitos son:
+
+-Se deberá modificar el CSS del juego original, usando otras fuentes de letra, fondos de pantalla, etc.
+
+-Se posibilitará (con css) una versión “sin distracciones” que no incluya imágenes, ni fondo, ni música.
+
+-En al menos una situación (de las existentes o incluyendo alguna/s nueva/s), se podrá establecer un diálogo con otro personaje del juego (con preguntas y respuestas predefinidas, por supuesto, dado que serán acciones del juego; no se trata de implementar un chatbot). INNEGOCIABLE.
+
+-Cada situación deberá llevar una imagen descriptiva asociada.
+
+
+**Sprint Review:** 
+
+Puntos de Historia Totales: 73
+
+Puntos de Historia Realizados: 22
+
+**Sprint Retrospective:**
