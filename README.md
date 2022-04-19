@@ -97,4 +97,36 @@ Puntos de Historia Totales: 73
 
 Puntos de Historia Realizados: 22
 
+-Aproximadamente hemos terminado al 100% un 30% de las historias de usuario totales del proyecto, y aproximadante un 60% del proyecto completo.
+lo proximo a seguir son las historias que estamos desarrollando para tener terminada al 100%.
+
+-Para el Sprint 2, primero de todo completaremos las historias de usuario que ya hemos comenzado en este Sprint, posteriormente realizaremos la versión sin distracciones y por último añadiremos el contenido extra que no afecta a la jugabilidad, como por ejemplo, la creación de la plataforma web, añadir música, 
+vídeos, etc.
+
+-En cuanto a los plazos de entrega vamos al día, hemos tenido problemas en Semana Santa a la hora de realizar las dailys ya que cada miembro del equipo tenía 
+sus circustancias personales.
+
 **Sprint Retrospective:**
+
+* ¿Qué ha ido bien?
+
+- A la hora de desarrollo de código no han ocurrido conflictos entre nosotros. La herramienta que hemos utilizado para los flujos de código y manejo de ramas ha sido GitHub Desktop.
+  
+ - Ambos bots de Telegram, tanto de GitHub como de Trello nos han resultado muy utiles para saber el trabajo de cada uno.
+  
+ - La herramienta que ofrece GitHub para ver el trabajo de cada uno ha sido positivo para analizar el trabajo de cada uno en las Dailys.
+
+ - El reparto de trabajo entre los miembros del equipo ha sido equitativo.
+
+* ¿Qué no ha ido bien?
+
+- Se necesita mejor coordinación en cuanto al desarrollo del código, de forma que nadie retrase el trabajo de los miembros del equipo.
+
+- No todos los días asistieron todos los miembros del grupo a las Dailys.
+
+* ¿Cómo mejorar?
+
+- Establecer plazos de entrega de cada parte del código para mejorar la coordinación.
+
+- Mayor compromiso para las reuniones Dailys.
+
