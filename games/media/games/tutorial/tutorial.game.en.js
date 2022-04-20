@@ -596,7 +596,7 @@ undum.game.qualityGroups = {
 undum.game.init = function(character, system) {
     character.qualities.energia = 0;
     character.qualities.herramientas = 0;
-    character.qualities.fragmentos = 0;
+    character.qualities.fragmentos = 0 + "/3";
     character.qualities.llave = 0;
     system.setQuality( "arreglado" , false )
     system.setCharacterText("<p>Comienza el juego.</p>");
