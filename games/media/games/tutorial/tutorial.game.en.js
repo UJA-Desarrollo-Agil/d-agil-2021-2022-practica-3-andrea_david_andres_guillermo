@@ -224,7 +224,7 @@ undum.game.situations = {
     /*Guille*/
 
     /*Globos*/
-    /*Fragmentos de llave 0/3 para saber cuántos fragmentos hay que coger*/
+    /*Fragmentos de llave 0/3 para saber cuántos fragmentos hay que coger + jugar solo una vez*/
     globos: new undum.SimpleSituation(
         "<h1>Caseta de juegos</h1>\
         <p class='transient'> \
@@ -596,7 +596,7 @@ undum.game.qualityGroups = {
 undum.game.init = function(character, system) {
     character.qualities.energia = 0;
     character.qualities.herramientas = 0;
-    character.qualities.fragmentos = 0 + "/3";
+    character.qualities.fragmentos = 0;
     character.qualities.llave = 0;
     system.setQuality( "arreglado" , false )
     system.setCharacterText("<p>Comienza el juego.</p>");
