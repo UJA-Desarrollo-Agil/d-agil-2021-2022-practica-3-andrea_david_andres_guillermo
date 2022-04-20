@@ -328,10 +328,7 @@ undum.game.situations = {
 				enter: function( character, system, from ) {
 					if(  character.qualities.arreglado == false ) {
                         if(character.qualities.herramientas > 0){
-                            system.setQuality( "arreglado" , true )
-                            system.setQuality("herramientas", character.qualities.herramientas-1);
-                            system.setCharacterText( "<p>Montaña rusa Arreglada</p>");
-                            system.doLink("rusaherramientas")
+                            system.doLink("arreglar")
                         }else{
                             system.setCharacterText( "<p>La montaña rusa está averiada, necesario Kit Herramientas</p>");
                         }
@@ -341,6 +338,41 @@ undum.game.situations = {
 				}
 			}
                       
+    ),
+
+
+    arreglar: new undum.SimpleSituation(
+        
+        "<p class='transient'> \
+         Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
+         ¿Será un fragmento de llave?<br>\
+         <a href='arreglar2'>Arreglar</a><br>\
+        <img src='media/img/mapa7.png' class='mapa'/> \
+         Elige un lugar al que ir:<br> \
+         <a href='coches'> Karts(8) </a><br>\
+         <a href='plaza'> Plaza(1)</a><br> \
+         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+    ),
+
+    arreglar2: new undum.SimpleSituation(
+        
+        "<p class='transient'> \
+         Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
+         ¿Será un fragmento de llave?<br>\
+         <a href='arreglar2'>Arreglar</a><br>\
+        <img src='media/img/mapa7.png' class='mapa'/> \
+         Elige un lugar al que ir:<br> \
+         <a href='coches'> Karts(8) </a><br>\
+         <a href='plaza'> Plaza(1)</a><br> \
+         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+        {
+            enter: function( character, system, from ) {
+    system.setQuality( "arreglado" , true )
+    system.setQuality("herramientas", character.qualities.herramientas-1);
+    system.setCharacterText( "<p>Montaña rusa Arreglada</p>");
+        system.doLink("rusaherramientas")
+        }
+    }
     ),
     
     rusaherramientas: new undum.SimpleSituation(
@@ -539,7 +571,7 @@ undum.game.qualities = {
     ),
 
     arreglado: new undum.OnOffQuality(
-        "Arreglado Mon-Rus", {priority:"0002", group:'stats', onDisplay:"✓"}
+        "M.Rusa arreglada", {priority:"0002", group:'stats', onDisplay:"✓"}
     )
 
 };
