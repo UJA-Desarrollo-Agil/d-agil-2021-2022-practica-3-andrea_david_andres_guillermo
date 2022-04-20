@@ -161,7 +161,7 @@ undum.game.situations = {
         Parece que esta puerta está cerrada y se necesita una llave para poder abrirla... \
         <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\
         <a href='abrir'>Abrir</a><br> \
-        <img src='media/img/mapa10.png' class='mapa'/> \
+        <img src='media/img/mapa10.png' class='mapa' /> \
          Elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='plaza'> Plaza(1)</a></p>",
@@ -224,6 +224,7 @@ undum.game.situations = {
     /*Guille*/
 
     /*Globos*/
+    /*Fragmentos de llave 0/3 para saber cuántos fragmentos hay que coger*/
     globos: new undum.SimpleSituation(
         "<h1>Caseta de juegos</h1>\
         <p class='transient'> \
