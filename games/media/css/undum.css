@@ -234,9 +234,10 @@ img.float_left {
 }
 .tools {
     padding: 0.6em;
-    width: 8.9em;
+    width: 9.89em;
     background: #cec3ae url("../img/tools_bg.jpg") repeat left top;
     position: absolute;
+    left: 46em;
 }
 .tools p {
     font-size: 0.95em;
@@ -245,6 +246,7 @@ img.float_left {
 .tools.left {
     left: -10em;
     width: 18.9em;
+    
 }
 .tools.right {
     right: 0.4em;
