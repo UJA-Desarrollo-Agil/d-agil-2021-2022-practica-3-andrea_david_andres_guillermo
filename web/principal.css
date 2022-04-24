@@ -59,3 +59,17 @@ background-color: #E9E9E9;
     background-color: #f2f2f2;
     padding: 10px;
   }
+
+  /*Quienes somos*/
+  .container-card{
+    width: 100%;
+  }
+.card{
+  display: flex;
+  width: 400px;
+  margin: auto;
+  float: center;
+}
+  .card-img{
+    width: 100%;
+  }
