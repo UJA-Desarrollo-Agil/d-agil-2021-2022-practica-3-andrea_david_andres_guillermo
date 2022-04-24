@@ -68,7 +68,7 @@ background-color: #E9E9E9;
   display: flex;
   width: 400px;
   margin: auto;
-  float: center;
+  float: left;
 }
   .card-img{
     width: 100%;
