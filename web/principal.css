@@ -1,0 +1,61 @@
+*{
+  font-family:Arial, Helvetica, sans-serif;
+}
+/*Barra de navegación*/
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .nav-bar-item {
+    float: right;
+  }
+  
+  .nav-bar-item a {
+    display: block;
+    color: #333333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-bar-item a:hover {
+    color: #ED088C;
+  }
+.todo{
+background-color: #E9E9E9;
+  }
+
+/*Formulario*/
+  input[type=text],input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #ED088C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #CB0AA7;
+  }
+  
+  .formulario {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
