@@ -233,9 +233,9 @@ undum.game.situations = {
         </p>\
         \
         <img src='media/img/mapa4.png' class='mapa transient ' /> \
-         <p class='transient'>\
-         <a href='juegoglobos'> Pulse para jugar...<br><br> </a>\
-         En otro caso, elige un lugar al que ir:<br> \
+         <p class='transient'>"+
+         (1==2?"<a href='juegoglobos'> Pulse para jugar...<br><br> </a>":"")+
+         "En otro caso, elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a></p>"
     ),
@@ -489,8 +489,9 @@ undum.game.situations = {
         <p class='transient'> \
          <img src='media/img/caseta.png' class='mapa'/> \
          Elige que hacer<br> \
+         <br>\
          <a href='moverseluz'> Moverse de Sitio </a><br> \
-         <a href='arreglarluz'> Entrar a la Caseta de Electricidad </a>",
+         <a href='arreglarluz'> Entrar a la caseta de electricidad </a>",
     ),
 
     moverseluz: new undum.SimpleSituation(
