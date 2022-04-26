@@ -485,44 +485,40 @@ undum.game.situations = {
 
     /*Andrés*/
     luz: new undum.SimpleSituation(
-        "<h1>Entrada Caseta de electricidad </h1>\
+        "<h1>Caseta de electricidad </h1>\
         <p class='transient'> \
-         <img src='media/img/caseta.png' class='mapa'/> \
-         Elige que hacer<br> \
          <br>\
-         <a href='moverseluz'> Moverse de Sitio </a><br> \
-         <a href='arreglarluz'> Entrar a la caseta de electricidad </a>",
+         <a href='arreglarluz'>Activar generador</a><br>\
+         <p class='transient'> \
+          <img src='media/img/mapa5.png' class='mapa'/> \
+          Elige un lugar al que ir:<br> \
+          <a href='caida'> Caida Libre(3) </a><br> \
+          <a href='agua'> Rápidos Acuáticos(6) </a>",
     ),
 
-    moverseluz: new undum.SimpleSituation(
-        "<h1>Elige donde Ir </h1>\
+
+    arreglarluz: new undum.SimpleSituation(
+        "<h1>Caseta Electricidad </h1> \
+        <p class='transient'> <br>\
         <p class='transient'> \
          <img src='media/img/mapa5.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='caida'> Caida Libre(3) </a><br> \
          <a href='agua'> Rápidos Acuáticos(6) </a>",
-    ),
-
-    arreglarluz: new undum.SimpleSituation(
-        "<h1>Interior Caseta Electricidad </h1> \
-        <p class='transient'> <br>\
-       <img src='media/img/elec.png' class='mapa'/> \
-        Veamos si tienes todo lo necesario....<br> \
-        <a href='luz'> Salir Caseta </a>",
 
 {
             enter: function(character, system, action) {
                 if (character.qualities.herramientas >= 1 && character.qualities.energia != 100) {
                     system.setQuality("herramientas", character.qualities.herramientas - 1);
-                    system.setCharacterText("<p>Electricidad Arreglada</p>");
+                    system.setCharacterText("<p>Generador arreglado</p>");
                     if(character.qualities.energia == 0){
                         system.setQuality("energia", character.qualities.energia + 100);
                         system.setCharacterText("<p>100% de Energía</p>");
                     }else{
-                        system.setCharacterText("<p>Energía ya Arreglada</p>");
+                        system.setCharacterText("<p>El generador ya tiene energía</p>");
                     }
                 } else {
-                    if(character.qualities.herramientas < 1) system.setCharacterText("<p>Necesitas un Kit de Herramientas</p>");
+                    if(character.qualities.herramientas < 1) system.setCharacterText("<p>Necesitas un Kit de Herramientas para poder arreglar la electricidad</p>");
                     if(character.qualities.energia == 100) system.setCharacterText("<p>Energía al 100%</p>");
                 }
             },
@@ -559,13 +555,13 @@ undum.game.start = "start";
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
     energia: new undum.NumericQuality(
-        "Energía", {priority:"0001", group:'stats'}
+        "Energía(%)", {priority:"0001", group:'stats'}
     ),
     herramientas: new undum.NumericQuality(
         "Kit herramientas", {priority:"0002", group:'stats'}
     ),
     fragmentos: new undum.NumericQuality(
-        "Fragmentos de llave", {priority:"0003", group:'stats'}
+        "Fragmentos de llave(3)", {priority:"0003", group:'stats'}
     ),
     llave: new undum.NumericQuality(
         "Llave", {priority:"0004", group:'stats'}
