@@ -63,13 +63,21 @@ background-color: #E9E9E9;
   /*Quienes somos*/
   .container-card{
     width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
-.card{
+
+.card {
   display: flex;
-  width: 400px;
-  margin: auto;
+  width: 330px;
+  margin: 10px;
   float: left;
 }
   .card-img{
     width: 100%;
   }
+
+
+
+  
