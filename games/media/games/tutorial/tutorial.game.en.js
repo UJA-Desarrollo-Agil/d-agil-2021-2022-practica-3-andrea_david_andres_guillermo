@@ -307,8 +307,8 @@ undum.game.situations = {
 					if( character.qualities.energia > 0 ) {
 						system.doLink( "rusaenergia" );
 					} else {
-                        system.setCharacterText( "<p>Te intentas montar pero no hay energia suficiente\
-                                                                                    como para que funcione...Habrá que hacer algo...</p>");
+                        system.setCharacterText( "<p>Te intentas montar pero no hay energía suficiente\
+                                                                                    para que funcione...Habrá que hacer algo...</p>");
 					}
 				}
 			}
