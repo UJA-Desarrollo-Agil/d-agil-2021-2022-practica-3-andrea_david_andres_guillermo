@@ -259,7 +259,7 @@ undum.game.situations = {
 
     
     azul: new undum.SimpleSituation(
-        "<p> Enhorabuena, has obtenido un fragmento de la llave.\
+        "<p> Enhorabuena, has ganado.\
         </p>\
         \
         <img src='media/img/azul.png' class='globos transient' /> \
@@ -270,6 +270,9 @@ undum.game.situations = {
                     if(  character.qualities.fragmento2 == false ) {
                         system.setQuality("fragmentos", character.qualities.fragmentos + 1);
                         system.setQuality( "fragmento2" , true )
+                        system.setCharacterText( "<p>Enhorabuena, has obtenido un fragmento de la llave</p>");
+                    }else{
+                        system.setCharacterText( "<p>Ya has conseguido tu fragmento antes</p>");
                     }
                 },
         }
