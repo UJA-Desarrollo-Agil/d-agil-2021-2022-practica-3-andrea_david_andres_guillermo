@@ -440,8 +440,8 @@ undum.game.situations = {
         <a href='plaza'> Plaza(1)</a> </p>",
         {
             enter: function(character, system, action) {
-                if(character.qualities.herramientas <= 4){
-                    system.setQuality("herramientas", character.qualities.herramientas+1);
+                if(character.qualities.herramientas == 0){
+                    system.setQuality("herramientas", character.qualities.herramientas+2);
                 } else {
                     system.setCharacterText("<p>Ya recogiste los kits de herramientas con anterioridad.</p>")
                     system.doLink("maxkit");
