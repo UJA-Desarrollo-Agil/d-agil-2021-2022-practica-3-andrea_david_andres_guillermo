@@ -236,9 +236,9 @@ undum.game.situations = {
         </p>\
         \
         <img src='media/img/mapa4.png' class='mapa transient ' /> \
-         <p class='transient'>"+
-         (1==2?"<a href='juegoglobos'> Pulse para jugar...<br><br> </a>":"")+
-         "En otro caso, elige un lugar al que ir:<br> \
+         <p class='transient'>\
+         <a href='juegoglobos'> Pulse para jugar...<br><br> </a>\
+         En otro caso, elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='caida'> Caida Libre(3) </a></p>"
     ),
