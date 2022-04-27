@@ -131,7 +131,10 @@ undum.game.situations = {
         <a href='coches'> Karts(8) </a></p>",
          {
             enter: function(character, system, action) {
-                system.setQuality("fragmentos", character.qualities.fragmentos+1);
+                if(  character.qualities.fragmento3 == false ) {
+                    system.setQuality("fragmentos", character.qualities.fragmentos + 1);
+                    system.setQuality( "fragmento3" , true )
+                }
              },
          }
     ),
@@ -264,7 +267,10 @@ undum.game.situations = {
          </p>",
          {
             enter: function(character, system, action) {
-                    system.setQuality("fragmentos", character.qualities.fragmentos+1);
+                    if(  character.qualities.fragmento2 == false ) {
+                        system.setQuality("fragmentos", character.qualities.fragmentos + 1);
+                        system.setQuality( "fragmento2" , true )
+                    }
                 },
         }
     ),
@@ -574,7 +580,13 @@ undum.game.qualities = {
         "M.Rusa arreglada", {priority:"0002", group:'stats', onDisplay:"✓"}
     ),
     fragmento1: new undum.OnOffQuality(
-        "Fragmento 1", {priority:"0002", group:'llave'}
+        "fr1", {priority:"0002", group:'llave'}
+    ),
+    fragmento2: new undum.OnOffQuality(
+        "fr2", {priority:"0002", group:'llave'}
+    ),
+    fragmento3: new undum.OnOffQuality(
+        "fr3", {priority:"0002", group:'llave'}
     ),
 
 };
@@ -603,5 +615,7 @@ undum.game.init = function(character, system) {
     character.qualities.llave = 0;
     system.setQuality( "arreglado" , false )
     system.setQuality( "fragmento1" , false )
+    system.setQuality( "fragmento2" , false )
+    system.setQuality( "fragmento3" , false )
     system.setCharacterText("<p>Comienza el juego.</p>");
 };
