@@ -397,7 +397,10 @@ undum.game.situations = {
         {
             enter: function(character, system, action) {
                     system.setQuality("energia", character.qualities.energia-10);
-                    system.setQuality("fragmentos", character.qualities.fragmentos+1);
+                    if(  character.qualities.fragmento1 == false ) {
+                        system.setQuality("fragmentos", character.qualities.fragmentos + 1);
+                        system.setQuality( "fragmento1" , true )
+                    }
                 },
         }
     ),
@@ -569,7 +572,10 @@ undum.game.qualities = {
 
     arreglado: new undum.OnOffQuality(
         "M.Rusa arreglada", {priority:"0002", group:'stats', onDisplay:"✓"}
-    )
+    ),
+    fragmento1: new undum.OnOffQuality(
+        "Fragmento 1", {priority:"0002", group:'llave'}
+    ),
 
 };
 
@@ -582,7 +588,7 @@ undum.game.qualities = {
 
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
-    Progreso: new undum.QualityGroup('', {priority:"0002"})
+    llave: new undum.QualityGroup('', {priority:"0002"})
 
 };
 
@@ -596,5 +602,6 @@ undum.game.init = function(character, system) {
     character.qualities.fragmentos = 0;
     character.qualities.llave = 0;
     system.setQuality( "arreglado" , false )
+    system.setQuality( "fragmento1" , false )
     system.setCharacterText("<p>Comienza el juego.</p>");
 };
