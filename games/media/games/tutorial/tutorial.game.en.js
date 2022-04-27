@@ -69,14 +69,19 @@ undum.game.situations = {
          <img src='media/img/mapa9.png' class='mapa'/>",
         {
             enter: function( character, system, from ) {
-                if( character.qualities.energia > 0 ) {
-                    system.doLink( "tiovivoenergia" );
-                } else {
-                    system.setCharacterText( "<p>Parece que no hay suficiente energía\
+                if(character.qualities.fragmento3 == false){
+                    if( character.qualities.energia > 0 ) {
+                        system.doLink( "tiovivoenergia" );
+                    } else {
+                        system.setCharacterText( "<p>Parece que no hay suficiente energía\
                                                       para que la atracción funcione\
                                                       quizás debas activar la energía antes\
                                                       de poder subir.</p>");
-                    system.doLink("tiovivonoenergia");
+                        system.doLink("tiovivonoenergia");
+                    }
+                } else {
+                    system.setCharacterText("<p>Ya encontraste el fragmento de esta zona</p>");
+                    system.doLink("fencontradotres");
                 }
             }
         }
@@ -96,6 +101,7 @@ undum.game.situations = {
           <a href='fallatv'>Coche que realiza movimientos hacía adelante y hacía atrás </a><br>\
           <a href='fallatv'>Columpio que se mueve hacia atrás y delante </a><br>\
           o bien puedes seguir buscando en algún otro lugar.<br>\
+          <img src='media/img/mapa9.png' class='mapa'/>\
           <a href='plaza'>Plaza(1)</a><br>\
           <a href='coches'> Karts(8) </a></p>"
     ),
@@ -114,6 +120,7 @@ undum.game.situations = {
          Coche que realiza movimientos hacía adelante y hacía atrás<br>\
           Columpio que se mueve hacia atrás y delante<br>\
          o bien puedes seguir buscando en algún otro lugar.<br>\
+         <img src='media/img/mapa9.png' class='mapa'/>\
          <a href='plaza'>Plaza(1)</a><br>\
          <a href='coches'> Karts(8) </a></p>"
     ),
@@ -126,6 +133,7 @@ undum.game.situations = {
         Recuerda que debes seguir investigando \
         para encontrar los demás fragmentos y \
         poder salir del parque de atracciones.<br>\
+        <img src='media/img/mapa9.png' class='mapa'/>\
         Elige un lugar al que ir:<br> \
         <a href='plaza'>Plaza(1)</a><br> \
         <a href='coches'> Karts(8) </a></p>",
@@ -133,10 +141,21 @@ undum.game.situations = {
             enter: function(character, system, action) {
                 if(  character.qualities.fragmento3 == false ) {
                     system.setQuality("fragmentos", character.qualities.fragmentos + 1);
-                    system.setQuality( "fragmento3" , true )
+                    system.setQuality( "fragmento3" , true );
                 }
              },
          }
+    ),
+
+    fencontradotres: new undum.SimpleSituation(
+        "<h1>Tiovivo</h1>\
+        <p class='transient'>\
+        Ya encontraste el fragmento de esta zona y no hay nada más que hacer. Quizá debas explorar por otra zona...<br>\
+        <img src='media/img/mapa9.png' class='mapa'/>\
+        Elige un lugar al que ir:<br> \
+        <a href='plaza'>Plaza(1)</a><br> \
+        <a href='coches'> Karts(8) </a></p>\
+        "
     ),
 
     fallatv: new undum.SimpleSituation(
@@ -487,7 +506,7 @@ undum.game.situations = {
         <p class='transient'> \
         <img src='media/img/mapa6.png' class='mapa' />\
         Vaya parece que no hay agua... Sólo hay una trampilla con cerradura...\
-         Aquí no encontraré nada...<br>\
+         Aquí no encontrarás nada...<br>\
          Elige otro lugar al que ir:<br> \
          <a href='rusa'> Montaña Rusa(7) </a><br>\
          <a href='luz'> Electricidad(5) </a><br> \
