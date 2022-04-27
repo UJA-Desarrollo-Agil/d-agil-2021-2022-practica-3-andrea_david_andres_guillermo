@@ -583,13 +583,13 @@ undum.game.qualities = {
         "M.Rusa arreglada", {priority:"0002", group:'stats', onDisplay:"✓"}
     ),
     fragmento1: new undum.OnOffQuality(
-        "Fragmento 1", {priority:"0002", group:'llave',onDisplay:"✓"}
+        "", {priority:"0002", group:'llave'}
     ),
     fragmento2: new undum.OnOffQuality(
-        "Fragmento 2", {priority:"0002", group:'llave',onDisplay:"✓"}
+        "", {priority:"0002", group:'llave'}
     ),
     fragmento3: new undum.OnOffQuality(
-        "Fragmento 3", {priority:"0002", group:'llave',onDisplay:"✓"}
+        "", {priority:"0002", group:'llave'}
     ),
 
 };
