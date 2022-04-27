@@ -435,9 +435,8 @@ undum.game.situations = {
         "<h1>Coches de choque</h1>\
         <p class='transient'>\
         Afortunadamente está vez has podido encontrar\
-        un kit de herramientas, el cual se ha sumado a tu inventario.\
-        puedes seguir <a href='coches'> explorando </a> y ver si encuentras más o bien escoger otro lugar\
-        que visitar:\
+        2 kits de herramientas,los cuales se han sumado a tu inventario.\
+        puedes seguir explorando el parque...\
         <a href='rusa'> Montaña Rusa(7) </a><br>\
         <a href='tiovivo'> Tiovivo(9) </a><br> \
         <a href='plaza'> Plaza(1)</a> </p>",
