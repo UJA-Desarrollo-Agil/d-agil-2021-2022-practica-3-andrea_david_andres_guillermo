@@ -444,6 +444,7 @@ undum.game.situations = {
             enter: function(character, system, action) {
                 if(character.qualities.herramientas == 0){
                     system.setQuality("herramientas", character.qualities.herramientas+2);
+                    system.setCharacterText("<p>Has recogido tus 2 Kit de Herramientas.</p>")
                 } else {
                     system.setCharacterText("<p>Ya recogiste los kits de herramientas con anterioridad.</p>")
                     system.doLink("maxkit");
