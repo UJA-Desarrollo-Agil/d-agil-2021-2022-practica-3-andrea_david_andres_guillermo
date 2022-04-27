@@ -442,7 +442,7 @@ undum.game.situations = {
         <a href='plaza'> Plaza(1)</a> </p>",
         {
             enter: function(character, system, action) {
-                if(character.qualities.herramientas == 0){
+                if(character.qualities.herramientas == 0 && character.qualities.arreglado == false && character.qualities.energia == 0 ){
                     system.setQuality("herramientas", character.qualities.herramientas+2);
                     system.setCharacterText("<p>Has recogido tus 2 Kit de Herramientas.</p>")
                 } else {
