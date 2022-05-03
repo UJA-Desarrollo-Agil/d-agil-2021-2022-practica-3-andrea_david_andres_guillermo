@@ -29,6 +29,28 @@
 background-color: #E9E9E9;
   }
 
+
+  /*Footer*/
+
+.footer{
+width: 100%;
+}
+
+.elemento-footer{
+ width: 50%;
+  }
+
+
+.elemento-footer img{
+  width: 1rem;
+  height: 1rem;
+  float: right;
+  padding-top: 3%;
+  padding-left: 3%;
+}
+
+
+
 /*Formulario*/
   input[type=text],input[type=email], select {
     width: 100%;
@@ -86,6 +108,8 @@ background-color: #E9E9E9;
     height:442px;
 
   }
+
+
 
 
   
