@@ -8,22 +8,25 @@
     padding: 0;
     overflow: hidden;
     background-color: #ffffff;
+    margin-right: 40% ;
   }
   
   .nav-bar-item {
     float: right;
+    padding-top: 1rem;
   }
   
   .nav-bar-item a {
     display: block;
-    color: #333333;
+    color: black;
     text-align: center;
-    padding: 14px 16px;
+padding-left: 5rem;
     text-decoration: none;
+    font-weight: bold;
   }
   
   .nav-bar-item a:hover {
-    color: #ED088C;
+    color:  #09088B;
   }
 .todo{
 background-color: #E9E9E9;
@@ -39,47 +42,42 @@ width: 100%;
 .elemento-footer{
  width: 50%;
   }
-
-
+  .elemento-footer img .github{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  
 .elemento-footer img{
   width: 1rem;
   height: 1rem;
   float: right;
   padding-top: 3%;
   padding-left: 3%;
+  padding-bottom: 3%;
 }
 
 
 
+
 /*Formulario*/
-  input[type=text],input[type=email], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
+
   input[type=submit] {
-    width: 100%;
-    background-color: #ED088C;
+    width: 50%;
+    background-color: #0B2161; 
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin-left: 25%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
   input[type=submit]:hover {
-    background-color: #CB0AA7;
+    background-color: #09088B;
   }
   
   .formulario {
-    background-color: #f2f2f2;
-    padding: 10px;
+    padding: 5px 0px 20px 0px;
   }
 
   /*Quienes somos*/
@@ -100,15 +98,28 @@ width: 100%;
     width: 100%;
   }
 
+  /*Textos*/
+  h1{
+    padding-top: 20px;
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+.texto-index{
+  margin-left: 25%;
+  width: 50%;
+  text-align: justify;
+}
 
   /*Portada*/
   .port{
-
-    width:800px;
-    height:442px;
+  margin-left: 25%;
+    width:50%;
+    height:30%;
+    border-radius: 3%;
 
   }
-
 
 
 
