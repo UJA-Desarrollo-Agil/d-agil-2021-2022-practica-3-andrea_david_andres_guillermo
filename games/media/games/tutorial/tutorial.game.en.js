@@ -207,7 +207,9 @@ undum.game.situations = {
                         system.setQuality("fragmentos", character.qualities.fragmentos-3);
                         system.setQuality("llave", character.qualities.llave+1);
                         system.setQuality("puntuacion", character.qualities.puntuacion + 10);
-
+                        if(character.qualities.puntuacion==100){
+                            system.setCharacterText( "<p>!!JUEGO COMPLETADO!!</p>");
+                        }
 
                 }else{
                         system.setCharacterText( "<p>Necesitas 3 fragmentos para canjear la llave.</p>");
@@ -611,16 +613,16 @@ undum.game.qualities = {
         "M.Rusa arreglada", {priority:"0002", group:'stats', onDisplay:"✓"}
     ),
     fragmento1: new undum.OnOffQuality(
-        "", {priority:"0002", group:'llave'}
+        "FragMentoX", {priority:"0002", group:'llave', onDisplay:"✓"}
     ),
     fragmento2: new undum.OnOffQuality(
-        "", {priority:"0002", group:'llave'}
+        "FragMentoY", {priority:"0002", group:'llave', onDisplay:"✓"}
     ),
     fragmento3: new undum.OnOffQuality(
-        "", {priority:"0002", group:'llave'}
+        "FragMentoZ", {priority:"0002", group:'llave', onDisplay:"✓"}
     ),
     puntuacion: new undum.IntegerQuality(
-        "Puntuación", {priority: "0001", group: "porcentaje",}
+        "", {priority: "0001", group: "porcentaje",}
     ),
 
 };
