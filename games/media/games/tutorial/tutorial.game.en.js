@@ -142,6 +142,8 @@ undum.game.situations = {
                 if(  character.qualities.fragmento3 == false ) {
                     system.setQuality("fragmentos", character.qualities.fragmentos + 1);
                     system.setQuality( "fragmento3" , true );
+                    system.setQuality("puntuacion", character.qualities.puntuacion + 15);
+
                 }
              },
          }
@@ -204,7 +206,9 @@ undum.game.situations = {
                 if(character.qualities.fragmentos == 3 ) {
                         system.setQuality("fragmentos", character.qualities.fragmentos-3);
                         system.setQuality("llave", character.qualities.llave+1);
-                        
+                        system.setQuality("puntuacion", character.qualities.puntuacion + 10);
+
+
                 }else{
                         system.setCharacterText( "<p>Necesitas 3 fragmentos para canjear la llave.</p>");
 
@@ -289,6 +293,7 @@ undum.game.situations = {
                     if(  character.qualities.fragmento2 == false ) {
                         system.setQuality("fragmentos", character.qualities.fragmentos + 1);
                         system.setQuality( "fragmento2" , true )
+                        system.setQuality("puntuacion", character.qualities.puntuacion + 15);
                         system.setCharacterText( "<p>Enhorabuena, has obtenido un fragmento de la llave</p>");
                     }else{
                         system.setCharacterText( "<p>Ya has conseguido tu fragmento antes</p>");
@@ -398,7 +403,8 @@ undum.game.situations = {
     system.setQuality( "arreglado" , true )
     system.setQuality("herramientas", character.qualities.herramientas-1);
     system.setCharacterText( "<p>Montaña rusa Arreglada</p>");
-        system.doLink("rusaherramientas")
+    system.setQuality("puntuacion", character.qualities.puntuacion + 15);
+                system.doLink("rusaherramientas")
         }
     }
     ),
@@ -428,6 +434,7 @@ undum.game.situations = {
                     if(  character.qualities.fragmento1 == false ) {
                         system.setQuality("fragmentos", character.qualities.fragmentos + 1);
                         system.setQuality( "fragmento1" , true )
+                        system.setQuality("puntuacion", character.qualities.puntuacion + 15);
                     }
                 },
         }
@@ -464,6 +471,7 @@ undum.game.situations = {
                 if(character.qualities.herramientas == 0 && character.qualities.arreglado == false && character.qualities.energia == 0 ){
                     system.setQuality("herramientas", character.qualities.herramientas+2);
                     system.setCharacterText("<p>Has recogido tus 2 Kit de Herramientas.</p>")
+                    system.setQuality("puntuacion", character.qualities.puntuacion + 15);
                 } else {
                     system.setCharacterText("<p>Ya recogiste los kits de herramientas con anterioridad.</p>")
                     system.doLink("maxkit");
@@ -545,6 +553,7 @@ undum.game.situations = {
                     if(character.qualities.energia == 0){
                         system.setQuality("energia", character.qualities.energia + 100);
                         system.setCharacterText("<p>100% de Energía</p>");
+                        system.setQuality("puntuacion", character.qualities.puntuacion + 15);
                     }else{
                         system.setCharacterText("<p>El generador ya tiene energía</p>");
                     }
@@ -610,6 +619,9 @@ undum.game.qualities = {
     fragmento3: new undum.OnOffQuality(
         "", {priority:"0002", group:'llave'}
     ),
+    puntuacion: new undum.IntegerQuality(
+        "Puntuación", {priority: "0001", group: "porcentaje",}
+    ),
 
 };
 
@@ -621,8 +633,9 @@ undum.game.qualities = {
  * non-existent group. */
 
 undum.game.qualityGroups = {
-    stats: new undum.QualityGroup(null, {priority:"0001"}),
-    llave: new undum.QualityGroup('', {priority:"0002"})
+    stats: new undum.QualityGroup("Estadísticas", {priority:"0001"}),
+    llave: new undum.QualityGroup('Fragmentos de Llave', {priority:"0002"}),
+    porcentaje: new undum.QualityGroup("Porcentaje Completado", {priority: "0001",})
 
 };
 
@@ -631,6 +644,7 @@ undum.game.qualityGroups = {
  * to configure the character at the start of play. */
 
 undum.game.init = function(character, system) {
+    character.qualities.puntuacion = 0;
     character.qualities.energia = 0;
     character.qualities.herramientas = 0;
     character.qualities.fragmentos = 0;
