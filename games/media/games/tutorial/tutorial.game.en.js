@@ -655,5 +655,5 @@ undum.game.init = function(character, system) {
     system.setQuality( "fragmento1" , false )
     system.setQuality( "fragmento2" , false )
     system.setQuality( "fragmento3" , false )
-    system.setCharacterText("<p>Comienza el juego.</p>");
+    system.setCharacterText("<p><i>Comienza el juego.</i></p>");
 };
