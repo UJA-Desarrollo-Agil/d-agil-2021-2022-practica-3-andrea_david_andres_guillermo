@@ -179,11 +179,12 @@ undum.game.situations = {
     /*David*/
 
     /*Guille*/
+    /* */
     entrada: new undum.SimpleSituation(
         "<h1>Entrada</h1>\
         <p class='transient'> \
         Parece que esta puerta está cerrada y se necesita una llave para poder abrirla...\
-        Hay un monitor pero no funciona... Necesita energía\
+        Hay un monitor pero no funciona... Necesita energía. <br>\
         <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\
         <a href='abrir'>Abrir</a><br> \
         <img src='media/img/mapa10.png' class='mapa' /> \
@@ -196,7 +197,7 @@ undum.game.situations = {
         "<h1>Entrada</h1>\
         <p class='transient'> \
         Parece que esta puerta está cerrada y se necesita una llave para poder abrirla... \
-        La máquina funciona\
+        La máquina funciona... Quizás me de información de cómo salir de aquí.\
         <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\
         <a href='abrir'>Abrir</a><br> \
         <img src='media/img/mapa10.png' class='mapa'/> \
@@ -222,6 +223,52 @@ undum.game.situations = {
     ),
     
 
+    /* MÁQUINA Y CONVERSACIÓN */
+    dialogo: new undum.SimpleSituation(
+
+        "<h1>Máquina</h1>\
+        <p class='transient'> \
+        Hola soy Robbie, ¿en qué puedo ayudarle?</p> <br>\
+        <p class='once' ><a href='respuesta1'>Responder</a><p><br>\,"
+
+    ),
+
+   respuesta1: new undum.SimpleSituation(
+        "<h1>Máquina</h1>\
+        <p class='transient'> \
+        Hola Robbie, ¿cómo puedo salir del parque?</p>\
+        <p class='once' ><a href='dialogo3'>Pulse para obtener una respuesta</a><p><br>\,"    
+    ),
+
+    dialogo3: new undum.SimpleSituation( 
+        "<h1>Máquina</h1>\
+        <p class='transient'> \
+        ¿Has obtenido los 3 fragmentos de llave necesarios?</p> <br>\
+        <p class='once' ><a href='dialogo4'>Responder</a><p><br>\," 
+         
+    ),
+
+    dialogo4: new undum.SimpleSituation(
+        "<h1>Máquina</h1>\
+        <p class='transient'> \
+        <p class='once' ><a href='Si'>Si</a><p><br>\
+        <p class='once' ><a href='No'>No</a><p><br>\,"    
+    ),
+
+    Si: new undum.SimpleSituation(
+        "<h1>Máquina</h1>\
+        <p class='transient'> \
+        Si los introduces puedo crearte una llave para salir</p> <br>\
+        <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\,"     
+    ),
+    No: new undum.SimpleSituation(
+        "<h1>Máquina</h1>\
+        <p class='transient'> \
+        Vuelve cuando los reunas para obtener una llave</p> <br>\
+        Elige un lugar al que ir:<br> \
+         <a href='noria'> Noria(2)</a><br> \
+         <a href='plaza'> Plaza(1)</a></p>"     
+    ),
 
     abrir: new undum.SimpleSituation(
         "<h1>Entrada</h1>\
