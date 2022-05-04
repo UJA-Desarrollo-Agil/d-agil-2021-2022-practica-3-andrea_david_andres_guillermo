@@ -263,7 +263,7 @@ undum.game.situations = {
                     system.setCharacterText( "<p>Mmmmm...parece que no los tienes...¿De verdad,\
                    creías que podías engañarme?</p>");
                 }else{
-                    doLink('Si2')
+                    system.doLink( "Si2" );
                 }
             }
         }   
