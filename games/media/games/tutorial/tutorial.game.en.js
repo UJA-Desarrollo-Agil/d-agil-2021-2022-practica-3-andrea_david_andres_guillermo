@@ -185,12 +185,20 @@ undum.game.situations = {
         <p class='transient'> \
         Parece que esta puerta está cerrada y se necesita una llave para poder abrirla...\
         Hay una máquina... Quizás me de información de cómo salir de aquí. <br>\
-        <p class='once' ><a href='dialogo'>Encender la máquina</a><p><br>\
-        <a href='abrir'>Abrir</a><br> \
         <img src='media/img/mapa10.png' class='mapa' /> \
          Elige un lugar al que ir:<br> \
          <a href='noria'> Noria(2)</a><br> \
          <a href='plaza'> Plaza(1)</a></p>",
+        {
+            enter: function (character, system, action) {
+                if (character.qualities.energia > 0) {
+                    system.setCharacterText("<p>Máquina Encendida</p>");
+                    system.doLink( "dialogo" );
+                }else{
+                    system.setCharacterText("<p>No puedes encender la máquina, necesitas !Electricidad!</p>");
+                }
+            }
+        }
     ),
 
     canjear: new undum.SimpleSituation(
