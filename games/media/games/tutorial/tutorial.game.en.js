@@ -33,13 +33,17 @@ undum.game.situations = {
         "<h1>Inicio del juego</h1>\
         <p> Bienvenido al inicio del juego. </p> \
         <p> Te encuentras en un parque de atracciones \
-        </p>sólo tienes un mapa del parque y la única indicación que te da es\
-        encontrar 3 fragmentos de llave para poder salir de él.\
+        </p>En esta versión no cuentas con\
+        un mapa del parque y la única indicación que se te da al principio\
+        es encontrar 3 fragmentos de llave para poder salir de él.\
         <p>Tu objetivo consiste en completar todas las tareas para\
         conseguir la llave con la que podrás salir de este lugar.\
         \
        </p>\
-        \
+       </br>\
+        <p> Como en esta versión no cuentas con el mapa solamentamente\
+        tendrás una descripción del parque de atracciones, la puedes\
+        consultar siempre que desees.</p>\
          <p><a href='plaza'> Pulse para comenzar...</a><br> \
          <img src='media/img/mapa1.png' class='mapainicio' class='float_right'/>\
          </p>"
