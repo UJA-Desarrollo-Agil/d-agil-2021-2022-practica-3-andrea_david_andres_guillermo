@@ -142,7 +142,7 @@ undum.game.situations = {
                 if(  character.qualities.fragmento3 == false ) {
                     system.setQuality("fragmentos", character.qualities.fragmentos + 1);
                     system.setQuality( "fragmento3" , true );
-                    system.setQuality("puntuacion", character.qualities.puntuacion + 15);
+                    system.setQuality("puntuacion", character.qualities.puntuacion + 20);
 
                 }
              },
@@ -210,8 +210,8 @@ undum.game.situations = {
                         system.setQuality("fragmentos", character.qualities.fragmentos-3);
                         system.setQuality("llave", character.qualities.llave+1);
                         system.setQuality("puntuacion", character.qualities.puntuacion + 10);
-                        if(character.qualities.puntuacion==100){
-                            system.setCharacterText( "<p>!!JUEGO COMPLETADO!!</p>");
+                        if(character.qualities.puntuacion==90){
+                            system.setCharacterText( "<p>LLave canjeada! Coreeee!!!</p>");
                         }
 
                 }else{
@@ -281,7 +281,11 @@ undum.game.situations = {
          <a href='plaza'> Plaza(1)</a></p>",
         {
             enter: function( character, system, from ) {
-                if( character.qualities.llave > 0 ) {
+                if( character.qualities.llave == 1 ) {
+                    system.setQuality("puntuacion", character.qualities.puntuacion + 10);
+                    if(character.qualities.puntuacion==100){
+                        system.setCharacterText( "<p>!!JUEGO COMPLETADO!!</p>");
+                    }
                     system.doLink( "final" );
                     
                 } else {
@@ -344,7 +348,7 @@ undum.game.situations = {
                     if(  character.qualities.fragmento2 == false ) {
                         system.setQuality("fragmentos", character.qualities.fragmentos + 1);
                         system.setQuality( "fragmento2" , true )
-                        system.setQuality("puntuacion", character.qualities.puntuacion + 15);
+                        system.setQuality("puntuacion", character.qualities.puntuacion + 20);
                         system.setCharacterText( "<p>Enhorabuena, has obtenido un fragmento de la llave</p>");
                     }else{
                         system.setCharacterText( "<p>Ya has conseguido tu fragmento antes</p>");
@@ -454,7 +458,7 @@ undum.game.situations = {
     system.setQuality( "arreglado" , true )
     system.setQuality("herramientas", character.qualities.herramientas-1);
     system.setCharacterText( "<p>Montaña rusa Arreglada</p>");
-    system.setQuality("puntuacion", character.qualities.puntuacion + 15);
+    system.setQuality("puntuacion", character.qualities.puntuacion + 10);
                 system.doLink("rusaherramientas")
         }
     }
@@ -485,7 +489,7 @@ undum.game.situations = {
                     if(  character.qualities.fragmento1 == false ) {
                         system.setQuality("fragmentos", character.qualities.fragmentos + 1);
                         system.setQuality( "fragmento1" , true )
-                        system.setQuality("puntuacion", character.qualities.puntuacion + 15);
+                        system.setQuality("puntuacion", character.qualities.puntuacion + 20);
                     }
                 },
         }
@@ -522,7 +526,7 @@ undum.game.situations = {
                 if(character.qualities.herramientas == 0 && character.qualities.arreglado == false && character.qualities.energia == 0 ){
                     system.setQuality("herramientas", character.qualities.herramientas+2);
                     system.setCharacterText("<p>Has recogido tus 2 Kit de Herramientas.</p>")
-                    system.setQuality("puntuacion", character.qualities.puntuacion + 15);
+                    system.setQuality("puntuacion", character.qualities.puntuacion + 5);
                 } else {
                     system.setCharacterText("<p>Ya recogiste los kits de herramientas con anterioridad.</p>")
                     system.doLink("maxkit");
@@ -604,7 +608,7 @@ undum.game.situations = {
                     if(character.qualities.energia == 0){
                         system.setQuality("energia", character.qualities.energia + 100);
                         system.setCharacterText("<p>100% de Energía</p>");
-                        system.setQuality("puntuacion", character.qualities.puntuacion + 15);
+                        system.setQuality("puntuacion", character.qualities.puntuacion + 5);
                     }else{
                         system.setCharacterText("<p>El generador ya tiene energía</p>");
                     }
@@ -659,16 +663,16 @@ undum.game.qualities = {
     ),
 
     arreglado: new undum.OnOffQuality(
-        "M.Rusa arreglada", {priority:"0002", group:'stats', onDisplay:"✓"}
+        "Montaña Rusa", {priority:"0002", group:'stats', onDisplay:"✓"}
     ),
     fragmento1: new undum.OnOffQuality(
-        "FragMentoX", {priority:"0002", group:'llave', onDisplay:"✓"}
+        "", {priority:"0002", group:'llave'}
     ),
     fragmento2: new undum.OnOffQuality(
-        "FragMentoY", {priority:"0002", group:'llave', onDisplay:"✓"}
+        "", {priority:"0002", group:'llave'}
     ),
     fragmento3: new undum.OnOffQuality(
-        "FragMentoZ", {priority:"0002", group:'llave', onDisplay:"✓"}
+        "", {priority:"0002", group:'llave'}
     ),
     puntuacion: new undum.IntegerQuality(
         "", {priority: "0001", group: "porcentaje",}
@@ -685,8 +689,8 @@ undum.game.qualities = {
 
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup("Estadísticas", {priority:"0001"}),
-    llave: new undum.QualityGroup('Fragmentos de Llave', {priority:"0002"}),
-    porcentaje: new undum.QualityGroup("Porcentaje Completado", {priority: "0001",})
+    llave: new undum.QualityGroup('', {priority:"0002"}),
+    porcentaje: new undum.QualityGroup("Progreso (%)", {priority: "0001",})
 
 };
 
@@ -704,5 +708,5 @@ undum.game.init = function(character, system) {
     system.setQuality( "fragmento1" , false )
     system.setQuality( "fragmento2" , false )
     system.setQuality( "fragmento3" , false )
-    system.setCharacterText("<p><i>Comienza el juego.</i></p>");
+    system.setCharacterText("<p><i>!Comienza el juego!</i></p>");
 };
