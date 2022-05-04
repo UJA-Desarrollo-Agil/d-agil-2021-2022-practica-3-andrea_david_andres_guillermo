@@ -184,8 +184,8 @@ undum.game.situations = {
         "<h1>Entrada</h1>\
         <p class='transient'> \
         Parece que esta puerta está cerrada y se necesita una llave para poder abrirla...\
-        Hay un monitor pero no funciona... Necesita energía. <br>\
-        <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\
+        Hay una máquina... Quizás me de información de cómo salir de aquí. <br>\
+        <p class='once' ><a href='dialogo'>Encender la máquina</a><p><br>\
         <a href='abrir'>Abrir</a><br> \
         <img src='media/img/mapa10.png' class='mapa' /> \
          Elige un lugar al que ir:<br> \
@@ -196,8 +196,7 @@ undum.game.situations = {
     canjear: new undum.SimpleSituation(
         "<h1>Entrada</h1>\
         <p class='transient'> \
-        Parece que esta puerta está cerrada y se necesita una llave para poder abrirla... \
-        La máquina funciona... Quizás me de información de cómo salir de aquí.\
+    ¡¡¡LLAVE CANJEADA!!!\
         <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\
         <a href='abrir'>Abrir</a><br> \
         <img src='media/img/mapa10.png' class='mapa'/> \
@@ -209,14 +208,10 @@ undum.game.situations = {
                 if(character.qualities.fragmentos == 3 ) {
                         system.setQuality("fragmentos", character.qualities.fragmentos-3);
                         system.setQuality("llave", character.qualities.llave+1);
-                        system.setQuality("puntuacion", character.qualities.puntuacion + 10);
+                        system.setQuality("puntuacion", character.qualities.puntuacion + 5);
                         if(character.qualities.puntuacion==100){
                             system.setCharacterText( "<p>!!JUEGO COMPLETADO!!</p>");
                         }
-
-                }else{
-                        system.setCharacterText( "<p>Necesitas 3 fragmentos para canjear la llave.</p>");
-
                 }
             }
         }
@@ -259,8 +254,27 @@ undum.game.situations = {
         "<h1>Máquina</h1>\
         <p class='transient'> \
         Si los introduces puedo crearte una llave para salir</p> <br>\
-        <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\,"     
+        <p class='once' ><a href='#'>Canjear llave</a><p><br>\,",
+        {
+            enter: function( character, system, from ) {
+                if(character.qualities.fragmentos < 3 ) {
+
+                    system.setCharacterText( "<p>Mmmmm...parece que no los tienes...¿De verdad,\
+                   creías que podías engañarme?</p>");
+                }else{
+                    doLink('Si2')
+                }
+            }
+        }   
+
     ),
+    Si2: new undum.SimpleSituation(
+        "<h1>Máquina</h1>\
+        <p class='transient'> \
+        Si los introduces puedo crearte una llave para salir</p> <br>\
+        <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\,",
+    ),
+
     No: new undum.SimpleSituation(
         "<h1>Máquina</h1>\
         <p class='transient'> \
@@ -295,6 +309,14 @@ undum.game.situations = {
         "<h1>Final</h1>\
         <p class='transient'> \
        Enhorabuena, te has pasado el juego</p>",
+       {
+        enter: function( character, system, from ) {
+                    system.setQuality("puntuacion", character.qualities.puntuacion + 5);
+                    if(character.qualities.puntuacion==100){
+                        system.setCharacterText( "<p>!!JUEGO COMPLETADO!!</p>");
+                    }
+            }
+        }
     
     ),
 
