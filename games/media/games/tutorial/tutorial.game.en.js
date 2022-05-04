@@ -205,7 +205,7 @@ undum.game.situations = {
         "<h1>Entrada</h1>\
         <p class='transient'> \
     Ya tinees la llave, estas cerca de escapar... corre!!\
-        <a href='abrir'>Escaparrr!!!</a><br> \
+        <a href='final'>Escaparrr!!!</a><br> \
         <img src='media/img/mapa10.png' class='mapa'/>",
          {
             enter: function( character, system, from ) {
@@ -288,8 +288,8 @@ undum.game.situations = {
          <a href='plaza'> Plaza(1)</a></p>",
     ),
 
-    abrir: new undum.SimpleSituation(
-        "<h1>Entrada</h1>\
+    final: new undum.SimpleSituation(
+        "<h1>Final</h1>\
         <p class='transient'> \
         Enhorabuena, has conseguido escapar a tiempo!, Te has pasado el juego!!\
         <img src='media/img/mapa10.png' class='mapa'/> \,",
@@ -303,22 +303,6 @@ undum.game.situations = {
         }
     ),
 
-    /*
-    final: new undum.SimpleSituation(
-        "<h1>Final</h1>\
-        <p class='transient'> \
-       Enhorabuena, te has pasado el juego</p>",
-       {
-        enter: function( character, system, from ) {
-                    system.setQuality("puntuacion", character.qualities.puntuacion + 10);
-                    if(character.qualities.puntuacion==100){
-                        system.setCharacterText( "<p>!!JUEGO COMPLETADO!!</p>");
-                    }
-            }
-        }
-    
-    ),
-    */
     /*Guille*/
 
     /*Globos*/
