@@ -182,7 +182,8 @@ undum.game.situations = {
     entrada: new undum.SimpleSituation(
         "<h1>Entrada</h1>\
         <p class='transient'> \
-        Parece que esta puerta está cerrada y se necesita una llave para poder abrirla... \
+        Parece que esta puerta está cerrada y se necesita una llave para poder abrirla...\
+        Hay un monitor pero no funciona... Necesita energía\
         <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\
         <a href='abrir'>Abrir</a><br> \
         <img src='media/img/mapa10.png' class='mapa' /> \
@@ -195,6 +196,7 @@ undum.game.situations = {
         "<h1>Entrada</h1>\
         <p class='transient'> \
         Parece que esta puerta está cerrada y se necesita una llave para poder abrirla... \
+        La máquina funciona\
         <p class='once' ><a href='canjear'>Canjear llave</a><p><br>\
         <a href='abrir'>Abrir</a><br> \
         <img src='media/img/mapa10.png' class='mapa'/> \
