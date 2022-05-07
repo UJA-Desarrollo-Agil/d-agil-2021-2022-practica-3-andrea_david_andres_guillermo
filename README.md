@@ -26,14 +26,15 @@ Hecho por:
   * [5. Capturas de pantalla de Trello](#5-capturas-de-pantalla-de-trello)
   * [6. Capturas de pantalla de Telegram](#6-capturas-de-pantalla-de-telegram)
   * [7. Sprint1](#7-sprint1)
+  * [8. Sprint2](#8-sprint2)
 
 ## 1. Introducción
 
-En esta cuarta práctica de la asignatura Desarrollo Ágil tendremos que crear un juego con Undum en equipos de 4. Para facilitar el trabajo en grupo y mejorar la coordinación y comunicación entre nosotros usaremos las herramientas Trello, Telegram y GitHub. En este Sprint 1 hemos descrito las nuevas historias de usuario asignándole una descripción, puntos de historia y valor. También hemos tenido reuniones diarias para ver cómo iba evolucionando nuestro trabajo y las Sprint Review y Sprint Retrospective.
+En esta quinta práctica de la asignatura Desarrollo Ágil tendremos que crear un juego con Undum en equipos de 4. Para facilitar el trabajo en grupo y mejorar la coordinación y comunicación entre nosotros usaremos las herramientas Trello, Telegram y GitHub. En este Sprint 2 hemos continuado con el desarrolo e implementación de nuestro juego. También hemos tenido reuniones diarias para ver cómo iba evolucionando nuestro trabajo y las Sprint Review y Sprint Retrospective.
 
 ## 2. Motivación
 
-Esta práctica está motivada por ser parte del contenido de prácticas de la asignatura de Desarrollo Ágil, por su importante peso en la nota final de prácticas y por la obligatoriedad de la entrega de esta para el dia 19 de Abril de 2022.
+Esta práctica está motivada por ser parte del contenido de prácticas de la asignatura de Desarrollo Ágil, por su importante peso en la nota final de prácticas y por la obligatoriedad de la entrega de esta para el dia 10 de Mayo de 2022.
 
 ## 3. Descripción del juego.
 
@@ -82,20 +83,35 @@ El día 6 de abril tuvimos que considerar nuevos requisitos, creando nuevas Hist
 
 Los nuevos requisitos son:
 
--Se deberá modificar el CSS del juego original, usando otras fuentes de letra, fondos de pantalla, etc.
+-Se deberá modificar el CSS del juego original, usando otras fuentes de letra, fondos de pantalla, etc. PH:4/VALOR:5
 
--Se posibilitará (con css) una versión “sin distracciones” que no incluya imágenes, ni fondo, ni música.
+-Se posibilitará (con css) una versión “sin distracciones” que no incluya imágenes, ni fondo, ni música. PH:5/VALOR:5
 
--En al menos una situación (de las existentes o incluyendo alguna/s nueva/s), se podrá establecer un diálogo con otro personaje del juego (con preguntas y respuestas predefinidas, por supuesto, dado que serán acciones del juego; no se trata de implementar un chatbot). INNEGOCIABLE.
+-En al menos una situación (de las existentes o incluyendo alguna/s nueva/s), se podrá establecer un diálogo con otro personaje del juego (con preguntas y respuestas predefinidas, por supuesto, dado que serán acciones del juego; no se trata de implementar un chatbot). INNEGOCIABLE. PH:6/VALOR:20
 
--Cada situación deberá llevar una imagen descriptiva asociada.
+-Cada situación deberá llevar una imagen descriptiva asociada. PH:6/VALOR:15
+
+Tras asignar los Puntos de Historia y el Valor a cada requisito decidimos introducir para este Sprint1: Modificar el CSS del juego y que cada situación lleve una imagen descriptiva asociada ya que nos resultó más fácil su implementación teniendo una primera versión del juego con inicio y fin.
 
 
 **Sprint Review:** 
 
 Puntos de Historia Totales: 73
-
 Puntos de Historia Realizados: 22
+
+-En este Sprint hemos completado las siguientes Historias de Usuario:
+El jugador podrá moverse de unas situaciones a otras.
+El jugador podrá usar objetos para resolver puzzles.
+El jugador podrá recoger objetos a lo largo del juego.
+Se modificará el CSS del juego original.
+Cada situación deberá llevar una imagen descriptiva asociada.
+
+-Sin embargo decidimos centrarnos en terminar una versión del juego con inicio y fin e introducir las siguientes Historias de Usuario en el siguiente Sprint ya que aportaban un valor extra a este y no algo esencial para su desarrollo.
+El jugador debe saber cuántos puntos lleva en la partida.
+Se podrá establecer un diálogo.
+La historia deberá tener como mínimo 9 situaciones.
+Se añadirán videos en los que se incluya parte de la historia que necesita para completar el juego y tomar decisiones. 
+Versión sin distracciones.
 
 -Aproximadamente hemos terminado al 100% un 30% de las Historias de Usuario totales del proyecto, y aproximadante un 60% del proyecto completo.
 lo próximo pendiente a realizar son las Historias que estamos desarrollando para tener terminadas al 100%.
@@ -130,3 +146,20 @@ sus circustancias personales.
 
 -Mayor compromiso para las reuniones Dailys.
 
+## 8. Sprint2
+
+**Product Backlog Refinement (PBR):**
+
+El día 27 de abril tuvimos que considerar de nuevo los requisitos a considerar, creando nuevas Historias de Usuario y asignándoles Puntos de Historia y Valor
+
+Los nuevos requisitos son:
+
+-El jugador podrá solicitar ayuda al juego y recibirá información que le sirva para entender el juego y lograr llegar al final del mismo. PH:7/VALOR:1
+-La ayuda que aporte el juego será sensible al contexto, es decir, en función de la situación en que esté y/o los objetos que tenga y/o la puntuación que lleve y/o -cualquier otro aspecto que deseéis considerar se le aportará una información de ayuda u otra. PH:7/VALOR:1
+-El juego estará disponible en español y en otro idioma. PH:5/VALOR:1
+
+Tras asignar los Puntos de Historia y el Valor a cada requisito decidimos no introducir ninguno para este Sprint2.
+
+**Sprint Review:** 
+
+**Sprint Retrospective:**
