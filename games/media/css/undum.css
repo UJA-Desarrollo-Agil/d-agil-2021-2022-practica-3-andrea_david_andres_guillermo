@@ -8,11 +8,19 @@ body {
 }
 
 /* Basic structure */
+
+.video{
+    width:500px;
+    height:300px;
+    float: none;
+    margin-top: 3rem;
+}
+
 .mapainicio{
     width:400px; 
     height:264px;
     display:flex;
-    margin: auto;
+    margin-top: 1rem;
 
     
 }

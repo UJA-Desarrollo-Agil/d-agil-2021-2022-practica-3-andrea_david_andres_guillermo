@@ -40,14 +40,14 @@ undum.game.situations = {
         \
        </p>\
         \
-         <p><a href='trailer'> Pulse para comenzar...</a><br> \
-         <img src='media/img/mapa1.png' class='mapainicio' class='float_right'/>\
+         <p class='transient'><a href='trailer'> Pulse para comenzar...</a><br> \
+         <img src='media/img/mapa1.png' class='mapainicio transient' class='float_right'/>\
          </p>"
        
     ),
     
         trailer: new undum.SimpleSituation(
-            "<video src='../img/video.mov'  type='video/mov' autoplay /> \
+            "<video class='video' src=\"media/videos/video.mov\" autoplay controls/> \
             \
            </p>\
             \
