@@ -44,17 +44,41 @@ undum.game.situations = {
         <p> Como en esta versión no cuentas con el mapa solamentamente\
         tendrás una descripción del parque de atracciones, la puedes\
         consultar siempre que desees.</p>\
-         <p><a href='plaza'> Pulse para comenzar...</a><br> \
+         <p><a href='descrip'> Pulse para comenzar...</a><br> \
          <img src='media/img/mapa1.png' class='mapainicio' class='float_right'/>\
          </p>"
        
     ),
 
     descrip: new undum.SimpleSituation(
-
-
+        "<h1>Descripción del mapa</h1>\
+        <p class='transient'>\
+        Inicialmente comienzas en la plaza(1), el sitio centrico del mapa\
+        Los lugares que puedes acceder apartir de aquí son:\
+        <br/>\
+        - Plaza(1): Noria(2), caida libre(3), rapidos(6), montaña rusa(7), karts(8), tio vivo(9), entrada(10).\
+        <br/>\
+        - Noria(2): Plaza(1), globos(4), entrada(10).\
+        <br/>\
+        - Caida libre(3): Plaza(1), globos(4), electricidad(5).\
+        <br/>\
+        - Globos(4): Noria(2), caida libre(3).\
+        <br/>\
+        - Electricidad(5): Caida libre(3), rapidos(6).\
+        <br/>\
+        - Rapidos(6): Plaza(1), electricidad(5), montaña rusa(7).\
+        <br>\
+        - Montaña rusa(7): Plaza(1), rapidos(6), karts(8).\
+        <br>\
+        - Karts(8): Plaza(1), montaña rusa(7), tio vivo(9).\
+        <br>\
+        - Tio vivo(9): Plaza(1), karts(8).\
+        <br>\
+        - Entrada(10): Plaza(1), Noria(2).\
+        <br/>\
+        </p>"
     ),
-    
+
     /*Andrés*/
     plaza: new undum.SimpleSituation(
         "<h1>Plaza</h1>\
@@ -645,9 +669,6 @@ undum.game.situations = {
     ),
    /*Nadie*/
 
-
-
-    
 };
 
 // ---------------------------------------------------------------------------
@@ -687,7 +708,6 @@ undum.game.qualities = {
     puntuacion: new undum.IntegerQuality(
         "", {priority: "0001", group: "porcentaje",}
     ),
-
 };
 
 // ---------------------------------------------------------------------------
