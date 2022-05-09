@@ -50,6 +50,16 @@ undum.game.situations = {
        
     ),
 
+        trailer: new undum.SimpleSituation(
+            "<video class='video' src=\"media/videos/video.mov\" autoplay controls/> \
+            \
+           </p>\
+            \
+             <p><a href='plaza'> Siguiente...</a><br>\
+             </p>"
+
+        ),
+
     /*Andrés*/
     plaza: new undum.SimpleSituation(
         "<h1>Plaza</h1>\
