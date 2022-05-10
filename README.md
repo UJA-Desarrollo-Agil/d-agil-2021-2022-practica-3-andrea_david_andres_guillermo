@@ -148,6 +148,30 @@ sus circustancias personales.
 
 ## 8. Sprint2
 
+En este segundo Sprint hemos elegido implementar todas las Historias de Usuario restantes para terminar nuestro juego completo.
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/Captura de pantalla (364).png"></img>
+>Ilustración 7: Captura de pantalla de Trello en el Sprint2
+
+
+**Sprint Planning:**
+
+Al comienzo del Sprint2, tuvimos una reunión en la que nos dividimos el trabajo entre los miembros del equipo. El reparto quedó de la siguiente manera:
+
+- Guillermo: Landing page , página web y vídeo.
+ 
+- Andrea: Diáologo.
+ 
+- Andrés: Progreso y música.
+
+- David: Versión sin distracciones.
+ 
+Aunque entre todos nos hemos ayudado y hemos corregido los errores que han ido surgiendo a lo largo del desarrollo del juego.
+
+Además hemos modificado parte del código que no era imprescindible para obtener la versión completa pero que sí afectaban a su jugabilidad.
+
+
+
 **Product Backlog Refinement (PBR):**
 
 El día 27 de abril tuvimos que considerar de nuevo los requisitos a considerar, creando nuevas Historias de Usuario y asignándoles Puntos de Historia y Valor
@@ -155,11 +179,36 @@ El día 27 de abril tuvimos que considerar de nuevo los requisitos a considerar,
 Los nuevos requisitos son:
 
 -El jugador podrá solicitar ayuda al juego y recibirá información que le sirva para entender el juego y lograr llegar al final del mismo. PH:7/VALOR:1
+
 -La ayuda que aporte el juego será sensible al contexto, es decir, en función de la situación en que esté y/o los objetos que tenga y/o la puntuación que lleve y/o -cualquier otro aspecto que deseéis considerar se le aportará una información de ayuda u otra. PH:7/VALOR:1
+
 -El juego estará disponible en español y en otro idioma. PH:5/VALOR:1
 
 Tras asignar los Puntos de Historia y el Valor a cada requisito decidimos no introducir ninguno para este Sprint2.
 
+
 **Sprint Review:** 
 
+En este segundo Sprint hemos completado todas las HU que definimos al inicio del proyecto completando así el prototipo inicial del juego que hicimos en el anterior.
+
+No hemos añadido ninguna HU nueva para este Sprint ya que decidimos que no aportaban ninguna mejora.
+
+En cuanto a los plazos de entrega estamos al día.
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/Captura.PNG"></img>
+>Ilustración 8: Captura de pantalla del tablero final de Trello (parte1)
+
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/Captura2.PNG"></img>
+>Ilustración 9: Captura de pantalla del tablero final de Trello (parte2)
+
+
 **Sprint Retrospective:**
+
+Hemos trabajado más coordinados en este segundo Sprint, la comunicación entre los mienbros del grupo ha sido la clave para completar este proyecto en el plazo indicado.
+
+Hemos tenido más compromiso en las Dailys. Nos hemos adaptado mejor a los horarios de cada uno.
+
+Nos hemos ayudado cuando ha surgido algún problema.
+
+
