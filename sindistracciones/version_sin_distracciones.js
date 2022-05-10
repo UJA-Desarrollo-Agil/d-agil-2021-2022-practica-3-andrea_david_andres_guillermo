@@ -33,50 +33,71 @@ undum.game.situations = {
         "<h1>Inicio del juego</h1>\
         <p> Bienvenido al inicio del juego. </p> \
         <p> Te encuentras en un parque de atracciones \
-        </p>sólo tienes un mapa del parque y la única indicación que te da es\
-        encontrar 3 fragmentos de llave para poder salir de él.\
+        </p>En esta versión no cuentas con\
+        un mapa del parque y la única indicación que se te da al principio\
+        es encontrar 3 fragmentos de llave para poder salir de él.\
         <p>Tu objetivo consiste en completar todas las tareas para\
         conseguir la llave con la que podrás salir de este lugar.\
         \
        </p>\
-        \
-         <p class='transient'><a href='trailer'> Pulse para comenzar...</a><br> \
-         <img src='media/img/mapa1.png' class='mapainicio transient' class='float_right'/>\
+       </br>\
+        <p> Como en esta versión no cuentas con el mapa solamentamente\
+        tendrás una descripción del parque de atracciones, la puedes\
+        consultar siempre que desees.</p>\
+         <p><a href='descrip'> Pulse para comenzar...</a><br> \
          </p>"
        
     ),
-    
-        trailer: new undum.SimpleSituation(
-            "<video class='video' src=\"media/videos/video.mov\" autoplay controls/> \
-            \
-           </p>\
-            \
-             <p><a href='plaza'> Siguiente...</a><br>\
-             </p>"
-           
-        ),
+
+    descrip: new undum.SimpleSituation(
+        "<h1>Descripción del mapa</h1>\
+        <p class='transient'>\
+        Inicialmente comienzas en la plaza, el sitio centrico del mapa\
+        Los lugares que puedes acceder apartir de aquí son:\
+        <br/>\
+        - Plaza: Noria, caida libre, rapidos, montaña rusa, karts, tio vivo, entrada.\
+        <br/>\
+        - Noria: Plaza, globos, entrada.\
+        <br/>\
+        - Caida libre: Plaza, globos, electricidad.\
+        <br/>\
+        - Globos: Noria, caida libre.\
+        <br/>\
+        - Electricidad: Caida libre, rapidos.\
+        <br/>\
+        - Rapidos: Plaza, electricidad, montaña rusa.\
+        <br>\
+        - Montaña rusa: Plaza, rapidos, karts.\
+        <br>\
+        - Karts: Plaza, montaña rusa, tio vivo.\
+        <br>\
+        - Tio vivo: Plaza, karts.\
+        <br>\
+        - Entrada: Plaza, Noria.\
+        <br/>\
+        <p><a href='plaza'>Pulse aquí para volver</a></p></p>"
+    ),
 
     /*Andrés*/
     plaza: new undum.SimpleSituation(
         "<h1>Plaza</h1>\
          <p class='transient'>\
          Te encuentras en el centro del parque... desde aquí podrás elegir donde quieres ir :<br> \
-         <a href='noria'> Noria(2)</a><br> \
-         <a href='caida'> Caida Libre(3) </a><br> \
-         <a href='coches'> Karts(8) </a><br>\
-         <a href='rusa'> Montaña Rusa(7) </a><br>\
-         <a href='tiovivo'> Tiovivo(9) </a><br> \
-         <a href='entrada'> Entrada(10) </a><br>\
-         <a href='agua'> Rápidos Acuáticos(6) </a> </p>\
-         <img src='media/img/mapa1.png' class='mapainicio'/></p>"
+         <a href='noria'> Noria</a><br> \
+         <a href='caida'> Caida Libre </a><br> \
+         <a href='coches'> Karts </a><br>\
+         <a href='rusa'> Montaña Rusa </a><br>\
+         <a href='tiovivo'> Tiovivo </a><br> \
+         <a href='entrada'> Entrada </a><br>\
+         <a href='agua'> Rápidos Acuáticos </a><br> \
+         <a href='descrip'>Pulse aqui para ver la descripcion del mapa</a></p>"
     ),
     /*Andrés*/
 
     /*David*/
     tiovivo: new undum.SimpleSituation(
         "<h1>Tiovivo</h1>\
-        <p class='transient'>\
-         <img src='media/img/mapa9.png' class='mapa'/>",
+        <p class='transient'>",
         {
             enter: function( character, system, from ) {
                 if(character.qualities.fragmento3 == false){
@@ -111,9 +132,8 @@ undum.game.situations = {
           <a href='fallatv'>Coche que realiza movimientos hacía adelante y hacía atrás </a><br>\
           <a href='fallatv'>Columpio que se mueve hacia atrás y delante </a><br>\
           o bien puedes seguir buscando en algún otro lugar.<br>\
-          <img src='media/img/mapa9.png' class='mapa'/>\
-          <a href='plaza'>Plaza(1)</a><br>\
-          <a href='coches'> Karts(8) </a></p>"
+          <a href='plaza'>Plaza</a><br>\
+          <a href='coches'> Karts </a></p>"
     ),
 
     tiovivonoenergia: new undum.SimpleSituation(
@@ -130,9 +150,8 @@ undum.game.situations = {
          Coche que realiza movimientos hacía adelante y hacía atrás<br>\
           Columpio que se mueve hacia atrás y delante<br>\
          o bien puedes seguir buscando en algún otro lugar.<br>\
-         <img src='media/img/mapa9.png' class='mapa'/>\
-         <a href='plaza'>Plaza(1)</a><br>\
-         <a href='coches'> Karts(8) </a></p>"
+         <a href='plaza'>Plaza</a><br>\
+         <a href='coches'> Karts </a></p>"
     ),
 
     caballo: new undum.SimpleSituation(
@@ -143,10 +162,9 @@ undum.game.situations = {
         Recuerda que debes seguir investigando \
         para encontrar los demás fragmentos y \
         poder salir del parque de atracciones.<br>\
-        <img src='media/img/mapa9.png' class='mapa'/>\
         Elige un lugar al que ir:<br> \
-        <a href='plaza'>Plaza(1)</a><br> \
-        <a href='coches'> Karts(8) </a></p>",
+        <a href='plaza'>Plaza</a><br> \
+        <a href='coches'> Karts </a></p>",
          {
             enter: function(character, system, action) {
                 if(  character.qualities.fragmento3 == false ) {
@@ -163,10 +181,9 @@ undum.game.situations = {
         "<h1>Tiovivo</h1>\
         <p class='transient'>\
         Ya encontraste el fragmento de esta zona y no hay nada más que hacer. Quizá debas explorar por otra zona...<br>\
-        <img src='media/img/mapa9.png' class='mapa'/>\
         Elige un lugar al que ir:<br> \
-        <a href='plaza'>Plaza(1)</a><br> \
-        <a href='coches'> Karts(8) </a></p>\
+        <a href='plaza'>Plaza</a><br> \
+        <a href='coches'> Karts </a></p>\
         "
     ),
 
@@ -180,10 +197,9 @@ undum.game.situations = {
         <a href='fallatv'> Coche que realiza movimientos hacía adelante y hacía atrás </a> <br>\
         <a href='fallatv'> Columpio que se mueve hacia atrás y delante</a> <br>\
         o bien puedes seguir buscando en algún otro lugar. <br>\
-        <img src='media/img/mapa9.png' class='mapa'/>\
         Elige un lugar al que ir:<br>\
-        <a href='plaza'>Plaza(1)</a><br>\
-        <a href='coches'> Karts(8) </a></p>\
+        <a href='plaza'>Plaza</a><br>\
+        <a href='coches'> Karts </a></p>\
         "
 ),
     /*David*/
@@ -195,10 +211,9 @@ undum.game.situations = {
         <p class='transient'> \
         Parece que esta puerta está cerrada y se necesita una llave para poder abrirla...\
         Hay una máquina... Quizás me de información de cómo salir de aquí. <br>\
-        <img src='media/img/mapa10.png' class='mapa' /> \
          Elige un lugar al que ir:<br> \
-         <a href='noria'> Noria(2)</a><br> \
-         <a href='plaza'> Plaza(1)</a></p>",
+         <a href='noria'> Noria</a><br> \
+         <a href='plaza'> Plaza</a></p>",
         {
             enter: function (character, system, action) {
                 if (character.qualities.energia > 0) {
@@ -215,8 +230,7 @@ undum.game.situations = {
         "<h1>Entrada</h1>\
         <p class='transient'> \
     Ya tinees la llave, estas cerca de escapar... corre!!\
-        <a href='final'>Escaparrr!!!</a><br> \
-        <img src='media/img/mapa10.png' class='mapa'/>",
+        <a href='final'>Escaparrr!!!</a><br>",
          {
             enter: function( character, system, from ) {
                 if(character.qualities.fragmentos == 3 ) {
@@ -294,15 +308,14 @@ undum.game.situations = {
         <p class='transient'> \
         Vuelve cuando los reunas para obtener una llave</p> <br>\
         Elige un lugar al que ir:<br> \
-         <p class='once' ><a href='noria'> Noria(2)</a><br> \
-         <a href='plaza'> Plaza(1)</a></p>",
+         <p class='once' ><a href='noria'> Noria</a><br> \
+         <a href='plaza'> Plaza</a></p>",
     ),
 
     final: new undum.SimpleSituation(
         "<h1>Final</h1>\
         <p class='transient'> \
-        Enhorabuena, has conseguido escapar a tiempo!, Te has pasado el juego!!\
-        <img src='media/img/mapa10.png' class='mapa'/> \,",
+        Enhorabuena, has conseguido escapar a tiempo!, Te has pasado el juego!!",
         {
             enter: function( character, system, from ) {
                 system.setQuality("puntuacion", character.qualities.puntuacion + 10);
@@ -324,12 +337,11 @@ undum.game.situations = {
         Si desea jugar:  \
         </p>\
         \
-        <img src='media/img/mapa4.png' class='mapa transient ' /> \
          <p class='transient'>\
          <a href='juegoglobos'> Pulse para jugar...<br><br> </a>\
          En otro caso, elige un lugar al que ir:<br> \
-         <a href='noria'> Noria(2)</a><br> \
-         <a href='caida'> Caida Libre(3) </a></p>"
+         <a href='noria'> Noria</a><br> \
+         <a href='caida'> Caida Libre </a></p>"
     ),
 
     juegoglobos: new undum.SimpleSituation(
@@ -339,7 +351,6 @@ undum.game.situations = {
         </p>\
         \
         <p>\
-        <img src='media/img/globos.png' class='globos transient'  /> \
          <a href='rojo'>Globo rojo🔴</a><br/>\
          <a href='azul'>Globo azul 🔵</a><br/> \
          <a href='amarillo'>Globo amarillo🟡</a><br/>\
@@ -350,8 +361,6 @@ undum.game.situations = {
     azul: new undum.SimpleSituation(
         "<p> Enhorabuena, has ganado.\
         </p>\
-        \
-        <img src='media/img/azul.png' class='globos transient' /> \
          <p><a href='globos'>Salir</a><br> \
          </p>",
          {
@@ -373,7 +382,6 @@ undum.game.situations = {
         "<p>Vaya, parece que no <br> hay nada.😔<br>\
         </p>\
         \
-        <p><img src='media/img/rojo.png' class='globos transient' /> <br> \
          <a href='juegoglobos'>Inténtelo de nuevo</a><br> \
          </p>"
     ),
@@ -384,7 +392,6 @@ undum.game.situations = {
         "<p> Vaya, parece que no <br> hay nada.😔\
         </p>\
         \
-        <p><img src='media/img/amarillo.png' class='globos transient' /> \
          <a href='juegoglobos'>Inténtelo de nuevo</a><br> \
          </p>"
     ),
@@ -396,11 +403,10 @@ undum.game.situations = {
         <p class='transient'> \
         Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
         ¿Será un fragmento de llave?<br>\
-        <img src='media/img/mapa7.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
-         <a href='coches'> Karts(8) </a><br>\
-         <a href='plaza'> Plaza(1)</a><br> \
-         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+         <a href='coches'> Karts </a><br>\
+         <a href='plaza'> Plaza</a><br> \
+         <a href='agua'> Rápidos Acuáticos </a> </p>",
          {
 				enter: function( character, system, from ) {
 					if( character.qualities.energia > 0 ) {
@@ -418,7 +424,6 @@ undum.game.situations = {
         "<p class='transient'> \
          Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
          ¿Será un fragmento de llave?<br>\
-        <img src='media/img/mapa7.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
          <a href='coches'> Karts(8) </a><br>\
          <a href='plaza'> Plaza(1)</a><br> \
@@ -446,11 +451,10 @@ undum.game.situations = {
          Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
          ¿Será un fragmento de llave?<br>\
          <a href='arreglar2'>Arreglar</a><br>\
-        <img src='media/img/mapa7.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
-         <a href='coches'> Karts(8) </a><br>\
-         <a href='plaza'> Plaza(1)</a><br> \
-         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+         <a href='coches'> Karts </a><br>\
+         <a href='plaza'> Plaza</a><br> \
+         <a href='agua'> Rápidos Acuáticos </a> </p>",
     ),
 
     arreglar2: new undum.SimpleSituation(
@@ -459,11 +463,10 @@ undum.game.situations = {
          Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
          ¿Será un fragmento de llave?<br>\
          <a href='arreglar2'>Arreglar</a><br>\
-        <img src='media/img/mapa7.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
-         <a href='coches'> Karts(8) </a><br>\
-         <a href='plaza'> Plaza(1)</a><br> \
-         <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+         <a href='coches'> Karts </a><br>\
+         <a href='plaza'> Plaza</a><br> \
+         <a href='agua'> Rápidos Acuáticos </a> </p>",
         {
             enter: function( character, system, from ) {
     system.setQuality( "arreglado" , true )
@@ -480,20 +483,18 @@ undum.game.situations = {
         Estás delante de la montaña rusa, es muy alta, arriba del todo hay algo que brilla.\
         ¿Será un fragmento de llave?<br>\
         <p class='once' ><a href='montarse'>Montarse</a><p><br> \
-       <img src='media/img/mapa7.png' class='mapa'/> \
         Elige un lugar al que ir:<br> \
-        <a href='coches'> Karts(8) </a><br>\
-        <a href='plaza'> Plaza(1)</a><br> \
-        <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+        <a href='coches'> Karts </a><br>\
+        <a href='plaza'> Plaza</a><br> \
+        <a href='agua'> Rápidos Acuáticos </a> </p>",
     ),
 
     montarse: new undum.SimpleSituation(
         "<p> ¡¡Era un fragmento de llave!! Encuentra todos los fragmentos y sal de parque.<br>\
-       <img src='media/img/mapa7.png' class='mapa'/> \
         Elige un lugar al que ir:<br> \
-        <a href='coches'> Karts(8) </a><br>\
-        <a href='plaza'> Plaza(1)</a><br> \
-        <a href='agua'> Rápidos Acuáticos(6) </a> </p>",
+        <a href='coches'> Karts </a><br>\
+        <a href='plaza'> Plaza</a><br> \
+        <a href='agua'> Rápidos Acuáticos</a> </p>",
         {
             enter: function(character, system, action) {
                     system.setQuality("energia", character.qualities.energia-10);
@@ -512,15 +513,14 @@ undum.game.situations = {
     coches: new undum.SimpleSituation(
         "<h1>Coches de choque</h1>\
         <p class='transient'> \
-        <img src='media/img/mapa8.png' class='mapa'/> \
          Llegaste a los coches de choque, resulta demasiado aburrido\
          montarte tú solo, pero siempre puedes <a href='mcoches'>explorar</a> y ver si descubres\
          algo nuevo.<br>\
          O bien, puedes elegir un nuevo lugar para explorar.\
          Elige un lugar al que ir:<br> \
-         <a href='rusa'> Montaña Rusa(7) </a><br>\
-         <a href='tiovivo'> Tiovivo(9) </a><br> \
-         <a href='plaza'> Plaza(1)</a> </p>"
+         <a href='rusa'> Montaña Rusa </a><br>\
+         <a href='tiovivo'> Tiovivo </a><br> \
+         <a href='plaza'> Plaza</a> </p>"
     ),
 
     mcoches: new undum.SimpleSituation(
@@ -529,9 +529,9 @@ undum.game.situations = {
         Afortunadamente está vez has podido encontrar\
         2 kits de herramientas,los cuales se han sumado a tu inventario.\
         puedes seguir explorando el parque...\
-        <a href='rusa'> Montaña Rusa(7) </a><br>\
-        <a href='tiovivo'> Tiovivo(9) </a><br> \
-        <a href='plaza'> Plaza(1)</a> </p>",
+        <a href='rusa'> Montaña Rusa </a><br>\
+        <a href='tiovivo'> Tiovivo </a><br> \
+        <a href='plaza'> Plaza</a> </p>",
         {
             enter: function(character, system, action) {
                 if(character.qualities.herramientas == 0 && character.qualities.arreglado == false && character.qualities.energia == 0 ){
@@ -553,9 +553,9 @@ undum.game.situations = {
         de encontrar alguno. Puedes seguir explorando y quizá en un futuro puedas volver a \
         encontrar alguno.\
         Elige un lugar al que ir:<br> \
-         <a href='rusa'> Montaña Rusa(7) </a><br>\
-         <a href='tiovivo'> Tiovivo(9) </a><br> \
-         <a href='plaza'> Plaza(1)</a></p>"
+         <a href='rusa'> Montaña Rusa </a><br>\
+         <a href='tiovivo'> Tiovivo </a><br> \
+         <a href='plaza'> Plaza</a></p>"
     ),
 
     /*David*/
@@ -563,14 +563,13 @@ undum.game.situations = {
     /*Andrea*/
     caida: new undum.SimpleSituation(
         "<h1>Caída Libre</h1>\
-        <p class='transient'> \
-        <img src='media/img/mapa3.png' class='mapa' />\
+        <p class='transient'>\
         Tras observar durante unos minutos la Caída Libre no\
         encuentras nada...<br>\
          Elige otro lugar al que ir:<br> \
-         <a href='globos'> Globos(4) </a><br>\
-         <a href='luz'> Electricidad(5) </a><br> \
-         <a href='plaza'> Plaza(1)</a> </p>"
+         <a href='globos'> Globos </a><br>\
+         <a href='luz'> Electricidad </a><br> \
+         <a href='plaza'> Plaza</a> </p>"
     ),
     /*Andrea*/
 
@@ -578,13 +577,12 @@ undum.game.situations = {
     agua: new undum.SimpleSituation(
         "<h1>Rápidos acuáticos</h1>\
         <p class='transient'> \
-        <img src='media/img/mapa6.png' class='mapa' />\
         Vaya parece que no hay agua... Sólo hay una trampilla con cerradura...\
          Aquí no encontrarás nada...<br>\
          Elige otro lugar al que ir:<br> \
-         <a href='rusa'> Montaña Rusa(7) </a><br>\
-         <a href='luz'> Electricidad(5) </a><br> \
-         <a href='plaza'> Plaza(1)</a> </p>"
+         <a href='rusa'> Montaña Rusa </a><br>\
+         <a href='luz'> Electricidad </a><br> \
+         <a href='plaza'> Plaza</a> </p>"
     ),
      /*Nadie*/
 
@@ -595,10 +593,9 @@ undum.game.situations = {
          <br>\
          <a href='arreglarluz'>Activar generador</a><br>\
          <p class='transient'> \
-          <img src='media/img/mapa5.png' class='mapa'/> \
           Elige un lugar al que ir:<br> \
-          <a href='caida'> Caida Libre(3) </a><br> \
-          <a href='agua'> Rápidos Acuáticos(6) </a>",
+          <a href='caida'> Caida Libre </a><br> \
+          <a href='agua'> Rápidos Acuáticos </a>",
     ),
 
 
@@ -606,10 +603,9 @@ undum.game.situations = {
         "<h1>Caseta Electricidad </h1> \
         <p class='transient'> <br>\
         <p class='transient'> \
-         <img src='media/img/mapa5.png' class='mapa'/> \
          Elige un lugar al que ir:<br> \
-         <a href='caida'> Caida Libre(3) </a><br> \
-         <a href='agua'> Rápidos Acuáticos(6) </a>",
+         <a href='caida'> Caida Libre </a><br> \
+         <a href='agua'> Rápidos Acuáticos </a>",
 
 {
             enter: function(character, system, action) {
@@ -636,19 +632,15 @@ undum.game.situations = {
     noria: new undum.SimpleSituation(
         "<h1>Noria</h1>\
         <p class='transient'> \
-        <img src='media/img/mapa2.png' class='mapa'/> \
         <br>\
         Tras subir a la noria, no encuentras nada...<br>\
          Elige un lugar al que ir:<br> \
-        <a href='globos'> Globos(4) </a><br>\
-        <a href='entrada'> Entrada(10) </a><br>\
-        <a href='plaza'> Plaza(1)</a></p>"    
+        <a href='globos'> Globos </a><br>\
+        <a href='entrada'> Entrada </a><br>\
+        <a href='plaza'> Plaza</a></p>"
     ),
    /*Nadie*/
 
-
-
-    
 };
 
 // ---------------------------------------------------------------------------
@@ -688,7 +680,6 @@ undum.game.qualities = {
     puntuacion: new undum.IntegerQuality(
         "", {priority: "0001", group: "porcentaje",}
     ),
-
 };
 
 // ---------------------------------------------------------------------------

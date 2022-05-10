@@ -1,5 +1,5 @@
 body {
-    background: #170804 url("../img/page_bg2.jpg") repeat-x left top;
+    background: #170804 url("../games/media/img/page_bg2.jpg") repeat-x left top;
     font-family: Verdana, Palatino, Times, "Times New Roman", serif;
     font-size: 18px;
     line-height: 1.6em;
@@ -55,7 +55,7 @@ body {
 }
 #title {
     max-width: 28em;
-    background: #e6e6c6 url("../img/title_bg.png") repeat -1.1em -1.1em;
+    background: #e6e6c6 url("../games/media/img/title_bg.png") repeat -1.1em -1.1em;
     margin: 2.2em auto 1.1em auto;
     padding: 1.7em;
     border: 1.1em solid rgba(0,0,0,0.25);
@@ -63,7 +63,7 @@ body {
 }
 #title .label {
     overflow: hidden;
-    background: #e6e6c6 url("../img/text_bg.jpg") repeat left top;
+    background: #e6e6c6 url("../games/media/img/text_bg.jpg") repeat left top;
     padding: 2.0em;
     margin: auto;
     max-width: 18em;
@@ -129,7 +129,7 @@ body {
 #content_wrapper {
     max-width: 28em;
     position: relative;
-    background: #e6e6c6 url("../img/text_bg.jpg") repeat left top;
+    background: #e6e6c6 url("../games/media/img/text_bg.jpg") repeat left top;
     margin: 0.6em auto 1.1em auto;
     padding: 2.8em;
     display: none; /* Shown by Javascript */
@@ -211,7 +211,7 @@ a {
 }
 a.raw {
     padding-right: 14px;
-    background: transparent url("../img/external_link.png") no-repeat right 4px;
+    background: transparent url("../games/media/img/external_link.png") no-repeat right 4px;
 }
 a:hover {
     border-bottom: 1px dotted #900;
@@ -243,7 +243,7 @@ img.float_left {
 .tools {
     padding: 0.6em;
     width: 14em;
-    background: #cec3ae url("../img/tools_bg.jpg") repeat left top;
+    background: #cec3ae url("../games/media/img/tools_bg.jpg") repeat left top;
     position: absolute;
     left: 46em;
     margin-top:100px ;
