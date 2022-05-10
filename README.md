@@ -151,7 +151,7 @@ sus circustancias personales.
 En este segundo Sprint hemos elegido implementar todas las Historias de Usuario restantes para terminar nuestro juego completo.
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/Captura de pantalla (364).png"></img>
->Ilustración 7: Captura de pantalla de Trello en el Sprint2
+>Ilustración 8: Captura de pantalla de Trello en el Sprint2
 
 
 **Sprint Planning:**
@@ -196,11 +196,11 @@ No hemos añadido ninguna HU nueva para este Sprint ya que decidimos que no apor
 En cuanto a los plazos de entrega estamos al día.
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/Captura.PNG"></img>
->Ilustración 8: Captura de pantalla del tablero final de Trello (parte1)
+>Ilustración 9: Captura de pantalla del tablero final de Trello (parte1)
 
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/Captura2.PNG"></img>
->Ilustración 9: Captura de pantalla del tablero final de Trello (parte2)
+>Ilustración 10: Captura de pantalla del tablero final de Trello (parte2)
 
 
 **Sprint Retrospective:**
