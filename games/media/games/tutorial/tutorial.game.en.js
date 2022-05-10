@@ -75,8 +75,7 @@ undum.game.situations = {
         <br>\
         - Entrada: Plaza, Noria.\
         <br/>\
-        </p>\
-        <p><a href='plaza'>Pulse aquí para volver</a></p>"
+        <p><a href='plaza'>Pulse aquí para volver</a></p></p>"
     ),
 
     /*Andrés*/
@@ -90,7 +89,7 @@ undum.game.situations = {
          <a href='rusa'> Montaña Rusa </a><br>\
          <a href='tiovivo'> Tiovivo </a><br> \
          <a href='entrada'> Entrada </a><br>\
-         <a href='agua'> Rápidos Acuáticos </a> \
+         <a href='agua'> Rápidos Acuáticos </a><br> \
          <a href='descrip'>Pulse aqui para ver la descripcion del mapa</a></p>"
     ),
     /*Andrés*/
