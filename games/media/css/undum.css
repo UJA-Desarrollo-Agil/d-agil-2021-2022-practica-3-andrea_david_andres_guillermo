@@ -246,6 +246,7 @@ img.float_left {
     background: #cec3ae url("../img/tools_bg.jpg") repeat left top;
     position: absolute;
     left: 46em;
+    margin-top:100px ;
 }
 .tools p {
     font-size: 0.95em;
