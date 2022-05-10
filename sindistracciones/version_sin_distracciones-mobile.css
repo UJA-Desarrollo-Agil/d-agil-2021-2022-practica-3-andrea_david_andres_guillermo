@@ -30,7 +30,7 @@ body {
     position: static;
 }
 .tools {
-    background-image: url("../img/text_bg.jpg");
+    background-image: url("../games/media/img/text_bg.jpg");
     position: relative;
     width: auto;
 }
@@ -61,7 +61,7 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    background: transparent url("../img/toolbar_bg.jpg") repeat-x top left;
+    background: transparent url("../games/media/img/toolbar_bg.jpg") repeat-x top left;
     height: 36px;
     padding: 8px;
     overflow: hidden;
@@ -102,7 +102,7 @@ body {
     left: 0;
     right: 0;
     font-size: 16px;
-    background-image: url("../img/tools_bg.jpg");
+    background-image: url("../games/media/img/tools_bg.jpg");
     z-index: 200;
     list-style-type: none;
     padding: 10px 0 0 0;
