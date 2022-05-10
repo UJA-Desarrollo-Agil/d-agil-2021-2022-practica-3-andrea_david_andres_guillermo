@@ -1,0 +1,126 @@
+*{
+  font-family:Arial, Helvetica, sans-serif;
+}
+/*Barra de navegación*/
+.nav-bar {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .nav-bar-item {
+    float: right;
+    padding-top: 1rem;
+    margin-right: 250px;
+  }
+  
+  .nav-bar-item a {
+    display: block;
+    color: black;
+    text-align: center;
+padding-left: 5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-bar-item a:hover {
+    color:  #09088B;
+  }
+.todo{
+background-color: #E9E9E9;
+  }
+
+
+  /*Footer*/
+
+.footer{
+width: 100%;
+}
+
+.elemento-footer{
+ width: 50%;
+  }
+  .elemento-footer img .github{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  
+.elemento-footer img{
+  width: 1rem;
+  height: 1rem;
+  float: right;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-bottom: 3%;
+}
+
+
+
+
+/*Formulario*/
+
+  input[type=submit] {
+    width: 50%;
+    background-color: #0B2161; 
+    color: white;
+    padding: 14px 20px;
+    margin-left: 25%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #09088B;
+  }
+  
+  .formulario {
+    padding: 5px 0px 20px 0px;
+  }
+
+  /*Quienes somos*/
+  .container-card{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+.card {
+  display: flex;
+  width: 330px;
+  margin: 10px;
+  float: left;
+}
+  .card-img{
+    width: 100%;
+  }
+
+  /*Textos*/
+  h1{
+    padding-top: 20px;
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+.texto-index{
+  margin-left: 25%;
+  width: 50%;
+  text-align: justify;
+}
+
+  /*Portada*/
+  .port{
+  margin-left: 25%;
+    width:50%;
+    height:30%;
+    border-radius: 3%;
+
+  }
+
+
+
+  
