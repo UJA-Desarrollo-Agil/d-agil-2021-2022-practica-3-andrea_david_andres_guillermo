@@ -27,6 +27,7 @@ Hecho por:
   * [6. Capturas de pantalla de Telegram](#6-capturas-de-pantalla-de-telegram)
   * [7. Sprint1](#7-sprint1)
   * [8. Sprint2](#8-sprint2)
+  * [9. Web](#9-web)
 
 ## 1. Introducción
 
@@ -211,4 +212,6 @@ Hemos tenido más compromiso en las Dailys. Nos hemos adaptado mejor a los horar
 
 Nos hemos ayudado cuando ha surgido algún problema.
 
+
+## 9. Web
 
