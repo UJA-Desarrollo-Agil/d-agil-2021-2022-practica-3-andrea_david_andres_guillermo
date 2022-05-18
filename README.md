@@ -28,6 +28,7 @@ Hecho por:
   * [7. Sprint1](#7-sprint1)
   * [8. Sprint2](#8-sprint2)
   * [9. Web](#9-web)
+  * [10. Métricas](#10-métricas)
 
 ## 1. Introducción
 
@@ -217,3 +218,20 @@ Nos hemos ayudado cuando ha surgido algún problema.
 
 **Link de la página web:** https://elparquedeatracciones.000webhostapp.com/
 
+## 10. Métricas
+
+**Tabla para los datos de las gráficas del proyecto en su totalidad:**
+
+**Gráficas burndown y burn-up de los puntos de historia:**
+
+**Gráficas burndown y burn-up del valor asociado a las Historias de Usuario:**
+
+**Tabla de velocidades:**
+
+**Tablas (una por cada sprint) con los datos para las gráficas de los sprints:**
+
+**Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1:**
+
+**Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 2:**
+
+**Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas:**
