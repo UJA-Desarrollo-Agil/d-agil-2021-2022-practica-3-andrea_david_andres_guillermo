@@ -265,7 +265,7 @@ Nos hemos ayudado cuando ha surgido algún problema.
 
 **Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 2.** 
 
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bds2.jpg"></img>
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/imagen-falta.PNG"></img>
 >Ilustración 20: Gráfica puntos de historia Burn Down, Sprint 2
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bus2.jpg"></img>
