@@ -240,6 +240,19 @@ Nos hemos ayudado cuando ha surgido algún problema.
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/PH-BD.jpg"></img>
 >Ilustración 16: Gráfica puntos de historia Burn Down
 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bus1.jpg"></img>
+>Ilustración 17: Gráfica puntos de historia Burn UP, Sprint 1
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bus2.jpg"></img>
+>Ilustración 18: Gráfica puntos de historia Burn UP, Sprint 2
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bds1.jpg"></img>
+>Ilustración 19: Gráfica puntos de historia Burn Down, Sprint 1
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bds2.jpg"></img>
+>Ilustración 20: Gráfica puntos de historia Burn Down, Sprint 2
+
+
 
 **Conclusiones obtenidas**
 
