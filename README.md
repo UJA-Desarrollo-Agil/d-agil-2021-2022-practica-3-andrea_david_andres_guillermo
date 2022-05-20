@@ -220,10 +220,27 @@ Nos hemos ayudado cuando ha surgido algún problema.
 
 ## 10. Métricas
 
+** Tabla para los datos de las gráficas del proyecto en su totalidad.** 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia1.png"></img>
+Ilustración 11: Gráfica del Sprint1
+
+
+** Gráficas burndown y burn-up de los puntos de historia.** 
+** Gráficas burndown y burn-up del valor asociado a las Historias de Usuario.** 
+** Tabla de velocidades.** 
+** Tablas (una por cada sprint) con los datos para las gráficas de los sprints.** 
+** Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1.** 
+** Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 2.** 
+** Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas.** 
+
+
 **Imagenes de las gráficas y tablas obtenidas en el proyecto** 
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia1.png"></img>
 >Ilustración 11: Gráfica del Sprint1
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia2.png"></img>
+Ilustración 13: Datos del Sprint2
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadiaS1.png"></img>
 >Ilustración 12: Datos del Sprint1
