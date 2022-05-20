@@ -285,7 +285,22 @@ Nos hemos ayudado cuando ha surgido algún problema.
 
 **Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas.** 
 
-<img src=""></img>
+**Conclusión Sprint 1**
 
-**Enlace Hoja de cálculo (Google Drive):** https://docs.google.com/spreadsheets/d/1Z-ZOlRZXwK4Z2G-7L33a9XgDahQrL2dwC9Usy6Iu44Q/edit?usp=sharing 
+En el Sprint 1 podemos observar que habíamos completado un 30% del total al acabar dicho Sprint, en este periodo el trabajo individual era correcto, pero la comunicación entre losmiembros del grupo no era la mejor.
+
+Debido a esto se puede ver en las gráficas, como la evolución del mismo no era fluida y el trabajo se centraba en x días a lo largo de dicho Sprint.
+
+**Conclusión Sprint 2**
+
+En el Sprint 2 podemos observar que habíamos completado un 70% del total al acabar dicho Sprint, en este periodo fuimos mucho más organizados y estuvimos mucho más comprometido con fechas y tiempos que nos marcábamos no solo para el trabajo individual sino para las reuniones diarias, esto hizo que trabajasemos más y mejor.
+
+El trabajo fué mucho más fluido y constante, esto ayudo a perfeccionar lo máximo que pudimos la entrega final.
+
+**Conclusión Final**
+
+Podemos concluir diciendo que el trabajo fue evolucíonando poco a poco, y que conforme pasaba el tiempo el equipo se organizabade una manera más práctica y mejor, mejorando la comunicación y el trabajo individual de cada uno, lo que al final favoreció y en gran medida la entrega final de dicho proyecto.
+
+
+**Enlace Hoja de cálculo (Google Drive):** https://docs.google.com/spreadsheets/d/1Z-ZOlRZXwK4Z2G-7L33a9XgDahQrL2dwC9Usy6Iu44Q/edit?usp=sharing
  
