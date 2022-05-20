@@ -224,6 +224,8 @@ Nos hemos ayudado cuando ha surgido algún problema.
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia1.png"></img>
 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia2.png"></img>
+
 <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/grafica%20valor.PNG"></img>
 
 **Gráficas burndown y burn-up de los puntos de historia.** 
@@ -245,8 +247,7 @@ Nos hemos ayudado cuando ha surgido algún problema.
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia1.png"></img>
 >Ilustración 14: Gráfica del Sprint1 PH
 
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadiaS2.png"></img>
->Ilustración 14: Gráfica del Sprint2 PH 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia2.png"></img>
 
 <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/valor1sprint.PNG"></img>
 >Gráfica del Sprint1 Valor 
@@ -285,19 +286,6 @@ Nos hemos ayudado cuando ha surgido algún problema.
 **Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas.** 
 
 <img src=""></img>
-
-**Imagenes de las gráficas y tablas obtenidas en el proyecto** 
-
->Ilustración 11: Gráfica del Sprint1
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia2.png"></img>
-Ilustración 13: Datos del Sprint2
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadiaS1.png"></img>
->Ilustración 12: Datos del Sprint1
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia2.png"></img>
->Ilustración 13: Datos del Sprint2
 
 **Enlace Hoja de cálculo (Google Drive):** https://docs.google.com/spreadsheets/d/1Z-ZOlRZXwK4Z2G-7L33a9XgDahQrL2dwC9Usy6Iu44Q/edit?usp=sharing 
  
