@@ -222,33 +222,68 @@ Nos hemos ayudado cuando ha surgido algún problema.
 
 **Tabla para los datos de las gráficas del proyecto en su totalidad.**
 
-
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia1.png"></img>
+
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/grafica%20valor.PNG"></img>
 
 **Gráficas burndown y burn-up de los puntos de historia.** 
 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/PH-BD.jpg"></img>
+>Ilustración 16: Gráfica puntos de historia Burn Down
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/PH-BU.jpg"></img>
+>Ilustración 15: Gráfica puntos de historia Burn Up 
 
 **Gráficas burndown y burn-up del valor asociado a las Historias de Usuario.**
 
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/gafrica%20valor%20burndown.PNG"></img>
 
-**Tabla de velocidades.** 
-
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/grafica%20valor%20burnup.PNG"></img>
 
 **Tablas (una por cada sprint) con los datos para las gráficas de los sprints.** 
 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia1.png"></img>
+>Ilustración 14: Gráfica del Sprint1 PH
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadiaS2.png"></img>
+>Ilustración 14: Gráfica del Sprint2 PH 
+
+<img src=""></img>
 
 **Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1.** 
 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bds1.jpg"></img>
+>Ilustración 19: Gráfica puntos de historia Burn Down, Sprint 1
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bus1.jpg"></img>
+>Ilustración 17: Gráfica puntos de historia Burn UP, Sprint 1
 
 **Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 2.** 
 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bds2.jpg"></img>
+>Ilustración 20: Gráfica puntos de historia Burn Down, Sprint 2
+
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bus2.jpg"></img>
+>Ilustración 18: Gráfica puntos de historia Burn UP, Sprint 2
+
+**Gráficas burndown y burn-up de los puntos de vaor del sprint 1.** 
+
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/burn%20down1spr.PNG"></img>
+
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/burnup1spr.PNG"></img>
+
+**Gráficas burndown y burn-up de los puntos de valor del sprint 2.** 
+
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/burn%20down%202spr.PNG"></img>
+
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/burn%20up%202spr.PNG"></img>
 
 **Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas.** 
 
+<img src=""></img>
 
 **Imagenes de las gráficas y tablas obtenidas en el proyecto** 
 
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia1.png"></img>
 >Ilustración 11: Gráfica del Sprint1
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia2.png"></img>
@@ -259,31 +294,6 @@ Ilustración 13: Datos del Sprint2
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia2.png"></img>
 >Ilustración 13: Datos del Sprint2
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadiaS2.png"></img>
->Ilustración 14: Gráfica del Sprint2
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/PH-BU.jpg"></img>
->Ilustración 15: Gráfica puntos de historia Burn Up 
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/PH-BD.jpg"></img>
->Ilustración 16: Gráfica puntos de historia Burn Down
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bus1.jpg"></img>
->Ilustración 17: Gráfica puntos de historia Burn UP, Sprint 1
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bus2.jpg"></img>
->Ilustración 18: Gráfica puntos de historia Burn UP, Sprint 2
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bds1.jpg"></img>
->Ilustración 19: Gráfica puntos de historia Burn Down, Sprint 1
-
-<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/ph-bds2.jpg"></img>
->Ilustración 20: Gráfica puntos de historia Burn Down, Sprint 2
-
-
-
-**Conclusiones obtenidas**
 
 **Enlace Hoja de cálculo (Google Drive):** https://docs.google.com/spreadsheets/d/1Z-ZOlRZXwK4Z2G-7L33a9XgDahQrL2dwC9Usy6Iu44Q/edit?usp=sharing 
  
