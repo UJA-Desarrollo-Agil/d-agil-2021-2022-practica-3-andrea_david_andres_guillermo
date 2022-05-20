@@ -220,15 +220,7 @@ Nos hemos ayudado cuando ha surgido algún problema.
 
 ## 10. Métricas
 
-**Tabla para los datos de las gráficas del proyecto en su totalidad:**
-
-**Gráficas burndown y burn-up de los puntos de historia:**
-
-**Gráficas burndown y burn-up del valor asociado a las Historias de Usuario:**
-
-**Tabla de velocidades:**
-
-**Tabla con los datos para las gráficas de los sprints:**
+**Imagenes de las gráficas y tablas obtenidas en el proyecto** 
 
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia1.png"></img>
 >Ilustración 11: Gráfica del Sprint1
@@ -239,13 +231,11 @@ Nos hemos ayudado cuando ha surgido algún problema.
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadia2.png"></img>
 >Ilustración 13: Datos del Sprint2
 
-><img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadiaS2.png"></img>
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadiaS2.png"></img>
 >Ilustración 14: Gráfica del Sprint2
 
 
-**Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1:**
-
-
-**Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 2:**
-
 **Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas:**
+
+**Enlace Hoja de cálculo (Google Drive):** https://docs.google.com/spreadsheets/d/1Z-ZOlRZXwK4Z2G-7L33a9XgDahQrL2dwC9Usy6Iu44Q/edit?usp=sharing 
+ 
