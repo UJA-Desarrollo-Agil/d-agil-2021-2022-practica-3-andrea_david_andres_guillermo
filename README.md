@@ -234,8 +234,14 @@ Nos hemos ayudado cuando ha surgido algún problema.
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadiaS2.png"></img>
 >Ilustración 14: Gráfica del Sprint2
 
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/PH-BU.jpg"></img>
+>Ilustración 15: Gráfica puntos de historia Burn Up 
 
-**Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas:**
+<img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/PH-BD.jpg"></img>
+>Ilustración 16: Gráfica puntos de historia Burn Down
+
+
+**Conclusiones obtenidas**
 
 **Enlace Hoja de cálculo (Google Drive):** https://docs.google.com/spreadsheets/d/1Z-ZOlRZXwK4Z2G-7L33a9XgDahQrL2dwC9Usy6Iu44Q/edit?usp=sharing 
  
