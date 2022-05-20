@@ -248,7 +248,11 @@ Nos hemos ayudado cuando ha surgido algún problema.
 <img src="https://raw.githubusercontent.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/master/Capturas/diaadiaS2.png"></img>
 >Ilustración 14: Gráfica del Sprint2 PH 
 
-<img src=""></img>
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/valor1sprint.PNG"></img>
+>Gráfica del Sprint1 Valor 
+
+<img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-3-andrea_david_andres_guillermo/blob/master/Capturas/valor2sprint.PNG"></img>
+>Gráfica del Sprint2 Valor
 
 **Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1.** 
 
